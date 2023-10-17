@@ -11,22 +11,11 @@ const Navbar = () => {
                                 <a className='nav-link' href='/Services' id='text'>Services</a>
                                 <a className='nav-link' href='/Projects' id='text'>Projects </a>
                                 <a className='nav-link' href='/About'  id='text'>About</a>
-                                <a className='nav-link' href='/Contact' id='text'>Show Recipes</a>
+                                <a className='nav-link' href='/Contact' id='text'>Contact</a>
                     </div>
-                        <div className="navbar-right" >
-                            <a href='Login'><button type="button" className="btn btn-dark ms-auto px-4 rounded-pill">Login</button></a>
-                        </div>
-                        <div className="nav navbar-nav navbar-right">
-                            <a href='SignUp'><button type="button" className="btn btn-dark ms-auto px-4 rounded-pill">Sign-up</button></a>
-                        </div>
                 </nav>
             </div>
-            {/* <div className="input-group">
-                <input type="search" className="form-control rounded me-3 bs" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                <button type="button" className="btn rounded search">Search</button>
-            </div> */}
         </div>
     );
 }
-
 export default Navbar;
