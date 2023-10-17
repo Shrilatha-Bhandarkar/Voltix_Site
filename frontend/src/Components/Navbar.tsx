@@ -1,3 +1,5 @@
+import React from "react";
+import './Home.css'
 const Navbar = () => {
     return (
         <div className='h_full'>
@@ -13,16 +15,16 @@ const Navbar = () => {
                                 <a className='nav-link' href='/' id='text'>Home</a>
                             </li>
                             <li className='nav-item'>
-                                <a className='nav-link' href='/Services' to="/Services" id='text'>Services</a>
+                                <a className='nav-link' href='/Services' id='text'>Services</a>
                             </li>
                             <li className='nav-item'>
-                                <a className='nav-link' href='/Projects' to="/Projects" id='text'>Projects </a>
+                                <a className='nav-link' href='/Projects' id='text'>Projects </a>
                             </li>
                             <li className='nav-item'>
-                                <a className='nav-link' href='/About' to="/About" id='text'>About</a>
+                                <a className='nav-link' href='/About'  id='text'>About</a>
                             </li>
                             <li className='nav-item'>
-                                <a className='nav-link' href='/Contact' to="/Home1s" id='text'>Show Recipes</a>
+                                <a className='nav-link' href='/Contact' id='text'>Show Recipes</a>
                             </li>
                         </ul>
                         <div className="nav navbar-nav navbar-right">
