@@ -1,9 +1,9 @@
-import Navbar from './Components/Navbar'
-import Home from './Components/Home'
-import Services from './Components/Services'
-import Projects from './Components/Projects'
-import About from './Components/About'
-import Contact from './Components/Contact'
+import Navbar from './Components/Navbar.tsx'
+import Home from './Components/Home.tsx'
+import Services from './Components/Services.tsx'
+import Projects from './Components/Projects.tsx'
+import About from './Components/About.tsx'
+import Contact from './Components/Contact.tsx'
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
