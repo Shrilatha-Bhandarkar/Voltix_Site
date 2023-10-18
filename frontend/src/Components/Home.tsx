@@ -4,7 +4,8 @@ import './Home.css';
 
 const Home = () => {
   const imageSrc1 = require('../images/FirstHome.png');
-  const imageSrc2=require('../images/sphere nw.png')
+  const imageSrc2=require('../images/sphere nw.png');
+  const imageSrc3=require('../images/obj.png')
   return (
     <div className='main'>
       <div className="container">
@@ -46,6 +47,13 @@ const Home = () => {
            </div>
          </div>
          </section> */}
+      <div className="container">
+        <img src={imageSrc3} alt="Image" className="image" />
+        <div className="textStyleLarge2"><p>Check out our Projects</p></div>
+        <div className="textStyleMedium3">Our endeavours serve as examples of our dedication to excellence.</div>
+        <div className="textStyleLarge4"><p>Trusted by Millions of Customers.</p></div>
+        <div className="textStyleMedium4">We have been successful in developing business<br></br> solutions in large part because of our talented and <br></br>devoted workforce.</div>
+      </div>
       </div>
     </div>
   );
