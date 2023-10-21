@@ -26,7 +26,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.verifyAccessToken = void 0;
+exports.getUserId = exports.verifyAccessToken = void 0;
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const dotenv = __importStar(require("dotenv"));
 dotenv.config();
@@ -44,7 +44,6 @@ const verifyAccessToken = (req, res, next) => {
             return res.status(401).json({ error: "Access token is missing" });
         }
         const decoded = jsonwebtoken_1.default.verify(accessToken, secretKey);
-        // req["userId"] = decoded.userId;
         req.userId = decoded.userId;
         next();
     }
@@ -54,3 +53,7 @@ const verifyAccessToken = (req, res, next) => {
     }
 };
 exports.verifyAccessToken = verifyAccessToken;
+const getUserId = (req) => {
+    return req.userId;
+};
+exports.getUserId = getUserId;

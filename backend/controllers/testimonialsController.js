@@ -27,13 +27,14 @@ const getAllTestimonials = (req, res) => __awaiter(void 0, void 0, void 0, funct
 exports.getAllTestimonials = getAllTestimonials;
 exports.getTestimonialById = [auth_1.verifyAccessToken, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         try {
-            const testimonialId = req.params.id;
+            const testimonialId = req.query.id;
             const testimonial = yield testimonialsModel_1.default.findById(testimonialId);
             if (testimonial) {
                 res.status(200).json(testimonial);
             }
             else {
-                res.status(404).json({ error: "Testimonial not found" });
+                const allTestimonials = yield testimonialsModel_1.default.find();
+                res.status(404).json({ error: "Testimonial not found", allTestimonials: allTestimonials });
             }
         }
         catch (err) {
@@ -45,6 +46,8 @@ exports.createTestimonial = [
     (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         try {
             const testimonialData = req.body;
+            const createdBy = req.userId;
+            testimonialData.created_by = createdBy;
             const createdTestimonial = yield testimonialsModel_1.default.create(testimonialData);
             res.status(201).json(createdTestimonial);
         }
@@ -58,7 +61,7 @@ exports.updateTestimonial = [
     auth_1.verifyAccessToken,
     (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         try {
-            const testimonialId = req.params.id;
+            const testimonialId = req.query.id;
             const testimonialData = req.body;
             const updatedTestimonial = yield testimonialsModel_1.default.findByIdAndUpdate(testimonialId, testimonialData, { new: true });
             if (updatedTestimonial) {
@@ -78,7 +81,7 @@ exports.deleteTestimonial = [
     auth_1.verifyAccessToken,
     (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         try {
-            const testimonialId = req.params.id;
+            const testimonialId = req.query.id;
             const deletedTestimonial = yield testimonialsModel_1.default.findByIdAndDelete(testimonialId);
             if (deletedTestimonial) {
                 res.status(200).send('Deleted successfully');

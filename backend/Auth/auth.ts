@@ -30,7 +30,6 @@ export const verifyAccessToken = (
     const decoded = jwt.verify(accessToken, secretKey as string) as {
       userId: string;
     };
-    // req["userId"] = decoded.userId;
     req.userId = decoded.userId;
     next();
   } catch (err) {
@@ -38,3 +37,6 @@ export const verifyAccessToken = (
     return res.status(401).json({ error: "Invalid access token" });
   }
 };
+export const getUserId = (req: CustomRequest)=>{
+  return req.userId;
+}

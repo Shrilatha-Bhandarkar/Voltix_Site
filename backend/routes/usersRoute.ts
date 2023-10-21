@@ -8,7 +8,7 @@ import {
 
 const router = express.Router();
 
-router.post("/register",validateUserInput, registerUser);
+router.post("/registration",validateUserInput, registerUser);
 router.post("/login", validateUserInput,loginUser);
 router.post("/refresh", validateUserInput,refreshToken);
 

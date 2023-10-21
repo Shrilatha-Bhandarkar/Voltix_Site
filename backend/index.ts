@@ -6,11 +6,6 @@ import serviceRoutes from "./routes/servicesRoutes";
 import testimonialRoutes from "./routes/testimonialRoutes";
 import contactRoutes from "./routes/contactRoutes";
 import userRoutes from "./routes/usersRoute";
-import {
-  registerUser,
-  loginUser,
-  refreshToken
-} from "./controllers/userController";
 
 dotenv.config();
 const app = express();

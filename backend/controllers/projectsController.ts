@@ -1,8 +1,8 @@
-import { Request, Response, NextFunction } from "express";
-import { verifyAccessToken } from "../Auth/auth"; // access token verification middleware
+import { Request, Response } from "express";
+import { verifyAccessToken, CustomRequest} from "../Auth/auth"; // access token verification middleware
 import ProjectModel from "../models/projectsModel";
 
-export const getAllProjects = async (req: Request, res: Response) => {
+export const getAllProjects = async (req: CustomRequest, res: Response) => {
   try {
     const projects = await ProjectModel.find();
     res.status(200).json(projects);
@@ -11,24 +11,25 @@ export const getAllProjects = async (req: Request, res: Response) => {
   }
 };
 
-export const getProjectById = async (req: Request, res: Response) => {
+export const getProjectById = async (req: CustomRequest, res: Response) => {
   try {
-    const projectId = req.params.id;
+    const projectId = req.query.id;
     const project = await ProjectModel.findById(projectId);
 
     if (project) {
       res.status(200).json(project);
     } else {
-      res.status(404).json({ error: "Project not found" });
+      const allProjects = await ProjectModel.find();
+      res.status(404).json({ error: "Project not found", allProjects: allProjects });
     }
   } catch (err) {
     res.status(500).json({ error: "Internal server error" });
   }
 };
 
-export const getProjectByTitle = async (req: Request, res: Response) => {
+export const getProjectByTitle = async (req: CustomRequest, res: Response) => {
   try {
-    const project_title = req.params.title;
+    const project_title = req.query.title;
     const project = await ProjectModel.findOne({
       project_title: project_title,
     });
@@ -36,7 +37,8 @@ export const getProjectByTitle = async (req: Request, res: Response) => {
     if (project) {
       res.status(200).json(project);
     } else {
-      res.status(404).json({ error: "Project not found" });
+      const allProjects = await ProjectModel.find();
+      res.status(404).json({ error: "Project not found", allProjects: allProjects });
     }
   } catch (err) {
     res.status(500).json({ error: "Internal server error" });
@@ -46,9 +48,11 @@ export const getProjectByTitle = async (req: Request, res: Response) => {
 
 export const createProject = [
   verifyAccessToken,
-  async (req: Request, res: Response) => {
+  async (req: CustomRequest, res: Response) => {
     try {
       const projectData = req.body;
+      const createdBy = req.userId;
+      projectData.created_by = createdBy;
       const createdProject = await ProjectModel.create(projectData);
       res.status(201).json(createdProject);
     } catch (err) {
@@ -59,9 +63,9 @@ export const createProject = [
 ];
 export const updateProject = [
   verifyAccessToken,
-  async (req: Request, res: Response) => {
+  async (req: CustomRequest, res: Response) => {
     try {
-      const projectId = req.params.id;
+      const projectId = req.query.id;
       const projectData = req.body;
       const updatedProject = await ProjectModel.findByIdAndUpdate(
         projectId,
@@ -83,13 +87,13 @@ export const updateProject = [
 
 export const deleteProject = [
   verifyAccessToken,
-  async (req: Request, res: Response) => {
+  async (req: CustomRequest, res: Response) => {
     try {
-      const projectId = req.params.id;
+      const projectId = req.query.id;
       const deletedProject = await ProjectModel.findByIdAndDelete(projectId);
 
       if (deletedProject) {
-        res.status(200).send('Deleted successfully');
+        res.status(200).send('Project Deleted successfully');
       } else {
         res.status(404).json({ error: "Project not found" });
       }

@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import { verifyAccessToken } from "../Auth/auth";
+import { verifyAccessToken, CustomRequest} from "../Auth/auth";
 import ServiceModel from "../models/servicesModel";
 
-export const getAllServices = async (req: Request, res: Response) => {
+export const getAllServices = async (req: CustomRequest, res: Response) => {
   try {
     const services = await ServiceModel.find();
     res.status(200).json(services);
@@ -11,24 +11,25 @@ export const getAllServices = async (req: Request, res: Response) => {
   }
 };
 
-export const getServiceById = async (req: Request, res: Response) => {
+export const getServiceById = async (req: CustomRequest, res: Response) => {
   try {
-    const serviceId = req.params.id;
+    const serviceId = req.query.id;
     const service = await ServiceModel.findById(serviceId);
 
     if (service) {
       res.status(200).json(service);
     } else {
-      res.status(404).json({ error: "Service not found" });
+      const allServices = await ServiceModel.find();
+      res.status(404).json({ error: "Service not found", allServices: allServices });
     }
   } catch (err) {
     res.status(500).json({ error: "Internal server error" });
   }
 };
 
-export const getServiceByTitle = async (req: Request, res: Response) => {
+export const getServiceByTitle = async (req: CustomRequest, res: Response) => {
   try {
-    const service_title = req.params.title;
+    const service_title = req.query.title;
     const service = await ServiceModel.findOne({
       service_title: service_title,
     });
@@ -36,7 +37,8 @@ export const getServiceByTitle = async (req: Request, res: Response) => {
     if (service) {
       res.status(200).json(service);
     } else {
-      res.status(404).json({ error: "Service not found" });
+      const allServices = await ServiceModel.find();
+      res.status(404).json({ error: "Service not found", allServices: allServices });
     }
   } catch (err) {
     res.status(500).json({ error: "Internal server error" });
@@ -46,9 +48,11 @@ export const getServiceByTitle = async (req: Request, res: Response) => {
 
 export const createService = [
   verifyAccessToken,
-  async (req: Request, res: Response) => {
+  async (req: CustomRequest, res: Response) => {
     try {
       const serviceData = req.body;
+      const createdBy = req.userId;
+      serviceData.created_by = createdBy;
       const createdService = await ServiceModel.create(serviceData);
       res.status(201).json(createdService);
     } catch (err) {
@@ -60,9 +64,9 @@ export const createService = [
 
 export const updateService = [
   verifyAccessToken,
-  async (req: Request, res: Response) => {
+  async (req: CustomRequest, res: Response) => {
     try {
-      const serviceId = req.params.id;
+      const serviceId = req.query.id;
       const serviceData = req.body;
       const updatedService = await ServiceModel.findByIdAndUpdate(
         serviceId,
@@ -84,9 +88,9 @@ export const updateService = [
 
 export const deleteService = [
   verifyAccessToken,
-  async (req: Request, res: Response) => {
+  async (req: CustomRequest, res: Response) => {
     try {
-      const serviceId = req.params.id;
+      const serviceId = req.query.id;
       const deletedService = await ServiceModel.findByIdAndDelete(serviceId);
 
       if (deletedService) {

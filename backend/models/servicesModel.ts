@@ -6,6 +6,7 @@ interface IService extends Document {
   service_category: string;
   image_url: string;
   created_at: Date;
+  created_by: string;
 }
 
 const servicesSchema = new mongoose.Schema<IService>({
@@ -14,6 +15,7 @@ const servicesSchema = new mongoose.Schema<IService>({
   service_category: { type: String, required: true },
   image_url: { type: String, required: true },
   created_at: { type: Date, default: Date.now },
+  created_by: { type: String, required: true}
 });
 
 const ServiceModel: Model<IService> = mongoose.model<IService>(

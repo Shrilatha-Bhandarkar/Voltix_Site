@@ -10,6 +10,7 @@ const projectsSchema = new mongoose_1.default.Schema({
     project_category: { type: String, required: true },
     image_url: { type: String, required: true },
     created_at: { type: Date, default: Date.now },
+    created_by: { type: String, required: true }
 });
 const ProjectModel = mongoose_1.default.model("Projects", projectsSchema);
 exports.default = ProjectModel;

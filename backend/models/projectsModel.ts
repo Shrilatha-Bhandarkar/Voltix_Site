@@ -6,6 +6,7 @@ interface IProject extends Document {
   project_category: string;
   image_url: string;
   created_at: Date;
+  created_by: string;
 }
 
 const projectsSchema = new mongoose.Schema<IProject>({
@@ -14,6 +15,7 @@ const projectsSchema = new mongoose.Schema<IProject>({
   project_category: { type: String, required: true },
   image_url: { type: String, required: true },
   created_at: { type: Date, default: Date.now },
+  created_by: { type: String, required: true}
 });
 
 const ProjectModel: Model<IProject> = mongoose.model<IProject>(

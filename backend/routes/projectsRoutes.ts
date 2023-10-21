@@ -3,21 +3,21 @@ import * as projectController from "../controllers/projectsController";
 import { verifyAccessToken } from "../Auth/auth";
 const p_router = express.Router();
 
-p_router.get("/projects/:id", projectController.getProjectById);
+p_router.get("/projects/id", projectController.getProjectById);
 p_router.get("/projects", projectController.getAllProjects);
-p_router.get("/projects/title/:title", projectController.getProjectByTitle);
+p_router.get("/projects/title", projectController.getProjectByTitle);
 p_router.post(
-  "/projects/create",
+  "/projects",
   verifyAccessToken,
   projectController.createProject
 );
 p_router.put(
-  "/projects/update/:id",
+  "/projects",
   verifyAccessToken,
   projectController.updateProject
 );
 p_router.delete(
-  "/projects/delete/:id",
+  "/projects",
   verifyAccessToken,
   projectController.deleteProject
 );

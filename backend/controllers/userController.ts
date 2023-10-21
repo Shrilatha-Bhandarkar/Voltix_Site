@@ -1,15 +1,15 @@
 import { Request, Response, NextFunction } from "express";
 import bcrypt from "bcrypt";
 import jwt, { VerifyErrors } from "jsonwebtoken";
-import UserModel, { IUser } from "../models/usersModel";
+import UserModel from "../models/usersModel";
 import { check, validationResult } from "express-validator";
 import * as dotenv from "dotenv";
 
 dotenv.config();
 
 const secretKey = process.env.ACCESS_TOKEN_SECRET;
-
 const refreshSecretKey = process.env.REFRESH_TOKEN_SECRET;
+
 const generateAccessToken = (userId: string): string => {
   return jwt.sign({ userId }, secretKey as string, { expiresIn: "30m" });
 };

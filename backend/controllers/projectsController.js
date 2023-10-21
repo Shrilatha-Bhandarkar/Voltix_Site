@@ -27,13 +27,14 @@ const getAllProjects = (req, res) => __awaiter(void 0, void 0, void 0, function*
 exports.getAllProjects = getAllProjects;
 const getProjectById = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const projectId = req.params.id;
+        const projectId = req.query.id;
         const project = yield projectsModel_1.default.findById(projectId);
         if (project) {
             res.status(200).json(project);
         }
         else {
-            res.status(404).json({ error: "Project not found" });
+            const allProjects = yield projectsModel_1.default.find();
+            res.status(404).json({ error: "Project not found", allProjects: allProjects });
         }
     }
     catch (err) {
@@ -43,7 +44,7 @@ const getProjectById = (req, res) => __awaiter(void 0, void 0, void 0, function*
 exports.getProjectById = getProjectById;
 const getProjectByTitle = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const project_title = req.params.title;
+        const project_title = req.query.title;
         const project = yield projectsModel_1.default.findOne({
             project_title: project_title,
         });
@@ -51,7 +52,8 @@ const getProjectByTitle = (req, res) => __awaiter(void 0, void 0, void 0, functi
             res.status(200).json(project);
         }
         else {
-            res.status(404).json({ error: "Project not found" });
+            const allProjects = yield projectsModel_1.default.find();
+            res.status(404).json({ error: "Project not found", allProjects: allProjects });
         }
     }
     catch (err) {
@@ -65,6 +67,8 @@ exports.createProject = [
     (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         try {
             const projectData = req.body;
+            const createdBy = req.userId;
+            projectData.created_by = createdBy;
             const createdProject = yield projectsModel_1.default.create(projectData);
             res.status(201).json(createdProject);
         }
@@ -78,7 +82,7 @@ exports.updateProject = [
     auth_1.verifyAccessToken,
     (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         try {
-            const projectId = req.params.id;
+            const projectId = req.query.id;
             const projectData = req.body;
             const updatedProject = yield projectsModel_1.default.findByIdAndUpdate(projectId, projectData, { new: true });
             if (updatedProject) {
@@ -98,10 +102,10 @@ exports.deleteProject = [
     auth_1.verifyAccessToken,
     (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         try {
-            const projectId = req.params.id;
+            const projectId = req.query.id;
             const deletedProject = yield projectsModel_1.default.findByIdAndDelete(projectId);
             if (deletedProject) {
-                res.status(200).send('Deleted successfully');
+                res.status(200).send('Project Deleted successfully');
             }
             else {
                 res.status(404).json({ error: "Project not found" });

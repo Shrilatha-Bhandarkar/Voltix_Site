@@ -27,13 +27,14 @@ const getAllServices = (req, res) => __awaiter(void 0, void 0, void 0, function*
 exports.getAllServices = getAllServices;
 const getServiceById = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const serviceId = req.params.id;
+        const serviceId = req.query.id;
         const service = yield servicesModel_1.default.findById(serviceId);
         if (service) {
             res.status(200).json(service);
         }
         else {
-            res.status(404).json({ error: "Service not found" });
+            const allServices = yield servicesModel_1.default.find();
+            res.status(404).json({ error: "Service not found", allServices: allServices });
         }
     }
     catch (err) {
@@ -43,7 +44,7 @@ const getServiceById = (req, res) => __awaiter(void 0, void 0, void 0, function*
 exports.getServiceById = getServiceById;
 const getServiceByTitle = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const service_title = req.params.title;
+        const service_title = req.query.title;
         const service = yield servicesModel_1.default.findOne({
             service_title: service_title,
         });
@@ -51,7 +52,8 @@ const getServiceByTitle = (req, res) => __awaiter(void 0, void 0, void 0, functi
             res.status(200).json(service);
         }
         else {
-            res.status(404).json({ error: "Service not found" });
+            const allServices = yield servicesModel_1.default.find();
+            res.status(404).json({ error: "Service not found", allServices: allServices });
         }
     }
     catch (err) {
@@ -65,6 +67,8 @@ exports.createService = [
     (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         try {
             const serviceData = req.body;
+            const createdBy = req.userId;
+            serviceData.created_by = createdBy;
             const createdService = yield servicesModel_1.default.create(serviceData);
             res.status(201).json(createdService);
         }
@@ -78,7 +82,7 @@ exports.updateService = [
     auth_1.verifyAccessToken,
     (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         try {
-            const serviceId = req.params.id;
+            const serviceId = req.query.id;
             const serviceData = req.body;
             const updatedService = yield servicesModel_1.default.findByIdAndUpdate(serviceId, serviceData, { new: true });
             if (updatedService) {
@@ -98,7 +102,7 @@ exports.deleteService = [
     auth_1.verifyAccessToken,
     (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         try {
-            const serviceId = req.params.id;
+            const serviceId = req.query.id;
             const deletedService = yield servicesModel_1.default.findByIdAndDelete(serviceId);
             if (deletedService) {
                 res.status(200).send("Service deleted successfully");
