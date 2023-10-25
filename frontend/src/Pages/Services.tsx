@@ -52,6 +52,9 @@ function Services() {
             {service.title === 'Mobile App Development' && (
               <Link to="/services/mobile-apps">Learn More</Link>
             )}
+             {service.title === 'Web Development' && (
+              <Link to="/services/web-development">Learn More</Link>
+            )}
           </div>
         ))}
       </div>

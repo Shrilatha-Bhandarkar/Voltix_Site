@@ -7,6 +7,7 @@ import Contact from './Pages/Contact.tsx'
 import Footer from './Components/Footer.tsx'
 import React from 'react';
 import MobileApps from './Pages/MobileApps.tsx'
+import WebDevelopment from './Pages/WebDevelopment.tsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/mobile-apps" element={<MobileApps />} />
+        <Route path="/services/web-development" element={<WebDevelopment />} />
         </Routes>
       </BrowserRouter>
       <Footer/>
