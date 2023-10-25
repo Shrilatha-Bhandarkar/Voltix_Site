@@ -1,11 +1,10 @@
 import Navbar from './Components/Navbar.tsx'
-import Home from './Components/Home.tsx'
-import Services from './Components/Services.tsx'
-import Projects from './Components/Projects.tsx'
-import About from './Components/About.tsx'
-import Contact from './Components/Contact.tsx'
+import Home from './Pages/Home.tsx'
+import Services from './Pages/Services.tsx'
+import Projects from './Pages/Projects.tsx'
+import About from './Pages/About.tsx'
+import Contact from './Pages/Contact.tsx'
 import React from 'react';
-import './Components/Navbar.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
