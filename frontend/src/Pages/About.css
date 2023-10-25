@@ -1,4 +1,4 @@
-/* Apply styles to the entire About component */
+
 .page {
     text-align: center;
     margin: 20px;
@@ -24,12 +24,7 @@
     max-width: 100%;
     height: auto;
   }
-  
-  /* Style the footer */
 
-  
-  /* Add custom styles for specific sections */
-  /* For example, styling the "How we work" section differently */
   .page .how-we-work {
     background-color: #f0f0f0;
     padding: 20px;
@@ -38,6 +33,5 @@
   .page .howwework{
     text-align: center;
   }
-  
-  /* Additional styles can be added as needed */
+
   

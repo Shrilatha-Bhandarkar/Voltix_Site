@@ -18,12 +18,11 @@ const Navbar = () => {
                     <a className='nav-link' href='/About' id='text'>About</a>
                 </li>
                 <li className="nav-item">
-                    <a className='nav-link' href='/Contact' id='text'>Contact</a>
+                    <a className='nav-link' href='/Contact' id='text'>Contact Us</a>
                 </li>
-
             </ul>
+            <button className="nav-btn">Let's Talk</button>
         </nav>
-
     );
 }
 
