@@ -1,5 +1,6 @@
 import React from 'react';
 import './Services.css';
+import { Link } from 'react-router-dom';
 
 function Services() {
   const services = [
@@ -48,6 +49,9 @@ function Services() {
             <p>{service.description}</p>
             <h1>Service Details</h1>
             <p>{service.content}</p>
+            {service.title === 'Mobile App Development' && (
+              <Link to="/services/mobile-apps">Learn More</Link>
+            )}
           </div>
         ))}
       </div>
