@@ -4,6 +4,7 @@ import Services from './Pages/Services.tsx'
 import Projects from './Pages/Projects.tsx'
 import About from './Pages/About.tsx'
 import Contact from './Pages/Contact.tsx'
+import Footer from './Components/Footer.tsx'
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
+      <Footer/>
     </>
 
   );

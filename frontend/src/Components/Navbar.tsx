@@ -20,11 +20,10 @@ const Navbar = () => {
                 <li className="nav-item">
                     <a className='nav-link' href='/Contact' id='text'>Contact</a>
                 </li>
-                <li className="nav">
-                    <a className='nav-link' href='/' id='text'>Footer</a>
-                </li>
+
             </ul>
         </nav>
+
     );
 }
 
