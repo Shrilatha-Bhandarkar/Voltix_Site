@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Footer.css';
 const VoltixSolutionHeader: React.FC = () => {
   return (
     <header>
