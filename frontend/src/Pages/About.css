@@ -1,0 +1,43 @@
+/* Apply styles to the entire About component */
+.page {
+    text-align: center;
+    margin: 20px;
+    
+  }
+  
+  .page h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+  }
+  
+  .page p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: rgb(198, 194, 201);
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .page img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Style the footer */
+
+  
+  /* Add custom styles for specific sections */
+  /* For example, styling the "How we work" section differently */
+  .page .how-we-work {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: left;
+  }
+  .page .howwework{
+    text-align: center;
+  }
+  
+  /* Additional styles can be added as needed */
+  
