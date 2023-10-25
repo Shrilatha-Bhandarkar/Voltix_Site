@@ -25,12 +25,12 @@ function Services() {
       content: 'Digital marketing content goes here.',
     },
     {
-      title: 'SEO Services',
+      title: 'Video Production',
       description: 'Improving your website\'s visibility on search engines.',
       content: 'SEO services content goes here.',
     },
     {
-      title: 'Content Creation',
+      title: 'Software Development',
       description: 'Engaging and informative content to attract your audience.',
       content: 'Content creation content goes here.',
     },
@@ -54,6 +54,9 @@ function Services() {
             )}
              {service.title === 'Web Development' && (
               <Link to="/services/web-development">Learn More</Link>
+            )}
+            {service.title === 'Software Development' && (
+              <Link to="/services/software-development">Learn More</Link>
             )}
           </div>
         ))}
