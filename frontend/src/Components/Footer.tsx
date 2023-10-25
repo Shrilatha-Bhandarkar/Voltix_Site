@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from 'react';
 import './Footer.css';
 
@@ -35,5 +35,4 @@ const Footer = () => {
 };
 
 export default Footer;
-=======
->>>>>>> d1463ce5a8ae61b65814fb938db4a8d4dbaba9f8
+
