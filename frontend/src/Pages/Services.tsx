@@ -61,6 +61,12 @@ function Services() {
              {service.title === 'Digital Marketing' && (
               <Link to="/services/digital-marketing">Learn More</Link>
             )}
+             {service.title === 'Video Production' && (
+              <Link to="/services/video-production">Learn More</Link>
+            )}
+             {service.title === 'UI/UX Design' && (
+              <Link to="/services/uiux-design">Learn More</Link>
+            )}
           </div>
         ))}
       </div>

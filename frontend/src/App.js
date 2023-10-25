@@ -10,6 +10,8 @@ import MobileApps from './Pages/MobileApps.tsx'
 import WebDevelopment from './Pages/WebDevelopment.tsx'
 import SoftwareDevelopment from './Pages/SoftwareDevelopment.tsx'
 import DigitalMarketing from './Pages/DigitalMarketing.tsx'
+import VideoProduction from './Pages/VideoProduction.tsx'
+import UIUXDesign from './Pages/UIUXDesign.tsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="/services/web-development" element={<WebDevelopment />} />
         <Route path="/services/software-development" element={<SoftwareDevelopment />} />
         <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
+        <Route path="/services/video-production" element={<VideoProduction />} />
+        <Route path="/services/uiux-design" element={<UIUXDesign />} />
         </Routes>
       </BrowserRouter>
       <Footer/>
