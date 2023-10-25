@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './SoftwareDevelopment.css';
+import './DigitalMarketing.css';
 
-function SoftwareDevelopment() {
+function DigitalMarketing() {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -24,8 +24,8 @@ function SoftwareDevelopment() {
   };
 
   return (
-    <div className="software-development-container">
-      <h1>Software  Development</h1>
+    <div className="digital-marketing-container">
+      <h1>Digital Marketing</h1>
       <p>
         We specialize in creating custom mobile applications to meet your specific needs.
       </p>
@@ -91,4 +91,4 @@ function SoftwareDevelopment() {
   );
 }
 
-export default SoftwareDevelopment;
+export default DigitalMarketing;
