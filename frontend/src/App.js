@@ -1,32 +1,60 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import Home from './Components/Home';
-import About from './Components/About';
-import Contact from './Components/Contact';
-import './App.css';
+// import React from 'react';
+// import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+// import Home from './Components/Home';
+// import About from './Components/About';
+// import Contact from './Components/Contact';
+// import './App.css';
 
+// function App() {
+//   return (
+//     <Router>
+//       <div className="App">
+//         <header>
+//           <h1>Welcome to My Website</h1>
+//           <nav>
+//             <ul>
+//               <li><Link to="/">Home</Link></li>
+//               <li><Link to="/about">About</Link></li>
+//               <li><Link to="/contact">Contact</Link></li>
+//             </ul>
+//           </nav>
+//         </header>
+//         <Routes>
+//           <Route path="/about" element={<About />} />
+//           <Route path="/contact" element={<Contact />} />
+//           <Route path="/" element={<Home />} />
+//         </Routes>
+//       </div>
+//     </Router>
+//   );
+// }
+
+// export default App;
+import Navbar from './Components/Navbar.tsx'
+import Home from './Components/Home.tsx'
+import Services from './Components/Services.tsx'
+import Projects from './Components/Projects.tsx'
+import About from './Components/About.tsx'
+import Contact from './Components/Contact.tsx'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <header>
-          <h1>Welcome to My Website</h1>
-          <nav>
-            <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-            </ul>
-          </nav>
-        </header>
+    <>
+      <Navbar />
+      <BrowserRouter>
         <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/Services" element={<Services/>} />
+        <Route path="/Projects" element={<Projects />} />
+        <Route path="/About" element={<About/>} />
+        <Route path="/Contact" element={<Contact />} />
         </Routes>
-      </div>
-    </Router>
+      </BrowserRouter>
+    </>
+
   );
 }
 
 export default App;
+
