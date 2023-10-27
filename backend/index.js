@@ -29,15 +29,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const dotenv = __importStar(require("dotenv"));
 const express_1 = __importDefault(require("express"));
 const mongoose_1 = __importDefault(require("mongoose"));
+const cors = require('cors');
 const projectsRoutes_1 = __importDefault(require("./routes/projectsRoutes"));
 const servicesRoutes_1 = __importDefault(require("./routes/servicesRoutes"));
 const testimonialRoutes_1 = __importDefault(require("./routes/testimonialRoutes"));
 const contactRoutes_1 = __importDefault(require("./routes/contactRoutes"));
 const usersRoute_1 = __importDefault(require("./routes/usersRoute"));
+// import routes from './routes/bucketUpload'
 dotenv.config();
 const app = (0, express_1.default)();
 const port = process.env.PORT;
 app.use(express_1.default.json());
+app.use(cors());
 const mongoURI = process.env.MONGO;
 mongoose_1.default
     .connect(mongoURI)
@@ -54,6 +57,7 @@ app.use("/capi", contactRoutes_1.default);
 app.use("/api", usersRoute_1.default);
 app.use("/api", usersRoute_1.default);
 app.use("/api", usersRoute_1.default);
+// app.use("/api",routes)
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });

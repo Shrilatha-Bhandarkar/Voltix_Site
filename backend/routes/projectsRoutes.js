@@ -29,6 +29,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const projectController = __importStar(require("../controllers/projectsController"));
 const auth_1 = require("../Auth/auth");
+// const {upload} = require("../Auth/bucketUpload")
 const p_router = express_1.default.Router();
 p_router.get("/projects/id", projectController.getProjectById);
 p_router.get("/projects", projectController.getAllProjects);

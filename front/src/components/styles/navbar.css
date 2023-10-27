@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #F4F5F9;
+    color: #000000;
+    text-decoration: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: #000000;
+  }
+  .nav-btn {
+    background-color: #975ba6;
+    color: #020202;
+    border: 10px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
