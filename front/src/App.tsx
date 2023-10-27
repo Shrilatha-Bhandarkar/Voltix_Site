@@ -8,6 +8,7 @@ import ServiceDetail from "./components/serviceDetail";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/projects/id" element={<ProjectDetail />} />
           <Route path="/services/id" element={<ServiceDetail />} />
           <Route path="/About" element={<AboutPage />} />
+          <Route path="/Contact" element={<ContactPage />} />
         </Routes>
       </BrowserRouter>
       <Footer />
