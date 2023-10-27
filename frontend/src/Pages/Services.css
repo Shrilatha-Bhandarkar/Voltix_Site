@@ -1,0 +1,54 @@
+/* Styles for the "Services" component */
+.page1 {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Styles for the service cards */
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10px; /* Add negative margin to compensate for the gap */
+}
+
+.service-card {
+  flex: 0 0 calc(33.33% - 20px); /* Three cards per row (adjust as needed) */
+  margin: 10px 10px; /* Add margin for spacing between cards */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 20px; /* Adjust the font size for the service details heading */
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* Styles for additional contents */
+.additional-contents {
+  text-align: left;
+}
+
