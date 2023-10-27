@@ -37,6 +37,22 @@
     color: #161616;
     text-decoration: none;
   }
+.footer-section i {
+  font-size: 24px; 
+  margin: 0 10px; 
+}
+
+.footer-section i.bxl-facebook-circle {
+  margin-top: 10px;
+}
+
+.footer-section i.bxl-instagram-alt {
+  margin-bottom: 10px;
+}
+.footer-section p {
+  margin-top: 20px; 
+}
+
 .footer-section p{
     margin-bottom: 5px;
 }
