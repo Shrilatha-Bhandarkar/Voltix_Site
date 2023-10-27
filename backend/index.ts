@@ -7,7 +7,7 @@ import serviceRoutes from "./routes/servicesRoutes";
 import testimonialRoutes from "./routes/testimonialRoutes";
 import contactRoutes from "./routes/contactRoutes";
 import userRoutes from "./routes/usersRoute";
-// import routes from './routes/bucketUpload'
+import routers from "./routes/aboutRoutes";
 
 dotenv.config();
 const app = express();
@@ -34,7 +34,7 @@ app.use("/capi", contactRoutes);
 app.use("/api", userRoutes);
 app.use("/api",userRoutes);
 app.use("/api", userRoutes);
-// app.use("/api",routes)
+app.use("/api",routers)
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

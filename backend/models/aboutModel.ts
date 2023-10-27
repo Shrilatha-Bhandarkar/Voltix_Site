@@ -11,7 +11,7 @@ const aboutSchema = new mongoose.Schema<IAbout>({
   });
   
   const AboutModel: Model<IAbout> = mongoose.model<IAbout>(
-    "Contacts",
+    "abouts",
     aboutSchema
   );
   export default AboutModel;
