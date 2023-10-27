@@ -17,9 +17,12 @@ export const fetchServiceById = (serviceId : string) => {
 export const fetchTestimonials = () =>{
     return axios.get(`${BASE_URL}/tapi/testimonials`);
 };
-export const fetchDataById = (Id:string) => {
-  return axios.get(`${BASE_URL}/api/data`);
-}
+// export const fetchDataById = (Id:string) => {
+//   return axios.get(`${BASE_URL}/api/data`);
+// }
 export const fetchContacts = () =>{
   return axios.get(`${BASE_URL}/capi/contact-entires`);
 };
+export const fetchData = () => {
+  return axios.get(`${BASE_URL}/api/data`);
+}

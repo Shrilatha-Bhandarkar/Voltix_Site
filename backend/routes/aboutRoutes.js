@@ -29,5 +29,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const dataController = __importStar(require("../controllers/dataController"));
 const routers = express_1.default.Router();
-routers.get("/data", dataController.getDataById);
+routers.get("/data", dataController.getData);
 exports.default = routers;

@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ContactPage from "./pages/ContactPage";
 import ContactForm from "./components/Contact";
-
+import AboutPage from "./pages/AboutPage";
 
 
 function App() {
@@ -26,9 +26,7 @@ function App() {
           <Route path="/services/id" element={<ServiceDetail />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/form/id" element={<ContactForm />} />
-          
-         
-         
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </BrowserRouter>
       <Footer />
