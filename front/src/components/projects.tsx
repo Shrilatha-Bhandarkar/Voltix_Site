@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { fetchProjects } from "../services/api";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 interface IProject {
   _id: string;
@@ -34,15 +36,15 @@ const Projects: React.FC = () => {
           <div className="col-md-4" key={entry._id}>
             <div className="card mb-4">
               <img src={entry.image_url} className="card-img-top" alt={entry.project_title} />
-              <h5 className="card-header">{entry.project_category}</h5>
-              <div className="card-body">
+              <div className="card-body d-flex flex-column">
                 <h5 className="card-title">{entry.project_title}</h5>
-                <p className="card-text">{entry.project_description}</p>
-                <Link to={`/projects/id?id=${entry._id}`} className="btn btn-primary">
-                  More
+                <div className="mt-auto text-end">
+                <Link to={`/projects/id?id=${entry._id}`}> 
+                <FontAwesomeIcon icon={faArrowRight} />
                 </Link>
               </div>
             </div>
+          </div>
           </div>
         ))}
       </div>
