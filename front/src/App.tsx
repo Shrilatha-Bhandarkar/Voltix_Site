@@ -7,6 +7,10 @@ import ProjectDetail from "./components/projectDetail";
 import ServiceDetail from "./components/serviceDetail";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ContactPage from "./pages/ContactPage";
+import ContactForm from "./components/Contact";
+
+
 
 function App() {
   return (
@@ -20,6 +24,11 @@ function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/projects/id" element={<ProjectDetail />} />
           <Route path="/services/id" element={<ServiceDetail />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/form/id" element={<ContactForm />} />
+          
+         
+         
         </Routes>
       </BrowserRouter>
       <Footer />

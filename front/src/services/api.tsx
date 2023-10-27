@@ -20,3 +20,6 @@ export const fetchTestimonials = () =>{
 export const fetchDataById = (Id:string) => {
   return axios.get(`${BASE_URL}/api/data`);
 }
+export const fetchContacts = () =>{
+  return axios.get(`${BASE_URL}/capi/contact-entires`);
+};

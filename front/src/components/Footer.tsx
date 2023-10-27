@@ -1,17 +1,21 @@
 import './styles/footer.css'
-
+import 'boxicons/css/boxicons.min.css';
 const Footer = () => {
   return (
     <div>
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>About Us</h3>
+            <h3>Voltix Solution</h3>
             <p>
               We are not afraid to say no to projects that we cannot do well. We
               would rather focus on a few projects and do them right than take
               on too much and sacrifice quality.
             </p>
+            <i className='bx bxl-facebook-circle'></i>
+            <i className='bx bxl-instagram-alt' ></i>
+            <i className='bx bxl-linkedin-square' ></i>
+            <i className='bx bxl-youtube' ></i>
           </div>
           <div className="footer-section">
             <h3>Company</h3>
