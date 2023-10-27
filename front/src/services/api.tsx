@@ -20,3 +20,6 @@ export const fetchTestimonials = () =>{
 export const fetchContacts = () =>{
   return axios.get(`${BASE_URL}/capi/contact-entires`);
 };
+export const fetchData = () => {
+  return axios.get(`${BASE_URL}/api/data`);
+}

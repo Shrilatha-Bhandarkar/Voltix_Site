@@ -8,5 +8,5 @@ const aboutSchema = new mongoose_1.default.Schema({
     title: String,
     content: String
 });
-const AboutModel = mongoose_1.default.model("Contacts", aboutSchema);
+const AboutModel = mongoose_1.default.model("abouts", aboutSchema);
 exports.default = AboutModel;

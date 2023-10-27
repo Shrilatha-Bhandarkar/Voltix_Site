@@ -7,6 +7,7 @@ import ProjectDetail from "./components/projectDetail";
 import ServiceDetail from "./components/serviceDetail";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import AboutPage from "./pages/AboutPage";
 
 
 function App() {
@@ -21,9 +22,7 @@ function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/projects/id" element={<ProjectDetail />} />
           <Route path="/services/id" element={<ServiceDetail />} />
-          
-         
-         
+          <Route path="/About" element={<AboutPage />} />
         </Routes>
       </BrowserRouter>
       <Footer />
@@ -32,20 +31,3 @@ function App() {
 }
 
 export default App;
-
-// <div className="App">
-//   <header className="App-header">
-//     <img src={logo} className="App-logo" alt="logo" />
-//     <p>
-//       Edit <code>src/App.tsx</code> and save to reload.
-//     </p>
-//     <a
-//       className="App-link"
-//       href="https://reactjs.org"
-//       target="_blank"
-//       rel="noopener noreferrer"
-//     >
-//       Learn React
-//     </a>
-//   </header>
-// </div>

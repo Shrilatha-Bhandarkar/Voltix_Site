@@ -35,7 +35,7 @@ const servicesRoutes_1 = __importDefault(require("./routes/servicesRoutes"));
 const testimonialRoutes_1 = __importDefault(require("./routes/testimonialRoutes"));
 const contactRoutes_1 = __importDefault(require("./routes/contactRoutes"));
 const usersRoute_1 = __importDefault(require("./routes/usersRoute"));
-// import routes from './routes/bucketUpload'
+const aboutRoutes_1 = __importDefault(require("./routes/aboutRoutes"));
 dotenv.config();
 const app = (0, express_1.default)();
 const port = process.env.PORT;
@@ -57,7 +57,7 @@ app.use("/capi", contactRoutes_1.default);
 app.use("/api", usersRoute_1.default);
 app.use("/api", usersRoute_1.default);
 app.use("/api", usersRoute_1.default);
-// app.use("/api",routes)
+app.use("/api", aboutRoutes_1.default);
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
