@@ -23,7 +23,7 @@ interface IAbout {
       return <div>Loading...</div>;
     }
     return (
-      <div className="container">
+      <div className="container1">
         {data.map((entry) => (
           <div className="col-md-4" key={entry._id}>
             <div className="card mb-4">

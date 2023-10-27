@@ -29,12 +29,12 @@ const Services: React.FC = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container1">
       <div className="head">
         The software development company that puts your needs first
       </div>
       <div className="des">
-        Voltix Solution is a software company offering web and mobile app development, digital marketing, with a skilled team focused on tech-driven solutions.
+        Voltix Solution is a software company offering web and mobile app development, digital marketing,<br></br> with a skilled team focused on tech-driven solutions.
       </div>
       <div className="row">
         {services.map((entry) => (
