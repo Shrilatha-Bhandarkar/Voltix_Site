@@ -156,7 +156,7 @@ const ContactForm: React.FC = () => {
         </div>
         <div className="row">
           <label htmlFor="message" className="form-label">
-            Message? Queries
+            Message/Queries
           </label>
           <input
             type="text"

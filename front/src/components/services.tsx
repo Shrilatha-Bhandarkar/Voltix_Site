@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../components/styles/Services.css";
 import { fetchServices } from "../services/api";
 
-interface IService {
+export interface IService {
   _id: string;
   service_title: string;
   service_description: string;
