@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { fetchProjects } from "../services/api";
 
-interface IProject {
+export interface IProject {
   _id: string;
   project_title: string;
   project_description: string;

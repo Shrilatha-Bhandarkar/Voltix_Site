@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { fetchTestimonials } from "../services/api";
 
-interface ITestimonial {
+export interface ITestimonial {
     _id:string;
   testimonial_author: string;
   testimonial_content: string;
