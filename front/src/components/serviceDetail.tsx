@@ -7,6 +7,7 @@ interface IServiceDetail {
   service_title: string;
   service_description: string;
   service_category: string;
+  service_template:string;
   image_url: string;
   created_at: Date;
   created_by: string;
