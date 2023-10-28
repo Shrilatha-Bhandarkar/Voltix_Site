@@ -1,0 +1,61 @@
+.form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 0px;
+    width: max-content;
+
+    
+  }
+  
+  h2 {
+    text-align: center;
+    
+  }
+  
+  .c_form {
+   
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #ccc;
+   
+   /* Adjust the right margin */
+  }
+  
+  label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  input[type='text'],
+  input[type='number'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+  
+  input[type='text']:focus,
+  input[type='number']:focus {
+    outline: none;
+  }
+  
+  .contactbutton {
+    display: block;
+    width: 50%;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .contactbutton:hover {
+    background-color: #0056b3;
+  }
+  
