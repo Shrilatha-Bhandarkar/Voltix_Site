@@ -1,6 +1,7 @@
 import { IProject } from "./projects"; 
 import { fetchProjects } from "../services/api";
 import React, { useEffect, useState } from "react";
+import './styles/Home.css'
 const HomeProject = () => {
   const [projects, setProjects] = useState<IProject[]>([]);
   useEffect(() => {
@@ -14,14 +15,14 @@ const HomeProject = () => {
   }, []);
   return (
     <div className="contaner">
-      <h2>Check out our Projects</h2>
-      <h6>
+      <h2 className="head">Check out our Projects</h2>
+      <h5 className="sub-head">
       Our endeavours serve as examples of our dedication to excellence
-      </h6>
+      </h5>
       <div className="row">
       {projects.map((entry) => (
         <div className="col-md-4" key={entry._id}>
-          <div className="card mb-4">
+          <div className="card mb-4 mt-4">
             <img
               src={entry.image_url}
               className="card-img-top"

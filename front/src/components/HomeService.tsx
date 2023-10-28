@@ -1,6 +1,7 @@
 import { IService } from "../components/services";
 import { fetchServices } from "../services/api";
 import React, { useEffect, useState } from "react";
+import './styles/Home.css'
 const HomeService = () => {
   const [services, setServices] = useState<IService[]>([]);
   useEffect(() => {
@@ -14,15 +15,15 @@ const HomeService = () => {
   }, []);
   return (
     <div className="contaner">
-      <h2>Our Actions and Motivations</h2>
-      <h6>
+      <h2 className="head">Our Actions and Motivations</h2>
+      <h5 className="sub-head">
         Our skilled and dedicated team plays a significant role in our ability
         to successfully develop business solutions.
-      </h6>
+      </h5>
       <div className="row">
       {services.map((entry) => (
         <div className="col-md-4" key={entry._id}>
-          <div className="card mb-4">
+          <div className="card mb-4 mt-4">
             <img
               src={entry.image_url}
               className="card-img-top"

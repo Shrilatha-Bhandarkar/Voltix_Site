@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { fetchProjectById } from "../services/api";
+import "./styles/Projects.css"
 
 interface IProjectDetail {
   _id: string;
@@ -35,10 +36,10 @@ const ProjectDetail: React.FC = () => {
 
   return (
     <div className="container">
-      <h1>{project.project_title}</h1>
-      <div className="card">
-        <img src={project.image_url} className="card-img-top" alt={project.project_title} />
-        <h5 className="card-header">{project.project_category}</h5>
+      <h1 className="pro-title">{project.project_title}</h1>
+      <div className="card pro-det">
+        <img src={project.image_url} className="card-img-top img" alt={project.project_title} />
+        <h5 className="card-header pro-head">{project.project_category}</h5>
         <div className="card-body">
           <p className="card-text">{project.project_description}</p>
         </div>
