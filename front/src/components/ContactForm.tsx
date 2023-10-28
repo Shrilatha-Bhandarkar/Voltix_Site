@@ -36,8 +36,10 @@ const ContactForm: React.FC = () => {
 
   return (
     <form  onSubmit={handleFormSubmit}>
-      <h2>Fill up the Form</h2>
+      
       <div className="container c_form">
+      <h2>Fill up the Form</h2>
+      <h6>Our success in creating business solutions is due in large part spacially to talented and highly committed team</h6>
         <div className="row">
           <div className="col-md-6">
             <label htmlFor="name" className="form-label">

@@ -1,6 +1,10 @@
-form {
+.form {
     margin-top: 20px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 0px;
+    width: max-content;
+
     
   }
   
@@ -10,27 +14,28 @@ form {
   }
   
   .c_form {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+   
+    border-radius: 15px;
     padding: 20px;
     background-color: #ccc;
-    margin-left: auto;
-    margin-right: 0px; /* Adjust the right margin */
+   
+   /* Adjust the right margin */
   }
   
   label {
     margin-top: 10px;
     display: block;
     font-weight: bold;
+    font-style: italic;
   }
   
   input[type='text'],
   input[type='number'] {
-    width: 60%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 15px;
   }
   
   input[type='text']:focus,
