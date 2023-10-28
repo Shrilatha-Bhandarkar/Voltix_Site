@@ -12,10 +12,17 @@ const Footer = () => {
               would rather focus on a few projects and do them right than take
               on too much and sacrifice quality.
             </p>
-            <i className='bx bxl-facebook-circle'></i>
-            <i className='bx bxl-instagram-alt' ></i>
-            <i className='bx bxl-linkedin-square' ></i>
-            <i className='bx bxl-youtube' ></i>
+            <a href='https://www.facebook.com/voltixsoluti0n/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0'>
+              <i className='bx bxl-facebook-circle'></i></a>
+            <a href='https://www.instagram.com/voltix_solution/'>
+              <i className='bx bxl-instagram-alt' ></i></a>
+            <a href='https://www.linkedin.com/company/voltix--solution/'>
+              <i className='bx bxl-linkedin-square' ></i></a>
+            <a href='https://www.youtube.com/@voltixsolution'>
+              <i className='bx bxl-youtube' ></i></a>
+            <a href='https://twitter.com/i/flow/login?redirect_after_login=%2FVoltixSolution'>
+              <i className='bx bxl-twitter'></i>
+            </a>
           </div>
           <div className="footer-section">
             <h3>Company</h3>
