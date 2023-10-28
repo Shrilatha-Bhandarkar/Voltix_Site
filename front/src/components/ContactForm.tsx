@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { postContact } from '../services/api';
 import React, { useState } from 'react';
+import './styles/Contact.css';
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -34,7 +35,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleFormSubmit}>
+    <form  onSubmit={handleFormSubmit}>
       <h2>Fill up the Form</h2>
       <div className="container c_form">
         <div className="row">
@@ -87,7 +88,7 @@ const ContactForm: React.FC = () => {
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
           />
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary contactbutton">
           Submit
         </button>
       </div>
