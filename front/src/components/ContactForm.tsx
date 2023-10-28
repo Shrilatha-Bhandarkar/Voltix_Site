@@ -80,6 +80,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { postContact } from '../services/api';
 import React, { useState } from 'react';
+import './styles/contact.css';
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
