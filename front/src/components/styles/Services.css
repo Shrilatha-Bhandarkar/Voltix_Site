@@ -9,3 +9,20 @@
     font-size: 20px;
     font-family:Georgia, 'Times New Roman', Times, serif
 }
+.ser-det{
+    margin-bottom: 80px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.img{
+    width: 80%;
+    height: 400px;
+    align-self: center;
+}
+.ser-head{
+    text-align: center;
+}
+.ser-title{
+    margin: 50px;
+    text-align: center;
+}

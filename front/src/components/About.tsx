@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { fetchData} from "../services/api";
+import './styles/About.css'
 
 interface IAbout {
     _id: string;
@@ -23,12 +24,12 @@ interface IAbout {
       return <div>Loading...</div>;
     }
     return (
-      <div className="container">
+      <div className="container mt-4 mb-4">
         {data.map((entry) => (
-          <div className="col-md-4" key={entry._id}>
+          <div className="row" key={entry._id}>
             <div className="card mb-4">
               <div className="card-body d-flex flex-column">
-                <h5 className="card-title">{entry.title}</h5>
+                <h5 className="card-title ab-title">{entry.title}</h5>
                 <p className="card-text">{entry.content}</p>
             </div>
           </div>

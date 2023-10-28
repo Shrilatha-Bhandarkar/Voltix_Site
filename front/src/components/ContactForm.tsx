@@ -115,7 +115,7 @@ const ContactForm: React.FC = () => {
   return (
     <form onSubmit={handleFormSubmit}>
       <h2>Fill up the Form</h2>
-      <div className="container">
+      <div className="container c_form">
         <div className="row">
           <div className="col-md-6">
             <label htmlFor="name" className="form-label">

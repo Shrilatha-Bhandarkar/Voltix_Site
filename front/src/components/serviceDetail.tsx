@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { fetchServiceById } from "../services/api";
+import "./styles/Services.css"
 
 interface IServiceDetail {
   _id: string;
@@ -36,10 +37,10 @@ const ServiceDetail: React.FC = () => {
 
   return (
     <div className="container">
-      <h1>{service.service_title}</h1>
-      <div className="card">
-        <img src={service.image_url} className="card-img-top" alt={service.service_title} />
-        <h5 className="card-header">{service.service_category}</h5>
+      <h1 className="ser-title">{service.service_title}</h1>
+      <div className="card ser-det">
+        <img src={service.image_url} className="card-img-top img" alt={service.service_title} />
+        <h5 className="card-header ser-head">{service.service_category}</h5>
         <div className="card-body">
           <p className="card-text">{service.service_description}</p>
         </div>

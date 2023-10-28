@@ -1,6 +1,7 @@
 import { ITestimonial } from "./testimonials"; 
 import { fetchTestimonials } from "../services/api";
 import React, { useEffect, useState } from "react";
+import './styles/Home.css'
 const HomeTestimonial = () => {
   const [testimonial, setTestimonial] = useState<ITestimonial[]>([]);
   useEffect(() => {
@@ -14,14 +15,14 @@ const HomeTestimonial = () => {
   }, []);
   return (
     <div className="contaner">
-      <h2>Trusted by Millions of Customers.</h2>
-      <h6>
+      <h2 className="head">Trusted by Millions of Customers.</h2>
+      <h5 className="sub-head">
       We have been successful in developing business solutions in large part because of our talented and devoted workforce.
-      </h6>
+      </h5>
       <div className="row">
       {testimonial.map((entry) => (
         <div className="col-md-4" key={entry._id}>
-          <div className="card mb-4">
+          <div className="card mb-4 mt-4">
             <div className="card-body d-flex flex-column">
               <h5 className="card-title">
                 {entry.testimonial_author}{" "}
