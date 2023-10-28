@@ -42,7 +42,8 @@ const Services: React.FC = () => {
             <div className="card mb-4">
               <img src={entry.image_url} className="card-img-top" alt={entry.service_title} />
               <div className="card-body d-flex flex-column">
-                <h5 className="card-title">{entry.service_template}</h5>
+                <h5 className="card-title text-center">{entry.service_title}</h5>
+                <h6 className="card-text text-center">{entry.service_template}</h6>
                 <div className="text-center mt-3">
                   <Link to={`/services/id?id=${entry._id}`}>
                     <button className="btn btn-primary">Know More</button>
