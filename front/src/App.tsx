@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
-
+import FAQPage from "./pages/FAQPage";
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
           <Route path="/services/id" element={<ServiceDetail />} />
           <Route path="/About" element={<AboutPage />} />
           <Route path="/Contact" element={<ContactPage />} />
+          <Route path="/FAQ" element={<FAQPage />} />
         </Routes>
       </BrowserRouter>
       <Footer />

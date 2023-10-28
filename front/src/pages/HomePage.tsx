@@ -1,10 +1,9 @@
-import React from "react";
 import HomeService from "../components/HomeService";
 import HomeProject from "../components/HomeProject";
 import HomeTestimonial from "../components/HomeTestimonial";
 const HomePage = () => {
     return ( 
-        <div className="container1">
+        <div className="container one">
             <div className="services">
                 <HomeService />
                 <HomeProject />
