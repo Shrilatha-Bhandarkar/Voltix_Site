@@ -1,6 +1,7 @@
 import { IProject } from "./projects"; 
 import { fetchProjects } from "../services/api";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import './styles/Home.css'
 const HomeProject = () => {
   const [projects, setProjects] = useState<IProject[]>([]);
@@ -29,9 +30,11 @@ const HomeProject = () => {
               alt={entry.project_title}
             />
             <div className="card-body d-flex flex-column">
-              <h5 className="card-title text-center">
+            <Link to={`/projects/id?id=${entry._id}`}>
+            <h5 className="card-title text-center pro-tit">
                 {entry.project_title}{" "}
               </h5>
+            </Link>
               <div className="mt-auto text-end"></div>
             </div>
           </div>

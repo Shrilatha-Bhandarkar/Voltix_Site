@@ -28,13 +28,13 @@ const Footer = () => {
             <h3>Company</h3>
             <ul>
               <li>
-                <a href="/">About Us</a>
+                <a href="/About">About Us</a>
               </li>
               <li>
-                <a href="/">Get in touch</a>
+                <a href="/Contact">Get in touch</a>
               </li>
               <li>
-                <a href="/">Help & FAQs</a>
+                <a href="/FAQ">Help & FAQs</a>
               </li>
               <li>
                 <a href="/">Privacy</a>

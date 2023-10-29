@@ -27,10 +27,10 @@ interface IAbout {
       <div className="container mt-4 mb-4">
         {data.map((entry) => (
           <div className="row" key={entry._id}>
-            <div className="card mb-4">
+            <div className="card mb-4 ab">
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title ab-title">{entry.title}</h5>
-                <p className="card-text">{entry.content}</p>
+                <p className="card-text ab-content">{entry.content}</p>
             </div>
           </div>
           </div>

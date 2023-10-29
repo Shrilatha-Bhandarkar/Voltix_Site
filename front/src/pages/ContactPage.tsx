@@ -4,11 +4,11 @@ const ContactPage = () => {
     return ( 
         <div>
             <div className="container form">
-                <div className="row">
-                    <div className="col-md-6">
+                {/* <div className="row">
+                    {/* <div className="col-md-6">
                         <ContactForm />
-                    </div>
-                </div>
+                    </div> */}
+                    <ContactForm />
             </div>
         </div>
      );

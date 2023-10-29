@@ -19,15 +19,22 @@
   .nav-link {
     text-decoration: none;
     color: #000000;
+    font-size: large;
+  }
+  .nav-link:hover{
+    color: black;
+    font-weight: bold;
   }
   .nav-btn {
     /* background-color: #c09cc9; */
     /* background-image: radial-gradient(circle,#a785e9,#b9e0e0); */
     background-image: radial-gradient(circle,#8154da,#acd6d6);
-    color: #020202;
+    /* color: #020202; */
+    color: white;
     border: 10px;
     border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
     font-size: larger;
+    font-weight: bolder;
   }

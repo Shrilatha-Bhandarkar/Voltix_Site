@@ -8,3 +8,12 @@
     padding: 20px;
     background-image: linear-gradient(#ecf1f1,#8f6ada);
 }
+.pro-tit:hover{
+    color: black;
+}
+.pro-tit{
+    color: #000;
+}
+.ser-tit,.ser-tit:hover{
+    color: #000;
+}

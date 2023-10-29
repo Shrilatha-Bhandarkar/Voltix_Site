@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { fetchFaq } from "../services/api";
+import './styles/Faq.css'
 
 export interface IFaq {
   _id: string;
@@ -23,14 +24,14 @@ const FAQ: React.FC = () => {
 
   return (
     <div className="container mt-5">
-      <h2 className="text-center mb-4">Frequently Asked Questions</h2>
+      <h2 className="text-center mb-5">Frequently Asked Questions</h2>
       <div className="accordion mb-5" id="accordionExample">
         {faq.map((entry, index) => (
-          <div className="card" key={entry._id}>
+          <div className="card faq" key={entry._id}>
             <div className="card-header" id={`heading${index}`}>
               <h2 className="mb-0">
                 <button
-                  className="btn btn-link"
+                  className="btn btn-link Ques"
                   type="button"
                   data-toggle="collapse"
                   data-target={`#collapse${index}`}
@@ -47,7 +48,7 @@ const FAQ: React.FC = () => {
               aria-labelledby={`heading${index}`}
               data-parent="#accordionExample"
             >
-              <div className="card-body">{entry.answer}</div>
+              <div className="card-body ans">{entry.answer}</div>
             </div>
           </div>
         ))}

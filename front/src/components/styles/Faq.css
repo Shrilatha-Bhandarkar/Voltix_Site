@@ -1,0 +1,23 @@
+.Ques{
+    font-size:large;
+    color: black;
+}
+.Ques:hover{
+    font-weight: bolder;
+    color: purple;
+}
+.faq{
+    /* background-color: #d6c4ff; */
+    background-image: linear-gradient(#d6c4ff,#eeebf6);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.ans{
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: large;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight:bold;
+}
