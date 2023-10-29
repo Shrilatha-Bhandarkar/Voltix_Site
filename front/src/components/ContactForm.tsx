@@ -90,7 +90,7 @@ const ContactForm: React.FC = () => {
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
           />
         </div>
-        <button type="submit" className="btn btn-primary contactbutton">
+        <button type="submit" className="btn btn-dark contactbutton">
           Submit
         </button>
       </div>

@@ -46,7 +46,7 @@ const Services: React.FC = () => {
                 <h6 className="card-text text-center">{entry.service_template}</h6>
                 <div className="text-center mt-3">
                   <Link to={`/services/id?id=${entry._id}`}>
-                    <button className="btn btn-primary">Know More</button>
+                    <button className="btn btn-dark">Know More</button>
                   </Link>
                 </div>
               </div>
