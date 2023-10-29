@@ -1,6 +1,7 @@
 import { IService } from "../components/services";
 import { fetchServices } from "../services/api";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import './styles/Home.css'
 const HomeService = () => {
   const [services, setServices] = useState<IService[]>([]);
@@ -15,7 +16,7 @@ const HomeService = () => {
   }, []);
   return (
     <div className="contaner">
-      <h2 className="head">Our Actions and Motivations</h2>
+      <h1 className="head">Our Actions and Motivations</h1>
       <h5 className="sub-head">
         Our skilled and dedicated team plays a significant role in our ability
         to successfully develop business solutions.
@@ -23,16 +24,14 @@ const HomeService = () => {
       <div className="row">
       {services.map((entry) => (
         <div className="col-md-4" key={entry._id}>
-          <div className="card mb-4 mt-4">
-            <img
-              src={entry.image_url}
-              className="card-img-top"
-              alt={entry.service_title}
-            />
+          <div className="card mb-4 mt-4 hser-tit">
             <div className="card-body d-flex flex-column">
-              <h5 className="card-title">
+            <Link to={`/services/id?id=${entry._id}`}>
+            <h3 className="card-title text-center mb-4 ser-tit">
                 {entry.service_title}{" "}
-              </h5>
+              </h3>
+            </Link>
+              <h5 className="card-title text-center">{entry.service_template}</h5>
               <div className="mt-auto text-end"></div>
             </div>
           </div>

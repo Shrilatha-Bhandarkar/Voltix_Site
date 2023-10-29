@@ -15,7 +15,7 @@ const HomeTestimonial = () => {
   }, []);
   return (
     <div className="contaner">
-      <h2 className="head">Trusted by Millions of Customers.</h2>
+      <h1 className="head">Trusted by Millions of Customers.</h1>
       <h5 className="sub-head">
       We have been successful in developing business solutions in large part because of our talented and devoted workforce.
       </h5>
@@ -24,10 +24,10 @@ const HomeTestimonial = () => {
         <div className="col-md-4" key={entry._id}>
           <div className="card mb-4 mt-4">
             <div className="card-body d-flex flex-column">
-              <h5 className="card-title">
+              <h5 className="card-title text-center">
                 {entry.testimonial_author}{" "}
               </h5>
-              <h6 className="card-text">{entry.testimonial_content}</h6>
+              <h6 className="card-text text-center">{entry.testimonial_content}</h6>
               <div className="mt-auto text-end"></div>
             </div>
           </div>
