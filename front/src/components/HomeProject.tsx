@@ -15,7 +15,7 @@ const HomeProject = () => {
   }, []);
   return (
     <div className="contaner">
-      <h2 className="head">Check out our Projects</h2>
+      <h1 className="head">Check out our Projects</h1>
       <h5 className="sub-head">
       Our endeavours serve as examples of our dedication to excellence
       </h5>
@@ -29,7 +29,7 @@ const HomeProject = () => {
               alt={entry.project_title}
             />
             <div className="card-body d-flex flex-column">
-              <h5 className="card-title">
+              <h5 className="card-title text-center">
                 {entry.project_title}{" "}
               </h5>
               <div className="mt-auto text-end"></div>

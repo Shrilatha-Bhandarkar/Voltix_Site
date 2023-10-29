@@ -12,8 +12,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getData = void 0;
+exports.getFaq = exports.getData = void 0;
 const aboutModel_1 = __importDefault(require("../models/aboutModel"));
+const faqModel_1 = __importDefault(require("../models/faqModel"));
 const getData = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const data = yield aboutModel_1.default.find();
@@ -24,3 +25,13 @@ const getData = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     }
 });
 exports.getData = getData;
+const getFaq = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const faq = yield faqModel_1.default.find();
+        res.status(200).json(faq);
+    }
+    catch (err) {
+        res.status(500).json({ error: "Internal server error" });
+    }
+});
+exports.getFaq = getFaq;

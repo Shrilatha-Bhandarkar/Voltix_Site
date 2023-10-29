@@ -36,6 +36,7 @@ const testimonialRoutes_1 = __importDefault(require("./routes/testimonialRoutes"
 const contactRoutes_1 = __importDefault(require("./routes/contactRoutes"));
 const usersRoute_1 = __importDefault(require("./routes/usersRoute"));
 const aboutRoutes_1 = __importDefault(require("./routes/aboutRoutes"));
+const faqRoutes_1 = __importDefault(require("./routes/faqRoutes"));
 dotenv.config();
 const app = (0, express_1.default)();
 const port = process.env.PORT;
@@ -58,6 +59,7 @@ app.use("/api", usersRoute_1.default);
 app.use("/api", usersRoute_1.default);
 app.use("/api", usersRoute_1.default);
 app.use("/api", aboutRoutes_1.default);
+app.use("/api", faqRoutes_1.default);
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });

@@ -34,21 +34,34 @@ const Services: React.FC = () => {
         The software development company that puts your needs first
       </div>
       <div className="des">
-        Voltix Solution is a software company offering web and mobile app development, digital marketing,<br></br> with a skilled team focused on tech-driven solutions.
+        Voltix Solution is a software company offering web and mobile app
+        development, digital marketing,<br></br> with a skilled team focused on
+        tech-driven solutions.
       </div>
       <div className="row">
         {services.map((entry) => (
           <div className="col-md-4" key={entry._id}>
-            <div className="card mb-4">
-              <img src={entry.image_url} className="card-img-top" alt={entry.service_title} />
+            <div className="card mb-4 c_ser">
+              <img
+                src={entry.image_url}
+                className="card-img-top ser-img"
+                alt={entry.service_title}
+              />
               <div className="card-body d-flex flex-column">
-                <h5 className="card-title text-center">{entry.service_title}</h5>
-                <h6 className="card-text text-center">{entry.service_template}</h6>
+                <h4 className="card-title text-center ">
+                  {entry.service_title}
+                </h4>
+                <h5 className="card-text text-center">
+                  {entry.service_template}
+                </h5>
                 <div className="text-center mt-3">
                   <Link to={`/services/id?id=${entry._id}`}>
-                    <button className="btn btn-primary">Know More</button>
+                    <button className="btn btn-primary ser-btn">
+                      Know More
+                    </button>
                   </Link>
                 </div>
+                <div className="mt-auto text-end"></div>
               </div>
             </div>
           </div>
