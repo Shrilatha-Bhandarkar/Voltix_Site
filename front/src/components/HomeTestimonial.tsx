@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { fetchTestimonials } from "../services/api";
 import './styles/Home.css';
-import StarRating from './StarRating'; // Import the StarRating component
-import Slider from "react-slick"; // Import the Slider component from react-slick
-import "slick-carousel/slick/slick.css"; // Import slick-carousel CSS
-import "slick-carousel/slick/slick-theme.css"; // Import slick-carousel theme CSS
+import StarRating from './StarRating';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import 'boxicons';
 
 interface ITestimonial {
   _id: string;
   testimonial_author: string;
   testimonial_content: string;
   testimonial_service: string;
-
   rating: number; 
 }
 
@@ -27,15 +27,26 @@ const HomeTestimonial = () => {
         console.error("Error fetching the Testimonials:", error);
       });
   }, []);
+  const NextArrow = (props: any) => (
+    <button {...props} className="slick-arrow custom-slick-arrow next-arrow">
+      <i className='bx bx-right-arrow-alt'></i>
+    </button>
+  );
 
+  const PrevArrow = (props: any) => (
+    <button {...props} className="slick-arrow custom-slick-arrow1 prev-arrow">
+      <i className='bx bx-left-arrow-alt' ></i>
+    </button>
+  );
   const sliderSettings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Number of cards to show at once
+    slidesToShow: 3,
     slidesToScroll: 1,
+    nextArrow:  <NextArrow /> ,
+    prevArrow: <PrevArrow />,
   };
-
   return (
     <div className="container">
       <h2 className="head">Trusted by Millions of Customers.</h2>
@@ -53,8 +64,8 @@ const HomeTestimonial = () => {
                 </h5>
                 <div className="line"></div>
               </div>
-              <h6 className="card-text text-center">{entry.testimonial_service}</h6>
-              <h6 className="card-text text-center">{entry.testimonial_content}</h6>
+              <h6 className="service card-text text-center">{entry.testimonial_service}</h6>
+              <h6 className="card1-text text-center">{entry.testimonial_content}</h6>
               <div className="star-rating text-center">
                 <StarRating rating={entry.rating} maxRating={5} />
               </div>
@@ -63,6 +74,7 @@ const HomeTestimonial = () => {
           </div>
         ))}
       </Slider>
+      <div className="End"></div>
     </div>
   );
 };
