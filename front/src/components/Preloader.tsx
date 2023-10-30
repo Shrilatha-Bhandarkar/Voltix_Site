@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './styles/Preloader.css';
 
+
 const Preloader = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -21,6 +22,7 @@ const Preloader = () => {
     );
   }
   return null;
+
 };
 
 export default Preloader;
