@@ -1,9 +1,9 @@
 import ContactForm from "../components/ContactForm";
-import './styles/ContactPage.css'
+import  './styles/Page.css';
 const ContactPage = () => {
     return ( 
         <div>
-            <div className="container form">
+            <div className="container form mar">
                 {/* <div className="row">
                     {/* <div className="col-md-6">
                         <ContactForm />
