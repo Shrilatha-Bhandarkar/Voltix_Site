@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { fetchProjectById } from "../services/api";
-import "./styles/Projects.css"
+import "./styles/Projects.css";
+import Preloader from "../components/Preloader";
 
 interface IProjectDetail {
   _id: string;
@@ -30,12 +31,20 @@ const ProjectDetail: React.FC = () => {
     }
   }, [projectId]);
 
+  const [isLoading, setIsLoading] = useState(true);
+    useEffect(() => {
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 3000);
+      }, []);
+
   if (!project) {
     return <div>Loading...</div>;
   }
 
   return (
     <div className="container">
+      {isLoading ? <Preloader /> : null}
       <h1 className="pro-title">{project.project_title}</h1>
       <div className="card pro-det">
         <img src={project.image_url} className="card-img-top img" alt={project.project_title} />
