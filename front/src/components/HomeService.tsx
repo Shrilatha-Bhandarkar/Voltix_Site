@@ -14,6 +14,7 @@ const HomeService = () => {
         console.error("Error fetching the Services:", error);
       });
   }, []);
+
   return (
     <div className="contaner">
       <h1 className="head">Our Actions and Motivations</h1>
