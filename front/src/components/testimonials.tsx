@@ -6,6 +6,7 @@ export interface ITestimonial {
     _id:string;
   testimonial_author: string;
   testimonial_content: string;
+  testimonial_service: string;
   created_at: Date;
   created_by: string;
 }
@@ -29,7 +30,7 @@ const Testimonials: React.FC = () => {
             {testimonials.map((entry)=>(
                 <div className="card" key={entry._id}>
                     <div className="card-body">
-                        <h5 className="card-title">{entry.testimonial_author}</h5>
+                        <p className="card-title">{entry.testimonial_author}</p>
                         <p className="card-text">{entry.testimonial_content}</p>
                     </div>
                 </div>

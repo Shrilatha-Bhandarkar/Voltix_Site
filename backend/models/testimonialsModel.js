@@ -7,6 +7,7 @@ const mongoose_1 = __importDefault(require("mongoose"));
 const testimonialsSchema = new mongoose_1.default.Schema({
     testimonial_author: { type: String, required: true },
     testimonial_content: { type: String, required: true },
+    testimonial_service: { type: String, required: true },
     created_at: { type: Date, default: Date.now },
     created_by: { type: String, required: true }
 });
