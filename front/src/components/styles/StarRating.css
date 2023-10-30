@@ -1,0 +1,12 @@
+.star-rating {
+    display: inline-flex; /* Use flexbox to display stars in a row */
+    align-items: center; /* Center stars vertically within the container */
+  }
+  
+  .star {
+    font-size: 24px;
+    color: #f1ce0a;
+    margin: 2px;
+  }
+
+  
