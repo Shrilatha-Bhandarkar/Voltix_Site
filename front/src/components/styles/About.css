@@ -1,17 +1,89 @@
-.ab-title{
+.ab-title {
     text-align: center;
-    font-size:xx-large;
-}
-.ab{
+    font-size: xx-large;
+  }
+  
+  .ab {
     margin-top: 20px;
-    background-image: linear-gradient(#ecf1f1,rgb(225, 215, 215));
-}
-.ab-content{
+    background-image: linear-gradient(#ecf1f1, rgb(225, 215, 215));
+  }
+  
+  .ab-content {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 50px;
     padding-right: 50px;
     background-color: rgb(217, 217, 217);
     border-radius: 20px;
-    font-size:large;
-}
+    font-size: large;
+  }
+  
+  .number-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bubble {
+    background-color: #575a5c;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    margin: 10px 0;
+    position: relative;
+    transition: background-color 0.3s; /* Add transition */
+  }
+
+  .number {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    background-color: #454749; /* Initial bubble color */
+    transition: background-color 0.3s; /* Add transition */
+  }
+  
+  .bubble:hover .number {
+    background-color: #fff; /* Change bubble background color on hover */
+    color: #414445; /* Change text color on hover */
+  }
+  
+  .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gg-arrow-long-down {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    border-right: 2px solid transparent;
+    border-left: 2px solid transparent;
+    box-shadow: inset 0 0 0 2px;
+    height: 44px;
+    width: 6px;
+    color: #4d4f4f; /* Initial arrow color */
+    cursor: pointer;
+    transition: color 0.3s; /* Add transition */
+  }
+  
+  .bubble:hover .gg-arrow-long-down {
+    color: #fff; /* Change arrow color on bubble hover */
+    transform: scale(var(--ggs, 1)) translateY(10px); /* Move arrow down */
+  }
+  
+  .bubble:hover .gg-arrow-long-down::after {
+    background-color: #404143; /* Fill arrow color on bubble hover */
+  }
+  

@@ -45,4 +45,9 @@
 .ser-btn:hover{
     background-color: rgb(104, 49, 192);
 }
-
+/* Add hover animation */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+  }
+  

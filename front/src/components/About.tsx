@@ -35,6 +35,28 @@ interface IAbout {
           </div>
           </div>
         ))}
+        
+        <div className="number-list">
+      <div className="bubble">
+        <div className="number">1</div>
+        <div className="arrow">
+          <i className="gg-arrow-long-down"></i>
+        </div>
+      </div>
+      <div className="bubble">
+        <div className="number">2</div>
+        <div className="arrow">
+          <i className="gg-arrow-long-down"></i>
+        </div>
+      </div>
+      <div className="bubble">
+        <div className="number">3</div>
+        <div className="arrow">
+          <i className="gg-arrow-long-down"></i>
+        </div>
+      </div>
+    </div>
+        
       </div>
     );
   };

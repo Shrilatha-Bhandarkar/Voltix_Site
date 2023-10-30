@@ -41,7 +41,7 @@ const Services: React.FC = () => {
       <div className="row">
         {services.map((entry) => (
           <div className="col-md-4" key={entry._id}>
-            <div className="card mb-4 c_ser">
+            <div className="card mb-4 c_ser card-hover">
               <img
                 src={entry.image_url}
                 className="card-img-top ser-img"
@@ -63,8 +63,8 @@ const Services: React.FC = () => {
                 </div>
                 <div className="mt-auto text-end"></div>
               </div>
+              </div>
             </div>
-          </div>
         ))}
       </div>
     </div>
