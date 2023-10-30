@@ -3079,7 +3079,7 @@ bootstrap@^5.3.2:
 
 boxicons@^2.1.4:
   version "2.1.4"
-  resolved "https://registry.npmjs.org/boxicons/-/boxicons-2.1.4.tgz"
+  resolved "https://registry.yarnpkg.com/boxicons/-/boxicons-2.1.4.tgz#6b478b1657f4019c657c8050bd145c0cd0655d3c"
   integrity sha512-BvJNfYfnE4g9WQ7GL91fftxMOTwAleWlPFwvQJPYb/Ju7aLjlQ/Eu55AH9JLNk/OR82z+ZSq4TbKzbV/e5Rr0A==
   dependencies:
     "@webcomponents/webcomponentsjs" "^2.0.2"
