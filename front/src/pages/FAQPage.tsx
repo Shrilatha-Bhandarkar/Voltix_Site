@@ -1,7 +1,8 @@
 import FAQ from "../components/FAQ";
+import  './styles/Page.css';
 const FAQPage = () => {
     return ( 
-        <div>
+        <div className="container mar">
             <FAQ />
         </div>
      );

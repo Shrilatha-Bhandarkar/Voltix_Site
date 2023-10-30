@@ -1,9 +1,10 @@
 import React from "react";
-import Services from '../components/services'
+import Services from '../components/services';
+import  './styles/Page.css';
 
 const ServicesPage : React.FC =()=>{
     return(
-        <div>
+        <div className="mar">
             <Services />
         </div>
     );

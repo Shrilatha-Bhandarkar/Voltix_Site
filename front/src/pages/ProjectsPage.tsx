@@ -1,9 +1,10 @@
 import React from "react";
-import Projects from '../components/projects'
+import Projects from '../components/projects';
+import  './styles/Page.css';
 
 const ProjectsPage : React.FC =()=>{
     return(
-        <div>
+        <div className="mar">
             <Projects />
         </div>
     );
