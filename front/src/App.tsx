@@ -11,7 +11,9 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import FAQPage from "./pages/FAQPage";
 
+
 function App() {
+  
   return (
     <>
       <Navbar />
@@ -27,6 +29,7 @@ function App() {
           <Route path="/Contact" element={<ContactPage />} />
           <Route path="/FAQ" element={<FAQPage />} />
         </Routes>
+       
       </BrowserRouter>
       <Footer />
     </>
