@@ -31,7 +31,7 @@ const Services: React.FC = () => {
   }, []);
 
   return (
-    <div className="container1">
+    <div className="container1 sb">
       <div className="head">
         The software development company that puts your needs first
       </div>

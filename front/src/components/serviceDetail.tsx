@@ -48,7 +48,7 @@ const ServiceDetail: React.FC = () => {
   }
 
   return (
-    <div className="container mar">
+    <div className="container mar sdbg">
       {isLoading ? (
         <Preloader />
       ) : (
