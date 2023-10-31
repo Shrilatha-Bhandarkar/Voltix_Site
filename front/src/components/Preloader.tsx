@@ -6,7 +6,6 @@ const Preloader = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a 5-second loading delay
     const timer = setTimeout(() => {
       setIsLoading(false);
     },1000);
