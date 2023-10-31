@@ -58,4 +58,8 @@
     max-width: 100%;
     height: auto;
 }
-  
+.h2-pair {
+    display: inline-block; /* Display h2 and p elements on the same line */
+    vertical-align: top; /* Align elements to the top */
+    margin-right: 20px; /* Add some spacing between pairs */
+}

@@ -70,15 +70,22 @@ const Services: React.FC = () => {
         ))}
       </div>
       <div id="content">
-        <h1>Why Branding Matters More Than Ever</h1>
-        <p>A strong brand can help you stand out from the competition, attract new customers, and build loyalty among your existing customers.</p>
+    <h1>Why Branding Matters More Than Ever</h1>
+    <p>A strong brand can help you stand out from the competition, attract new customers, and build loyalty among your existing customers.</p>
+    <div className="h2-pair">
         <h2>Be authentic</h2>
         <p>Your brand should reflect your values.</p>
+    </div><br></br>
+    <div className="h2-pair">
         <h2>Be consistent</h2>
         <p>Be consistent with your branding efforts.</p>
+    </div><br></br>
+    <div className="h2-pair">
         <h2>Be patient</h2>
         <p>Don't let your brand get lost in the noise.</p>
     </div>
+</div>
+
     </div>
   );
 };
