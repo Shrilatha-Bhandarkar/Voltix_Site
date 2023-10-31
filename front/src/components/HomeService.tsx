@@ -18,7 +18,7 @@ const HomeService = () => {
   }, []);
 
   return (
-    <div className="hs" style={{ width: '100%' }}>
+    <div className="hs">
       <div className="container">
         <h1 className="head">Our Actions and Motivations</h1>
         <h5 className="sub-head">

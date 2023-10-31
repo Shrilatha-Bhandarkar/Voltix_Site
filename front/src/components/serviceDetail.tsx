@@ -50,19 +50,22 @@ const ServiceDetail: React.FC = () => {
   }
 
   return (
-    <div className="container mar sdbg">
+    <div className="container mar ">
       {isLoading ? (
         <Preloader />
       ) : (
-        <div className="container ser">
+        <div className="container ser sdbg">
           <div className="head">
             <h3>{service.service_head}</h3>
             <h6>{service.service_tag}</h6>
           </div>
           <div className="body">
             <h5>{service.service_title}</h5>
-            <img src={service.image_url1}></img>
-
+            <img
+              src={service.image_url1}
+              className="img mb-4" // Add a class for styling
+              alt={service.service_title}
+            />
 
           </div>
           <div className="container">
