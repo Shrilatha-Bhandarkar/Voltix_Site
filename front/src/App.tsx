@@ -10,10 +10,10 @@ import Footer from "./components/Footer";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import FAQPage from "./pages/FAQPage";
-
 function App() {
+  
   return (
-    <>
+    <div className="container-fluid">
       <Navbar />
       <BrowserRouter>
         <Routes>
@@ -29,7 +29,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Footer />
-    </>
+    </div>
   );
 }
 

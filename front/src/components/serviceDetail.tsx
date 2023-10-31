@@ -8,9 +8,13 @@ interface IServiceDetail {
   _id: string;
   service_title: string;
   service_description: string;
+  service_head:string;
+  service_tag:string;
   service_category: string;
-  service_template:string;
+  service_template: string;
   image_url: string;
+  image_url1: string;
+
   created_at: Date;
   created_by: string;
 }
@@ -33,27 +37,38 @@ const ServiceDetail: React.FC = () => {
   }, [serviceId]);
 
   const [isLoading, setIsLoading] = useState(true);
-    useEffect(() => {
-        setTimeout(() => {
-          setIsLoading(false);
-        }, 3000);
-      }, []);
+  useEffect(() => {
+    const delay = 1000;
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, delay);
+    return () => clearTimeout(timer);
+  }, []);
 
   if (!service) {
     return <div>Loading...</div>;
   }
 
   return (
-    <div className="container">
-      {isLoading ? <Preloader /> : null}
-      <h1 className="ser-title">{service.service_title}</h1>
-      <div className="card ser-det">
-        <img src={service.image_url} className="card-img-top img" alt={service.service_title} />
-        <h5 className="card-header ser-head">{service.service_category}</h5>
-        <div className="card-body">
-          <p className="card-text">{service.service_description}</p>
+    <div className="container-fluid mar sdbg">
+      {isLoading ? (
+        <Preloader />
+      ) : (
+        <div className="container-fluid ser">
+          <div className="head">
+            <h2>{service.service_head}</h2>
+            <h5>{service.service_tag}</h5>
+          </div>
+          <div className="body">
+            <h5>{service.service_title}</h5>
+            <img src={service.image_url1} alt={service.service_title}></img>
+          </div>
+          <div className="container-fluid mt-4 mb-5">
+            <h2 className="mb-3">{service.service_template}</h2>
+            <p className="ser-des">{service.service_description}</p>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

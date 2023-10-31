@@ -1,26 +1,42 @@
 import HomeService from "../components/HomeService";
 import HomeProject from "../components/HomeProject";
 import HomeTestimonial from "../components/HomeTestimonial";
+import HomeHead from "../components/HomeHead";
 import Preloader from "../components/Preloader";
 import React, { useState, useEffect } from 'react';
-import  './styles/Page.css';
-const HomePage = () => {
-    const [isLoading, setIsLoading] = useState(true);
-    useEffect(() => {
-        setTimeout(() => {
-          setIsLoading(false);
-        }, 3000);
-      }, []);
-    return ( 
-        <div className="container one mar">
-            {isLoading ? <Preloader /> : null}
-            <div className="services">
-                <HomeService />
-                <HomeProject />
-                <HomeTestimonial />
-            </div>
+import './styles/Page.css';
+
+const HomePage: React.FC = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        setIsLoading(false);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setIsLoading(false); 
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <div className="container-fluid mar">
+      {isLoading ? (
+        <Preloader />
+      ) : (
+        <div className="services">
+          <HomeHead />
+          <HomeService />
+          <HomeProject />
+          <HomeTestimonial />
         </div>
-     );
-}
- 
+      )}
+    </div>
+  );
+};
+
 export default HomePage;

@@ -1,17 +1,67 @@
-.ab-title{
+
+.ab-title {
     text-align: center;
-    font-size:xx-large;
-}
-.ab{
+    font-size: xx-large;
+  }
+  
+  .ab {
     margin-top: 20px;
-    background-image: linear-gradient(#ecf1f1,rgb(225, 215, 215));
-}
-.ab-content{
+    /* background-image: linear-gradient(#ecf1f1, rgb(225, 215, 215)); */
+  }
+  
+  .ab-content {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: rgb(217, 217, 217);
+    padding-left: 150px;
+    padding-right: 150px;
+    /* background-color: rgb(217, 217, 217); */
     border-radius: 20px;
-    font-size:large;
+    font-size: large;
+  }
+.card-bubble{
+  align-items:left;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+    left: 150px;
+}
+  .number-list {
+    
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    /* margin: 20px auto; */
+    
+  }
+  
+  .bubble {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 40%;
+    background-color: #fff;
+    transition: background-color 1s; /* Adjust the duration as needed */
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .bubble.filled {
+    background-color: #ba68d7; /* Color for filled bubble */
+  }
+  
+  .number {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; /* Ensure text alignment */
+  }
+  
+.arrow {
+  text-align: center; /* Ensure arrow alignment */
+}
+
+.arrow i {
+  font-size: 24px;
 }

@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles/Preloader.css';
-const Preloader: React.FC = () => {
+
+const Preloader = () => {
   return (
-    <div className="preloader">
-      <h1>...</h1>
+    <div id="preloader">
+      <div id="loader"></div>
     </div>
   );
 };

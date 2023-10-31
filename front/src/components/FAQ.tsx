@@ -23,7 +23,7 @@ const FAQ: React.FC = () => {
   }, []);
 
   return (
-    <div className="container mt-5">
+    <div className="container-fluid mt-5">
       <h2 className="text-center mb-5">Frequently Asked Questions</h2>
       <div className="accordion mb-5" id="accordionExample">
         {faq.map((entry, index) => (

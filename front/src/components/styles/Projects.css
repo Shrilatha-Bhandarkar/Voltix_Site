@@ -20,20 +20,25 @@
     transform: translateY(-50%); 
     font-size: 33px; 
 }
-.pro-det{
-    margin-bottom: 80px;
-    margin-left: 200px;
-    margin-right: 200px;
+.pro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url('https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698735408155_LINE.png?AWSAccessKeyId=SYA94PA3KHO0CBEW4XPQ&Expires=1698792214&Signature=S0GFFPmX%2BdrtZKAMUrfMP5wouNQ%3D');
 }
 .img{
-    width: 80%;
-    height: 400px;
-    align-self: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
 }
-.pro-head{
-    text-align: center;
+.pbg{
+    background-image: url('https://voltixsite.s3.wasabisys.com/1698757533487_TRIANGLEprojects%20bg.png?AWSAccessKeyId=DYOXIVQ4TYHAD0CTIVTA&Expires=1698930337&Signature=kIEtXejvZgWCBIreuKQ%2Bj9Rl%2BRA%3D');
 }
-.pro-title{
-    margin: 50px;
-    text-align: center;
+.description{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.para{
+    font-size: large;
 }

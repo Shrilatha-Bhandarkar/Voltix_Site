@@ -28,7 +28,7 @@
   .nav-btn {
     /* background-color: #c09cc9; */
     /* background-image: radial-gradient(circle,#a785e9,#b9e0e0); */
-    background-image: radial-gradient(circle,#8154da,#acd6d6);
+    background-image: radial-gradient(circle,#a67ef6,#acd6d6);
     /* color: #020202; */
     color: white;
     border: 10px;
@@ -38,3 +38,8 @@
     font-size: larger;
     font-weight: bolder;
   }
+  .logo {
+    height: 50px; /* Adjust the height as needed */
+    margin-right: 20px; /* Add margin to create space between the logo and links */
+  }
+  

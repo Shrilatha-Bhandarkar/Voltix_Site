@@ -32,27 +32,36 @@ const ProjectDetail: React.FC = () => {
   }, [projectId]);
 
   const [isLoading, setIsLoading] = useState(true);
-    useEffect(() => {
-        setTimeout(() => {
-          setIsLoading(false);
-        }, 3000);
-      }, []);
+  useEffect(() => {
+    const delay = 1000;
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, delay);
+    return () => clearTimeout(timer);
+  }, []);
 
   if (!project) {
     return <div>Loading...</div>;
   }
 
   return (
-    <div className="container">
-      {isLoading ? <Preloader /> : null}
-      <h1 className="pro-title">{project.project_title}</h1>
-      <div className="card pro-det">
-        <img src={project.image_url} className="card-img-top img" alt={project.project_title} />
-        <h5 className="card-header pro-head">{project.project_category}</h5>
-        <div className="card-body">
-          <p className="card-text">{project.project_description}</p>
+    <div className="container-fluid mar">
+      {isLoading ? (
+        <Preloader />
+      ) : (
+        <div className="container-fluid pro">
+          <h1 className="pro-title mb-5">{project.project_title}</h1>
+            <img
+              src={project.image_url}
+              className="img mb-4"
+              alt={project.project_title}
+            />
+            <div className="container-fluid description">
+            <h3 className="pro-head mb-4">{project.project_category}</h3>
+            <p className="para">{project.project_description}</p>
+            </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

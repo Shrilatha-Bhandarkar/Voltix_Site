@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../components/styles/Services.css";
 import { fetchServices } from "../services/api";
-import "./styles/Services.css"
+
 export interface IService {
   _id: string;
   service_title: string;
   service_description: string;
   service_category: string;
+  service_head: string;
+  service_tag: string;
   service_template: string;
   image_url: string;
   created_at: Date;
@@ -29,11 +31,11 @@ const Services: React.FC = () => {
   }, []);
 
   return (
-    <div className="container1">
+    <div className="container-fluid sb">
       <div className="head">
         The software development company that puts your needs first
       </div>
-      <div className="des">
+      <div className="des mb-4">
         Voltix Solution is a software company offering web and mobile app
         development, digital marketing,<br></br> with a skilled team focused on
         tech-driven solutions.
@@ -51,9 +53,9 @@ const Services: React.FC = () => {
                 <h4 className="card-title text-center ">
                   {entry.service_title}
                 </h4>
-                <h5 className="card-text text-center">
+                <h6 className="card-text text-center">
                   {entry.service_template}
-                </h5>
+                </h6>
                 <div className="text-center mt-3">
                   <Link to={`/services/id?id=${entry._id}`}>
                     <button className="btn btn-primary ser-btn">
@@ -66,6 +68,19 @@ const Services: React.FC = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="container-fluid">
+        <h1>Why Branding Matters More Than Ever</h1>
+        <h6>
+          A strong brand can help you stand out from the competition, <br></br>attract
+          new customers, and build loyalty among your existing customers.
+        </h6>
+        <h4>Be authentic</h4>
+        <h6>Your brand should reflect your values.</h6>
+        <h4>Be consistent</h4>
+        <h6>Be consistent with your branding efforts.</h6>
+        <h4>Be patient</h4>
+        <h6>Don't let your brand get lost in the noise.</h6>
       </div>
     </div>
   );
