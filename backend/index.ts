@@ -9,6 +9,10 @@ import contactRoutes from "./routes/contactRoutes";
 import userRoutes from "./routes/usersRoute";
 import routers from "./routes/aboutRoutes";
 import faqRoutes from "./routes/faqRoutes";
+import { S3 } from 'aws-sdk';
+import {upload, storage, s3} from './Auth/bucketUpload';
+import { Request, Response } from 'express';
+import path from 'path';
 
 dotenv.config();
 const app = express();
@@ -37,6 +41,33 @@ app.use("/api",userRoutes);
 app.use("/api", userRoutes);
 app.use("/api",routers);
 app.use("/api",faqRoutes);
+
+app.post('/upload', upload.single('file'), (req: Request, res: Response) => {
+  if (!req.file) {
+    console.log(req.file)
+    return res.status(400).json({ error: 'No file uploaded' });
+  }
+
+  const params: S3.Types.PutObjectRequest = {
+    Bucket: process.env.WASABI_BUCKET as string,
+    Key: `${Date.now()}_${path.basename(req.file.originalname)}`,
+    Body: req.file.buffer,
+    ACL: 'public-read', // Set ACL to public-read for public access
+  };
+
+  // Upload the file to the Wasabi S3 bucket
+  s3.upload(params, (error: Error, data: S3.ManagedUpload.SendData) => {
+    if (error) {
+        console.log(error)
+      return res.status(500).json({ error: 'File upload failed' });
+    }
+    const expirationTimeInSeconds = 48 * 60 * 60; 
+    const fileKey = params.Key;
+    const fileUrl = s3.getSignedUrl('getObject', { Bucket: params.Bucket, Key: fileKey,  Expires: expirationTimeInSeconds });
+
+    res.json({ key: fileKey, url: fileUrl });
+  });
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
