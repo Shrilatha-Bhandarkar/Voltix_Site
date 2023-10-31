@@ -16,7 +16,7 @@ const HomeService = () => {
   }, []);
 
   return (
-    <div className="contaner">
+    <div className="container hs">
       <h1 className="head">Our Actions and Motivations</h1>
       <h5 className="sub-head">
         Our skilled and dedicated team plays a significant role in our ability

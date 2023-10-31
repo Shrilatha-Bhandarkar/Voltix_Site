@@ -49,7 +49,7 @@ const ProjectDetail: React.FC = () => {
       {isLoading ? (
         <Preloader />
       ) : (
-        <div className="container pro">
+        <div className="container pro pdbg">
           <h1 className="pro-title mb-5">{project.project_title}</h1>
           <div className="pro-det">
             <img

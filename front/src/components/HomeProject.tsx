@@ -15,7 +15,7 @@ const HomeProject = () => {
       });
   }, []);
   return (
-    <div className="contaner">
+    <div className="container hp">
       <h1 className="head">Check out our Projects</h1>
       <h5 className="sub-head">
       Our endeavours serve as examples of our dedication to excellence

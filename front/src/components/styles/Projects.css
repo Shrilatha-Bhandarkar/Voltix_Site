@@ -30,3 +30,9 @@
     max-width: 100%;
     height: auto;
 }
+.pb{
+    background-image: url('https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698748538851_TRIANGLEprojects%20bg.png?AWSAccessKeyId=SYA94PA3KHO0CBEW4XPQ&Expires=1698791765&Signature=6bqiKwMXHIwqRORRso1i59rVYP8%3D');
+}
+.pdbg{
+    background-image: url('https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698735408155_LINE.png?AWSAccessKeyId=SYA94PA3KHO0CBEW4XPQ&Expires=1698792214&Signature=S0GFFPmX%2BdrtZKAMUrfMP5wouNQ%3D');
+}
