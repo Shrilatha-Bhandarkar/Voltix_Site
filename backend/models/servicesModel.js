@@ -9,7 +9,10 @@ const servicesSchema = new mongoose_1.default.Schema({
     service_description: { type: String, required: true },
     service_category: { type: String, required: true },
     service_template: { type: String, required: true },
+    service_head: { type: String },
+    service_tag: { type: String },
     image_url: { type: String, required: true },
+    image_url1: { type: String, required: true },
     created_at: { type: Date, default: Date.now },
     created_by: { type: String, required: true }
 });

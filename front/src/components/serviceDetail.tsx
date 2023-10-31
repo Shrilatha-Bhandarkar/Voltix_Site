@@ -13,6 +13,8 @@ interface IServiceDetail {
   service_category: string;
   service_template: string;
   image_url: string;
+  image_url1: string;
+
   created_at: Date;
   created_by: string;
 }
@@ -59,7 +61,9 @@ const ServiceDetail: React.FC = () => {
           </div>
           <div className="body">
             <h5>{service.service_title}</h5>
-            <img src={service.image_url} alt={service.service_title}></img>
+            <img src={service.image_url1}></img>
+
+
           </div>
           <div className="container">
             <h2>{service.service_template}</h2>

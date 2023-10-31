@@ -8,6 +8,7 @@ interface IService extends Document {
   service_category: string;
   service_template:string;
   image_url: string;
+  image_url1: string;
   created_at: Date;
   created_by: string;
 }
@@ -20,6 +21,7 @@ const servicesSchema = new mongoose.Schema<IService>({
   service_head : {type: String},
   service_tag : {type: String},
   image_url: { type: String, required: true },
+  image_url1: { type: String, required: true },
   created_at: { type: Date, default: Date.now },
   created_by: { type: String, required: true}
 });
