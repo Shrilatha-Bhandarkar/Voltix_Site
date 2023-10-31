@@ -1,51 +1,23 @@
 "use strict";
-// import express from 'express';
-// import multer from 'multer';
-// import AWS from 'aws-sdk';
-// import dotenv from 'dotenv';
-// const app = express();
-// dotenv.config();
-// const storage = multer.memoryStorage();
-// const upload = multer({ storage: storage });
-// AWS.config.update({
-//   accessKeyId: process.env.ACCESS_KEY,
-//   secretAccessKey: process.env.SECRET_KEY,
-//   region: process.env.REGION,
-// });
-// const s3 = new AWS.S3();
-// app.post('/upload', upload.single('file'), (req, res) => {
-//   const file = req.file;
-//   if (!file) {
-//     return res.status(400).send('No file uploaded.');
-//   }
-//   const params: AWS.S3.Types.PutObjectRequest = {
-//     Bucket: process.env.WASABI_BUCKET as string,
-//     Key: generateUniqueFileName(file.originalname),
-//     Body: file.buffer,
-//   };
-//   s3.upload(params, (err: Error, data: AWS.S3.ManagedUpload.SendData) => {
-//     if (err) {
-//       console.error('Error uploading file:', err);
-//       return res.status(500).send('Error uploading file to Wasabi: ' + err.message);
-//     }
-//     console.log('File uploaded successfully:', data.Location);
-//     return res.send('File uploaded to Wasabi successfully.');
-//   });
-// });
-// function generateUniqueFileName(originalName: string): string {
-//   const uniqueName = Date.now() + '_' + originalName;
-//   return uniqueName;
-// }
-// middleware.ts
-// proper
-// import multer, { Multer } from 'multer';
-// import AWS, { S3 } from 'aws-sdk';
-// const storage: multer.StorageEngine = multer.memoryStorage();
-// const upload: Multer = multer({ storage });
-// AWS.config.update({
-//   accessKeyId: process.env.ACCESS_KEY,
-//   secretAccessKey: process.env.SECRET_KEY,
-//   region: process.env.REGION,
-// });
-// const s3: S3 = new AWS.S3();
-// export { upload, s3 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.upload = exports.storage = exports.s3 = void 0;
+const aws_sdk_1 = __importDefault(require("aws-sdk"));
+const multer_1 = __importDefault(require("multer"));
+const dotenv_1 = __importDefault(require("dotenv"));
+dotenv_1.default.config();
+// Configure AWS S3 client with your Wasabi credentials
+exports.s3 = new aws_sdk_1.default.S3({
+    accessKeyId: process.env.AWS_ACCESS_KEY,
+    secretAccessKey: process.env.AWS_SECRET_KEY,
+    endpoint: 'https://s3.wasabisys.com', // Wasabi S3 endpoint
+});
+// Set up CORS to allow cross-origin requests
+// Set up multer to handle file uploads
+exports.storage = multer_1.default.memoryStorage();
+exports.upload = (0, multer_1.default)({
+    storage: exports.storage,
+    limits: { fileSize: 1024 * 1024 * 5 }, // Limit file size to 5MB
+});
