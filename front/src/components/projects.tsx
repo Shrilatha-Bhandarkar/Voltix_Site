@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
   }, []);
 
   return (
-    <div className="container pbg">
+    <div className="container-fluid pbg">
       <div className="head">Great Design That Actually Works!</div>
       <div className="des">
         Our versatile team is built of designers, developers and digital

@@ -24,7 +24,7 @@ const Testimonials: React.FC = () => {
   }, []);
 
   return(
-    <div className="container">
+    <div className="container-fluid">
         <h1>Testimonials</h1>
         <div className="card-deck">
             {testimonials.map((entry)=>(

@@ -22,7 +22,7 @@ const AboutPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="mar">
+    <div className="container-fluid mar">
       {isLoading ? (
         <Preloader />
       ) : (

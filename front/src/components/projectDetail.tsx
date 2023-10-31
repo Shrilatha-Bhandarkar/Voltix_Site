@@ -45,21 +45,21 @@ const ProjectDetail: React.FC = () => {
   }
 
   return (
-    <div className="container mar">
+    <div className="container-fluid mar">
       {isLoading ? (
         <Preloader />
       ) : (
-        <div className="container pro pdbg">
+        <div className="container-fluid pro">
           <h1 className="pro-title mb-5">{project.project_title}</h1>
-          <div className="pro-det">
             <img
               src={project.image_url}
               className="img mb-4"
               alt={project.project_title}
             />
-            <h5 className="pro-head mb-4">{project.project_category}</h5>
-              <p className="description">{project.project_description}</p>
-          </div>
+            <div className="container-fluid description">
+            <h3 className="pro-head mb-4">{project.project_category}</h3>
+            <p className="para">{project.project_description}</p>
+            </div>
         </div>
       )}
     </div>

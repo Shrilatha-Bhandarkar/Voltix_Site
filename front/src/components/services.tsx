@@ -9,8 +9,8 @@ export interface IService {
   service_title: string;
   service_description: string;
   service_category: string;
-  service_head:string;
-  service_tag:string;
+  service_head: string;
+  service_tag: string;
   service_template: string;
   image_url: string;
   created_at: Date;
@@ -31,11 +31,11 @@ const Services: React.FC = () => {
   }, []);
 
   return (
-    <div className="container1 sb">
+    <div className="container-fluid sb">
       <div className="head">
         The software development company that puts your needs first
       </div>
-      <div className="des">
+      <div className="des mb-4">
         Voltix Solution is a software company offering web and mobile app
         development, digital marketing,<br></br> with a skilled team focused on
         tech-driven solutions.
@@ -65,20 +65,23 @@ const Services: React.FC = () => {
                 </div>
                 <div className="mt-auto text-end"></div>
               </div>
-              </div>
             </div>
+          </div>
         ))}
       </div>
-      <div id="content">
+      <div className="container-fluid">
         <h1>Why Branding Matters More Than Ever</h1>
-        <p>A strong brand can help you stand out from the competition, attract new customers, and build loyalty among your existing customers.</p>
-        <h2>Be authentic</h2>
-        <p>Your brand should reflect your values.</p>
-        <h2>Be consistent</h2>
-        <p>Be consistent with your branding efforts.</p>
-        <h2>Be patient</h2>
-        <p>Don't let your brand get lost in the noise.</p>
-    </div>
+        <h6>
+          A strong brand can help you stand out from the competition, <br></br>attract
+          new customers, and build loyalty among your existing customers.
+        </h6>
+        <h4>Be authentic</h4>
+        <h6>Your brand should reflect your values.</h6>
+        <h4>Be consistent</h4>
+        <h6>Be consistent with your branding efforts.</h6>
+        <h4>Be patient</h4>
+        <h6>Don't let your brand get lost in the noise.</h6>
+      </div>
     </div>
   );
 };

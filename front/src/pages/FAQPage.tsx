@@ -19,7 +19,7 @@ const FAQPage = () => {
     fetchData();
   }, []);
     return ( 
-        <div className="container mar">
+        <div className="container-fluid mar">
             {isLoading ? (
         <Preloader />
       ) : (

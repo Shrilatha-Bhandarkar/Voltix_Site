@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { fetchTestimonials } from "../services/api";
 import './styles/Home.css';
 import StarRating from './StarRating';
@@ -48,7 +48,7 @@ const HomeTestimonial = () => {
     prevArrow: <PrevArrow />,
   };
   return (
-    <div className="container">
+    <div className="container-fluid">
       <h2 className="head">Trusted by Millions of Customers.</h2>
       <h5 className="sub-head">
         We have been successful in developing business solutions in large part because of our talented and devoted workforce.

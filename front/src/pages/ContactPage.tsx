@@ -21,7 +21,7 @@ const ContactPage = () => {
     return ( 
         <div>
             {isLoading ? <Preloader /> : null}
-            <div className="container form mar">
+            <div className="container-fluid form mar">
                 {/* <div className="row">
                     {/* <div className="col-md-6">
                         <ContactForm />

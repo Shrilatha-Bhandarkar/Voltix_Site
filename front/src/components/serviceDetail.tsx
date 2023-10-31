@@ -50,24 +50,22 @@ const ServiceDetail: React.FC = () => {
   }
 
   return (
-    <div className="container mar sdbg">
+    <div className="container-fluid mar sdbg">
       {isLoading ? (
         <Preloader />
       ) : (
-        <div className="container ser">
+        <div className="container-fluid ser">
           <div className="head">
-            <h3>{service.service_head}</h3>
-            <h6>{service.service_tag}</h6>
+            <h2>{service.service_head}</h2>
+            <h5>{service.service_tag}</h5>
           </div>
           <div className="body">
             <h5>{service.service_title}</h5>
-            <img src={service.image_url1}></img>
-
-
+            <img src={service.image_url1} alt={service.service_title}></img>
           </div>
-          <div className="container">
-            <h2>{service.service_template}</h2>
-            <h6>{service.service_description}</h6>
+          <div className="container-fluid mt-4 mb-5">
+            <h2 className="mb-3">{service.service_template}</h2>
+            <p className="ser-des">{service.service_description}</p>
           </div>
         </div>
       )}
@@ -76,13 +74,3 @@ const ServiceDetail: React.FC = () => {
 };
 
 export default ServiceDetail;
-{/* <h1 className="ser-title mb-5">{service.service_title}</h1>
-          <div className="ser-det">
-            <img
-              src={service.image_url}
-              className="img mb-4"
-              alt={service.service_title}
-            />
-            <h5 className="ser-head mb-4">{service.service_category}</h5>
-              <p className="description">{service.service_description}</p>
-          </div> */}

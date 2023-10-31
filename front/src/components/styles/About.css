@@ -1,3 +1,4 @@
+
 .ab-title {
     text-align: center;
     font-size: xx-large;
@@ -5,15 +6,15 @@
   
   .ab {
     margin-top: 20px;
-    background-image: linear-gradient(#ecf1f1, rgb(225, 215, 215));
+    /* background-image: linear-gradient(#ecf1f1, rgb(225, 215, 215)); */
   }
   
   .ab-content {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: rgb(217, 217, 217);
+    padding-left: 150px;
+    padding-right: 150px;
+    /* background-color: rgb(217, 217, 217); */
     border-radius: 20px;
     font-size: large;
   }
@@ -21,18 +22,23 @@
   align-items:left;
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: 0;
+    left: 150px;
 }
   .number-list {
+    
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
+    align-items:flex-start;
+    /* margin: 20px auto; */
+    
   }
   
   .bubble {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:flex-start;
     padding: 10px;
     border: 2px solid #333;
     border-radius: 40%;

@@ -1,8 +1,10 @@
 import HomeService from "../components/HomeService";
 import HomeProject from "../components/HomeProject";
 import HomeTestimonial from "../components/HomeTestimonial";
+import HomeHead from "../components/HomeHead";
 import Preloader from "../components/Preloader";
 import React, { useState, useEffect } from 'react';
+import './styles/Page.css';
 
 const HomePage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,11 +24,12 @@ const HomePage: React.FC = () => {
   }, []);
 
   return (
-    <div className="container one mar">
+    <div className="container-fluid mar">
       {isLoading ? (
         <Preloader />
       ) : (
         <div className="services">
+          <HomeHead />
           <HomeService />
           <HomeProject />
           <HomeTestimonial />

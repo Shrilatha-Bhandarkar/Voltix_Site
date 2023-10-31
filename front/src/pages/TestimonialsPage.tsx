@@ -21,7 +21,7 @@ const TestimonialsPage: React.FC = () => {
     fetchData();
   }, []);
   return (
-    <div className="mar">
+    <div className="container-fluid mar">
       {isLoading ? <Preloader /> : null}
       <h1>Testimonials</h1>
       <Testimonials />
