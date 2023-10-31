@@ -115,9 +115,17 @@
   transform: scale(1.05);
   transition: transform 0.4s ease;
 }
-.hs{
+.hs {
   background-image: url('https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698736283668_sphere%20nw.png?AWSAccessKeyId=SYA94PA3KHO0CBEW4XPQ&Expires=1698789971&Signature=JQaf4EfQordUJCFpj%2Frmix7mHKc%3D');
+  background-size: cover;
+  width: 100%;
+  height: 100vh; /* Set the height to 100% of the viewport height for fullscreen */
+  margin: 0;
+  display: flex;
+  flex: auto;
+  left: 0;
 }
-.hp{
+
+.hp {
   background-image: url('https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698746388395_bg%20homepage%20projects.png?AWSAccessKeyId=SYA94PA3KHO0CBEW4XPQ&Expires=1698790072&Signature=%2FoheoGyzMufCT6GXQQiEUolh5wY%3D');
 }

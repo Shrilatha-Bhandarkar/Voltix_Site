@@ -3,21 +3,22 @@ import HomeProject from "../components/HomeProject";
 import HomeTestimonial from "../components/HomeTestimonial";
 import Preloader from "../components/Preloader";
 import React, { useState, useEffect } from 'react';
-import  './styles/Page.css';
+
 const HomePage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a 3-second delay for the preloader
-    const delay = 1000;
+    const fetchData = async () => {
+      try {
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        setIsLoading(false);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setIsLoading(false); 
+      }
+    };
 
-    // Set isLoading to false after the delay
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, delay);
-
-    // Clear the timer if the component unmounts
-    return () => clearTimeout(timer);
+    fetchData();
   }, []);
 
   return (
@@ -26,16 +27,13 @@ const HomePage: React.FC = () => {
         <Preloader />
       ) : (
         <div className="services">
-                <HomeService />
-                <HomeProject />
-                <HomeTestimonial />
-            </div>
+          <HomeService />
+          <HomeProject />
+          <HomeTestimonial />
+        </div>
       )}
- </div>
+    </div>
   );
 };
- 
+
 export default HomePage;
-
-
-

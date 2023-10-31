@@ -4,11 +4,20 @@ import React, { useState, useEffect } from 'react';
 import  './styles/Page.css';
 const ContactPage = () => {
     const [isLoading, setIsLoading] = useState(true);
+
     useEffect(() => {
-        setTimeout(() => {
+      const fetchData = async () => {
+        try {
+          await new Promise(resolve => setTimeout(resolve, 2000));
           setIsLoading(false);
-        }, 3000);
-      }, []);
+        } catch (error) {
+          console.error('Error fetching data:', error);
+          setIsLoading(false); 
+        }
+      };
+  
+      fetchData();
+    }, []);
     return ( 
         <div>
             {isLoading ? <Preloader /> : null}
