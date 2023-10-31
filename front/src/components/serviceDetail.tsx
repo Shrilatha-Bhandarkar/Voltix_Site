@@ -44,7 +44,7 @@ const ServiceDetail: React.FC = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container mar">
       {isLoading ? <Preloader /> : null}
       <h1 className="ser-title">{service.service_title}</h1>
       <div className="card ser-det">
