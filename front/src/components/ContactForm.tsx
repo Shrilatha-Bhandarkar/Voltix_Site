@@ -10,7 +10,6 @@ const ContactForm: React.FC = () => {
     email: '',
     message: '',
   });
-
   const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // Prevent the default form submission
 
@@ -36,7 +35,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <form  onSubmit={handleFormSubmit}>
-      
+    
       <div className="container c_form">
       <h2>Fill up the Form</h2>
       <h6>Our success in creating business solutions is due in large part spacially to talented and highly committed team</h6>

@@ -9,16 +9,16 @@ const Preloader = () => {
     // Simulate a 5-second loading delay
     const timer = setTimeout(() => {
       setIsLoading(false);
-    },500);
+    },1000);
 
     return () => clearTimeout(timer);
   }, []);
 
   if (isLoading) {
     return (
-      <div className="preloader-container">
-      <div className="preloader"></div>
-    </div>
+      <div id="preloader">
+       <div id="loader"></div>
+      </div>
     );
   }
   return null;
