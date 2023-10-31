@@ -1,9 +1,7 @@
 import express, { Request, Response } from 'express';
 import aws, { S3 } from 'aws-sdk';
 import multer, { memoryStorage } from 'multer';
-import cors from 'cors';
 import dotenv from 'dotenv';
-import path from 'path';
 
 dotenv.config();
 
