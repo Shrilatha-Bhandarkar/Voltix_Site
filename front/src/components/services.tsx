@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../components/styles/Services.css";
 import { fetchServices } from "../services/api";
-import "./styles/Services.css"
+
 export interface IService {
   _id: string;
   service_title: string;
@@ -43,7 +43,7 @@ const Services: React.FC = () => {
       <div className="row">
         {services.map((entry) => (
           <div className="col-md-4" key={entry._id}>
-            <div className="card mb-4 c_ser card-hover">
+            <div className="card mb-4 c_ser">
               <img
                 src={entry.image_url}
                 className="card-img-top ser-img"
@@ -53,9 +53,9 @@ const Services: React.FC = () => {
                 <h4 className="card-title text-center ">
                   {entry.service_title}
                 </h4>
-                <h5 className="card-text text-center">
+                <h6 className="card-text text-center">
                   {entry.service_template}
-                </h5>
+                </h6>
                 <div className="text-center mt-3">
                   <Link to={`/services/id?id=${entry._id}`}>
                     <button className="btn btn-primary ser-btn">
