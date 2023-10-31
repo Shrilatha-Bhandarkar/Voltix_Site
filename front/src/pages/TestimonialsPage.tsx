@@ -6,11 +6,20 @@ import { useState, useEffect } from 'react';
 
 const TestimonialsPage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
-    useEffect(() => {
-        setTimeout(() => {
-          setIsLoading(false);
-        }, 3000);
-      }, []);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        setIsLoading(false);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setIsLoading(false); 
+      }
+    };
+
+    fetchData();
+  }, []);
   return (
     <div className="mar">
       {isLoading ? <Preloader /> : null}

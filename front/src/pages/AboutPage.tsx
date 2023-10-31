@@ -8,16 +8,17 @@ const AboutPage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a 3-second delay for the preloader
-    const delay = 1000;
+    const fetchData = async () => {
+      try {
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        setIsLoading(false);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setIsLoading(false); 
+      }
+    };
 
-    // Set isLoading to false after the delay
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, delay);
-
-    // Clear the timer if the component unmounts
-    return () => clearTimeout(timer);
+    fetchData();
   }, []);
 
   return (

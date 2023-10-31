@@ -34,9 +34,10 @@ const ContactForm: React.FC = () => {
   };
 
   return (
+  
     <form  onSubmit={handleFormSubmit}>
-    
-      <div className="container c_form cbg">
+       <div className="container1 cbg">
+      <div className="container c_form ">
       <h2>Fill up the Form</h2>
       <h6>Our success in creating business solutions is due in large part spacially to talented and highly committed team</h6>
         <div className="row">
@@ -92,8 +93,9 @@ const ContactForm: React.FC = () => {
         <button type="submit" className="btn btn-dark contactbutton">
           Submit
         </button>
-      </div>
+      </div></div>
     </form>
+    
   );
 };
 
