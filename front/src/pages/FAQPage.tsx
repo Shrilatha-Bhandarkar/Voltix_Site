@@ -5,14 +5,19 @@ import  './styles/Page.css';
 const FAQPage = () => {
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
-        setTimeout(() => {
+      const delay = 1000;
+        const timer = setTimeout(() => {
           setIsLoading(false);
-        }, 3000);
+        }, delay);
+        return () => clearTimeout(timer);
       }, []);
     return ( 
         <div className="container mar">
-            {isLoading ? <Preloader /> : null}
-            <FAQ />
+            {isLoading ? (
+        <Preloader />
+      ) : (
+        <FAQ/>
+      )}
         </div>
      );
 }

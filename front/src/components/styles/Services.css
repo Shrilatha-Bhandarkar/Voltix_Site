@@ -9,23 +9,17 @@
     font-size: 20px;
     font-family:Georgia, 'Times New Roman', Times, serif
 }
-.ser-det{
+/* .ser-det{
     margin-bottom: 80px;
     margin-left: 200px;
     margin-right: 200px;
-}
+} */
 .img{
-    width: 80%;
-    height: 400px;
+    width: 30%;
+    height: auto;
     align-self: center;
 }
-.ser-head{
-    text-align: center;
-}
-.ser-title{
-    margin: 50px;
-    text-align: center;
-}
+
 .ser-img{
     padding-left: 150px;
     padding-right: 150px;
@@ -50,4 +44,9 @@
     transform: scale(1.05);
     transition: transform 0.2s ease;
   }
-  
+.ser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

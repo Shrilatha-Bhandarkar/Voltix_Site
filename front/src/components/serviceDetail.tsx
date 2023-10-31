@@ -8,8 +8,10 @@ interface IServiceDetail {
   _id: string;
   service_title: string;
   service_description: string;
+  service_head:string;
+  service_tag:string;
   service_category: string;
-  service_template:string;
+  service_template: string;
   image_url: string;
   created_at: Date;
   created_by: string;
@@ -33,11 +35,13 @@ const ServiceDetail: React.FC = () => {
   }, [serviceId]);
 
   const [isLoading, setIsLoading] = useState(true);
-    useEffect(() => {
-        setTimeout(() => {
-          setIsLoading(false);
-        }, 3000);
-      }, []);
+  useEffect(() => {
+    const delay = 1000;
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, delay);
+    return () => clearTimeout(timer);
+  }, []);
 
   if (!service) {
     return <div>Loading...</div>;
@@ -45,17 +49,36 @@ const ServiceDetail: React.FC = () => {
 
   return (
     <div className="container mar">
-      {isLoading ? <Preloader /> : null}
-      <h1 className="ser-title">{service.service_title}</h1>
-      <div className="card ser-det">
-        <img src={service.image_url} className="card-img-top img" alt={service.service_title} />
-        <h5 className="card-header ser-head">{service.service_category}</h5>
-        <div className="card-body">
-          <p className="card-text">{service.service_description}</p>
+      {isLoading ? (
+        <Preloader />
+      ) : (
+        <div className="container ser">
+          <div className="head">
+            <h3>{service.service_head}</h3>
+            <h6>{service.service_tag}</h6>
+          </div>
+          <div className="body">
+            <h5>{service.service_title}</h5>
+            <img src={service.image_url} alt={service.service_title}></img>
+          </div>
+          <div className="container">
+            <h2>{service.service_template}</h2>
+            <h6>{service.service_description}</h6>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
 
 export default ServiceDetail;
+{/* <h1 className="ser-title mb-5">{service.service_title}</h1>
+          <div className="ser-det">
+            <img
+              src={service.image_url}
+              className="img mb-4"
+              alt={service.service_title}
+            />
+            <h5 className="ser-head mb-4">{service.service_category}</h5>
+              <p className="description">{service.service_description}</p>
+          </div> */}
