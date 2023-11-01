@@ -61,7 +61,7 @@ const ServiceDetail: React.FC = () => {
           </div>
           <div className="body">
             <h5>{service.service_title}</h5>
-            <img src={service.image_url1} alt={service.service_title}></img>
+            <img className="img mb-4"src={service.image_url1} alt={service.service_title}></img>
           </div>
           <div className="container-fluid mt-4 mb-5">
             <h2 className="mb-3">{service.service_template}</h2>
