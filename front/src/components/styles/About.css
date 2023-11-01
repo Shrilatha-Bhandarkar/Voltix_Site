@@ -3,7 +3,7 @@
     text-align: center;
     font-size: xx-large;
   }
-  
+
   .ab {
     margin-top: 20px;
     /* background-image: linear-gradient(#ecf1f1, rgb(225, 215, 215)); */
@@ -64,4 +64,61 @@
 
 .arrow i {
   font-size: 24px;
+}
+.abouthead{
+  width: max-content;
+  height: auto;
+}
+.ah-img{
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+.textStyleLarges1{
+  position: absolute;
+  top: 19%;
+  left: 3%;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  font-size: 39px;
+  font-weight: bolder;
+}
+.textStyleMediums1{
+  position: absolute;
+  top: 35%;
+  left: 3%;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.text1{
+  margin-top: 20px;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.text2{
+  margin-top: 10px;
+  position: absolute;
+  top: 70%;
+  left: 3%;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.text3{
+  margin-top: 10px;
+  position: absolute;
+  top: 90%;
+  left: 3%;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  font-size: 18px;
+  font-weight: bolder;
 }
