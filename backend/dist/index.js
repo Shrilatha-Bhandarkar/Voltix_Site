@@ -42,6 +42,16 @@ const path_1 = __importDefault(require("path"));
 dotenv.config();
 const app = (0, express_1.default)();
 const port = process.env.PORT;
+const _dirname = path_1.default.dirname("");
+const buildPath = path_1.default.join(_dirname, "../backend/dist");
+app.use(express_1.default.static(buildPath));
+app.get("/*", function (req, res) {
+    res.sendFile(path_1.default.join(_dirname, "../backend/dist/index.html"), function (err) {
+        if (err) {
+            res.status(500).send(err);
+        }
+    });
+});
 app.use(express_1.default.json());
 app.use(cors());
 const mongoURI = process.env.MONGO;

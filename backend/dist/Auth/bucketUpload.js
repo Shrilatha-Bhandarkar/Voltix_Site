@@ -8,13 +8,12 @@ const aws_sdk_1 = __importDefault(require("aws-sdk"));
 const multer_1 = __importDefault(require("multer"));
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
-// Configure AWS S3 client with your Wasabi credentials
+// Configure AWS S3 client with Wasabi credentials
 exports.s3 = new aws_sdk_1.default.S3({
     accessKeyId: process.env.AWS_ACCESS_KEY,
     secretAccessKey: process.env.AWS_SECRET_KEY,
     endpoint: 'https://s3.wasabisys.com', // Wasabi S3 endpoint
 });
-// Set up CORS to allow cross-origin requests
 // Set up multer to handle file uploads
 exports.storage = multer_1.default.memoryStorage();
 exports.upload = (0, multer_1.default)({
