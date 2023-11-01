@@ -23,7 +23,7 @@ body::-webkit-scrollbar{
 }
 .hser-tit{
     padding: 20px;
-    background-image: linear-gradient(#ecf1f1,#8951fa);
+    background-image: linear-gradient(#ecf1f1,#8e56fd);
 }
 .pro-tit:hover{
     color: black;
@@ -63,7 +63,7 @@ body::-webkit-scrollbar{
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  background-image: linear-gradient(#8951fa,white);
+  background-image: linear-gradient(#8e56fd,white);
 }
 .sub-head {
   font-size: 20px;
