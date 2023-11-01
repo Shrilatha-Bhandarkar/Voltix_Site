@@ -37,6 +37,7 @@ const About: React.FC = () => {
   }
 
   return (
+    <div className="area1">
     <div className="container-fluid mt-4 mb-4">
       {data.map((entry) => (
         <div className="row" key={entry._id}>
@@ -48,7 +49,7 @@ const About: React.FC = () => {
           </div>
         </div>
       ))}
-    </div>
+    </div></div>
   );
 };
 
