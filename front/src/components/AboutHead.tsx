@@ -4,7 +4,7 @@ const AboutHead = () => {
     <div className="container-fluid abouthead">
       <img
         className="img-fluid ah-img"
-        src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698747450835_ABOUT%20main.png?AWSAccessKeyId=Y4U6BU1GFZVKHHPYTUF6&Expires=1698852903&Signature=mHkIXbF%2BU27mAMP8reVzBAWoiEc%3D"
+        src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698747450835_ABOUT%20main.png?AWSAccessKeyId=D1MNTIH70792PIEUQKYN&Expires=1698859506&Signature=LQbqPG99SlD7SAHGls%2BbaQPFTwo%3D"
         alt="Welcome!"
       ></img>
       <div className="textStyleLarges1">

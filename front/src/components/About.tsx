@@ -37,19 +37,6 @@ const About: React.FC = () => {
   }
 
   return (
-   <div className="area" >
-        <ul className="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-
     <div className="container-fluid mt-4 mb-4">
       {data.map((entry) => (
         <div className="row" key={entry._id}>
@@ -61,28 +48,7 @@ const About: React.FC = () => {
           </div>
         </div>
       ))}
-      {/* <div className="container-fluid card-bubble">
-        <h3 className="mb-3">We are here to redefine the way you do your business!</h3>
-        <h5 className="mb-4">Our process – How we get things done for you.</h5>
-      <div className="number-list">
-        {Array.from({ length: 3 }).map((_, index) => (
-          <div key={index} className="bubble-arrow">
-            <div className={`bubble ${index < activeBubble ? 'filled' : ''}`} key={index}>
-              <div className="number">{index + 1}</div>
-            </div>
-            {index < 2 && (
-              <div className={`arrow ${index < activeBubble - 1 ? 'hidden' : ''}`}>
-                <i className="gg-arrow-long-down"></i>
-              </div>
-
-            )}
-          </div>
-        ))}
-      </div>
-      </div> */}
     </div>
-    </ul>
-</div >
   );
 };
 
