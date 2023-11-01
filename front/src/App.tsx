@@ -13,7 +13,7 @@ import FAQPage from "./pages/FAQPage";
 function App() {
   
   return (
-    <div className="container-fluid">
+    <>
       <Navbar />
       <BrowserRouter>
         <Routes>
@@ -28,8 +28,7 @@ function App() {
           <Route path="/FAQ" element={<FAQPage />} />
         </Routes>
       </BrowserRouter>
-      <Footer />
-    </div>
+    <Footer /></>
   );
 }
 
