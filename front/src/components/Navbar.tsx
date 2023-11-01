@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navbar back fixed-top navbar-expand-lg">
-      <a href='/'><img src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698732835276_Voltixlogo.png?AWSAccessKeyId=MT0CVV2JO4QMMZ58V0PK&Expires=1698809906&Signature=D2Ja9WhDWOBTOUFf8WET%2BBL%2FOwY%3D" alt="VoltixLogo" className="logo" /></a>
+      <a href='/'><img src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698732835276_Voltixlogo.png?AWSAccessKeyId=VCNB8OFET5MQ8TU9AJBW&Expires=1698853889&Signature=5eU3nZYlAUqYB%2FYxN4BRglk8QoM%3D" alt="VoltixLogo" className="logo" /></a>
 
         <ul className="nav">
           <li className="nav-item">

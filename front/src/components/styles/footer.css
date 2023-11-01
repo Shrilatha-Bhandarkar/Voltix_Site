@@ -56,3 +56,28 @@
 .footer-section p{
     margin-bottom: 5px;
 }
+/* Add styling for the Voltix logo */
+
+/* Additional styling can be added as needed */
+/* Styling for the Voltix logo */
+/* Styling for the Voltix logo */
+.logo {
+  display: block;
+  margin: 0 10px 10px 0; /* Add some space to the right and below the logo */
+  /* Adjust the width and height as needed to fit your design */
+  width: 100px;
+  height: auto;
+  float: left; /* Align the image to the left */
+}
+
+/* Styling for the "Voltix Solution" text */
+h3 {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #333; /* Change the text color as desired */
+  margin: 0; /* Remove any default margins */
+}
+
+/* Additional styling can be added as needed */
+
+
+/* Additional styling can be added as needed */
