@@ -26,6 +26,7 @@ const FAQPage = () => {
         <FAQ/>
       )}
         </div>
+       
      );
 }
  

@@ -23,6 +23,24 @@ const FAQ: React.FC = () => {
   }, []);
 
   return (
+    <div className="background-animation">
+    <div className="wrapper">
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div>
+      <div><span className="dot"></span></div></div>
+   <div className="text-content">
     <div className="container-fluid mt-5">
       <h2 className="text-center mb-5">Frequently Asked Questions</h2>
       <div className="accordion mb-5" id="accordionExample">
@@ -51,9 +69,10 @@ const FAQ: React.FC = () => {
               <div className="card-body ans">{entry.answer}</div>
             </div>
           </div>
-        ))}
+        ))}</div>
+        <div className="end"></div>
       </div>
-    </div>
+    </div> </div>
   );
 };
 
