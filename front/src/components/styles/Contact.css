@@ -2,14 +2,16 @@
     margin-top: 100px;
     margin-bottom: 50px;
     margin-left: auto;
-    margin-right: 20px;
+    margin-right:auto;
+    
     width:45%;
   }
   
   .c_form {
     border-radius: 15px;
     padding: 20px;
-    background-color: #ccc;
+    /* background-color: #ccc; */
+    background-image: linear-gradient(#d6c4ff,#eeebf6);
     padding-left: 80px;
     padding-right: 80px;
   }
