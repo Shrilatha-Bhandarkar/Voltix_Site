@@ -34,7 +34,6 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-  
     <form  onSubmit={handleFormSubmit}>
        <div className="container-fluid cbg">
       <div className="container-fluid c_form ">
@@ -95,7 +94,6 @@ const ContactForm: React.FC = () => {
         </button>
       </div></div>
     </form>
-    
   );
 };
 

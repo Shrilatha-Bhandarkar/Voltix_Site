@@ -37,6 +37,19 @@ const About: React.FC = () => {
   }
 
   return (
+   <div className="area" >
+        <ul className="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
     <div className="container-fluid mt-4 mb-4">
       {data.map((entry) => (
         <div className="row" key={entry._id}>
@@ -68,6 +81,8 @@ const About: React.FC = () => {
       </div>
       </div> */}
     </div>
+    </ul>
+</div >
   );
 };
 
