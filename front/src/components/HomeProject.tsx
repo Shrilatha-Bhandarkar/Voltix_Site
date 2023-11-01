@@ -37,6 +37,7 @@ const HomeProject = () => {
     slidesToScroll: 1,
     nextArrow:  <NextArrow /> ,
     prevArrow: <PrevArrow />,
+    
   };
   return (
     <div className="container-fluid hp">
