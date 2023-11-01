@@ -18,6 +18,20 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT;
 
+const _dirname = path.dirname("")
+const buildPath = path.join(_dirname , "../backend/dist");
+app.use(express.static(buildPath))
+app.get("/*", function(req,res){
+  res.sendFile(
+    path.join(_dirname, "../backend/dist/index.html"),
+    function(err) {
+      if (err) {
+        res.status(500).send(err);
+      }
+    }
+    );
+})
+
 app.use(express.json());
 app.use(cors());
 
