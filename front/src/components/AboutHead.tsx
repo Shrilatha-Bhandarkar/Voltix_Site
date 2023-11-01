@@ -1,6 +1,18 @@
 import "./styles/About.css";
 const AboutHead = () => {
   return (
+    <div className="area" >
+        <ul className="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
     <div className="container-fluid abouthead">
       <img
         className="img-fluid ah-img"
@@ -39,6 +51,8 @@ const AboutHead = () => {
           the clients <br></br>after confirming the final output with them.
         </p>
       </div>
+    </div>
+    </ul>
     </div>
   );
 };
