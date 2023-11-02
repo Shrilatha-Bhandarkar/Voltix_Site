@@ -24,7 +24,7 @@
 }
 .textStyleLarges1{
   position: absolute;
-  top: 1%;
+  top: 2%;
   left: 3%;
   background-color: rgba(0, 0, 0, 0);
   color: black;
@@ -33,7 +33,7 @@
 }
 .textStyleMediums1{
   position: absolute;
-  top: 8%;
+  top: 9%;
   left: 3%;
   background-color: rgba(0, 0, 0, 0);
   color: black;
