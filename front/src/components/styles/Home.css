@@ -40,9 +40,7 @@ body::-webkit-scrollbar{
 .card-title-container {
     text-align: center;
   }
- /*Services */
 
-/* Testimonials */
 .line {
   width: 50%; 
   border-bottom: 1px solid #ccc; 
@@ -100,9 +98,7 @@ body::-webkit-scrollbar{
   transform: translateY(-50%);
   cursor: pointer;
   z-index: 1; 
-  right: 0; 
-  /* margin-right: 10px;
-  padding-right: 10px; */
+  right: 0;
 }
 
 .custom-slick-arrow:hover,.custom-slick-arrow1:hover {

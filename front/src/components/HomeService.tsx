@@ -26,7 +26,8 @@ const HomeService = () => {
 
       <div className="row">
         {services.map((entry) => (
-          <div className="col-md-4" key={entry._id}>
+         
+          <div className="col-4" key={entry._id}>
             <div className="card mb-4 mt-4 hser-tit">
               <div className="card-body d-flex flex-column p-4">
                 <Link to={`/services/id?id=${entry._id}`}>
