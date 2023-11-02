@@ -52,7 +52,7 @@ const About: React.FC = () => {
     <div className="container-fluid abouthead">
       <img
         className="img-fluid ah-img"
-        src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698747450835_ABOUT%20main.png?AWSAccessKeyId=D1MNTIH70792PIEUQKYN&Expires=1698859506&Signature=LQbqPG99SlD7SAHGls%2BbaQPFTwo%3D"
+        src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698747450835_ABOUT%20main.png?AWSAccessKeyId=XVDUK932SOJV422A7HQF&Expires=1698938470&Signature=FLI8hrLFMwCIhOlXh8uBXpAOx8I%3D"
         alt="Welcome!"
       ></img>
       <div className="textStyleLarges1">
