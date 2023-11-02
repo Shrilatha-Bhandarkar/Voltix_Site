@@ -50,6 +50,7 @@ const ServiceDetail: React.FC = () => {
   }
 
   return (
+    
     <div className="container-fluid mar sdbg">
       {isLoading ? (
         <Preloader />
