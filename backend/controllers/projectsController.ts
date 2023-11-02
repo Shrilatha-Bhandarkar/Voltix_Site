@@ -85,6 +85,7 @@ export const updateProject = [
   },
 ];
 
+
 export const deleteProject = [
   verifyAccessToken,
   async (req: CustomRequest, res: Response) => {

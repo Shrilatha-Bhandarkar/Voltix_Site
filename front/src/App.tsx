@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import FAQPage from "./pages/FAQPage";
+// import SocialFeeds from "./pages/SocialFeeds"
 function App() {
   
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/About" element={<AboutPage />} />
           <Route path="/Contact" element={<ContactPage />} />
           <Route path="/FAQ" element={<FAQPage />} />
+          {/* <Route path="/Social" element={<SocialFeeds />} /> */}
         </Routes>
       </BrowserRouter>
     <Footer /></>
