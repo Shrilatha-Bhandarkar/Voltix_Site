@@ -37,18 +37,10 @@ const About: React.FC = () => {
   }
 
   return (
-    <div className="area" >
-        <ul className="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li></ul>
+    <div className="example-box">
+  <div className="background-shapes"></div>
+  
+
     <div className="container-fluid abouthead">
       <img
         className="img-fluid ah-img"
@@ -101,8 +93,8 @@ const About: React.FC = () => {
         </div>
       ))}
     </div>
-    
     </div>
+    
   );
 };
 
