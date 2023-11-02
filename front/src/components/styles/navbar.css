@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     background-color: #F4F5F9;
     color: #000000;
     text-decoration: #000000;
@@ -26,20 +26,83 @@
     font-weight: bold;
   }
   .nav-btn {
-    /* background-color: #c09cc9; */
-    /* background-image: radial-gradient(circle,#a785e9,#b9e0e0); */
-    background-image: radial-gradient(circle,#a67ef6,#acd6d6);
-    /* color: #020202; */
-    color: white;
+    background-color: #c09cc9; */
+     /* background-image: radial-gradient(circle,#a785e9,#b9e0e0); 
+    background-image: radial-gradient(circle,#a67ef6,#acd6d6); 
+     color: #020202; 
+     color: white;
     border: 10px;
     border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
     font-size: larger;
     font-weight: bolder;
-  }
+  } 
   .logo {
-    height: 50px; /* Adjust the height as needed */
-    margin-right: 20px; /* Add margin to create space between the logo and links */
+    height: 50px; /* Adjust the height as needed 
+    margin-right: 20px; Add margin to create space between the logo and links 
+  } */
+/* new css */
+
+  .navbar {
+    background-color: #f4f5f9; /* Background color */
+    color: #000000; /* Text color */
+    display: flex;
+  text-decoration:#000000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
   }
   
+  .logo {
+    width: 150px; /* Adjust the logo size as needed */
+    height: auto;
+  }
+  
+  .nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 0 10px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #000000;
+    font-size: large;
+  }
+  
+  .nav-btn {
+    background-color: #c09cc9; /* Button background color */
+    color: #020202;
+    border: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: #0d0c0c;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav.show {
+      display: flex;
+    }
+  
+    .nav-item {
+      margin: 10px 0;
+    }
+  }
