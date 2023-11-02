@@ -127,3 +127,29 @@
     transform: translate3d(0, -1692px, 0);
   }
 }
+@media (max-width: 768px) {
+    .ab-content {
+      padding: 10px; 
+    }
+  
+    .ah-img {
+      height: auto;
+    }
+  
+    .example-box {
+      font-size: medium;
+    }
+  
+    .textStyleLarges1,
+    .textStyleMediums1,
+    .text1,
+    .text2,
+    .text3 {
+      position: static; 
+      margin-top: 10px; 
+    }
+  
+    .background-shapes {
+      display: none; 
+    }
+  }

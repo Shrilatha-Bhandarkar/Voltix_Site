@@ -29,6 +29,7 @@ const HomePage: React.FC = () => {
         <Preloader />
       ) : (
         <div className="services">
+          
           <HomeHead />
           <HomeService />
           <HomeProject />
