@@ -104,3 +104,22 @@
       transform:translateX(25%);
     }
   }
+  @media (max-width: 768px) {
+    .form {
+      width: 80%; /* Adjust the form width for mobile screens */
+    }
+  
+    .c_form {
+      padding-left: 20px; /* Adjust the padding for smaller screens */
+      padding-right: 20px;
+    }
+  
+    input[type='text'],
+    input[type='number'] {
+      width: 100%; /* Make the input fields take the full width of the form */
+    }
+  
+    .contactbutton {
+      width: 50%; /* Adjust the button width for mobile screens */
+    }
+  }

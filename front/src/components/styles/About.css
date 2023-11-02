@@ -5,7 +5,6 @@
 
   .ab {
     margin-top: 20px;
-    /* background-image: linear-gradient(#ecf1f1, rgb(225, 215, 215)); */
   }
   
   .ab-content {
@@ -13,7 +12,6 @@
     padding-bottom: 10px;
     padding-left: 150px;
     padding-right: 150px;
-    /* background-color: rgb(217, 217, 217); */
     border-radius: 20px;
     font-size: large;
   }
