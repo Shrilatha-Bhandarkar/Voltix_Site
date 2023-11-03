@@ -45,8 +45,8 @@
 /* new css */
 
   .navbar {
-    background-color: #f4f5f9; /* Background color */
-    color: #000000; /* Text color */
+    background-color: #f4f5f9; 
+    color: #000000;
     display: flex;
   text-decoration:#000000;
     justify-content: space-between;
@@ -55,7 +55,7 @@
   }
   
   .logo {
-    width: 150px; /* Adjust the logo size as needed */
+    width: 150px; 
     height: auto;
   }
   
@@ -77,7 +77,7 @@
   }
   
   .nav-btn {
-    background-color: #c09cc9; /* Button background color */
+    background-color: #c09cc9; 
     color: #020202;
     border: 10px;
     padding: 10px 20px;
@@ -85,7 +85,7 @@
     border-radius: 5px;
   }
   
-  /* Media query for responsiveness */
+  
   @media screen and (max-width: 768px) {
     .nav {
       display: none;

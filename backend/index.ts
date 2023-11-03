@@ -51,8 +51,8 @@ app.use("/sapi", serviceRoutes);
 app.use("/tapi", testimonialRoutes);
 app.use("/capi", contactRoutes);
 app.use("/api", userRoutes);
-app.use("/api",userRoutes);
-app.use("/api", userRoutes);
+// app.use("/api",userRoutes);
+// app.use("/api", userRoutes);
 app.use("/api",routers);
 app.use("/api",faqRoutes);
 

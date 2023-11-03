@@ -6,7 +6,7 @@ dotenv.config();
 const secretKey = process.env.ACCESS_TOKEN_SECRET;
 
 export interface CustomRequest extends Request {
-  userId?: any;
+    userId?: any;
 }
 export const verifyAccessToken = (
   req: CustomRequest,
