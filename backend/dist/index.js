@@ -68,8 +68,8 @@ app.use("/sapi", servicesRoutes_1.default);
 app.use("/tapi", testimonialRoutes_1.default);
 app.use("/capi", contactRoutes_1.default);
 app.use("/api", usersRoute_1.default);
-app.use("/api", usersRoute_1.default);
-app.use("/api", usersRoute_1.default);
+// app.use("/api",userRoutes);
+// app.use("/api", userRoutes);
 app.use("/api", aboutRoutes_1.default);
 app.use("/api", faqRoutes_1.default);
 app.post('/upload', bucketUpload_1.upload.single('file'), (req, res) => {
