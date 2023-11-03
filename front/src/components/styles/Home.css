@@ -80,8 +80,8 @@ body::-webkit-scrollbar{
 .service{
   padding: 5%;
 }
-.End{
-  margin: 5%;
+.End {
+  padding: 5% 5% 0; /* Top padding of 5%, right and left padding of 5%, and bottom padding of 0 */
 }
 
 .custom-slick-arrow {

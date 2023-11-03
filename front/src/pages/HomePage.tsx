@@ -28,13 +28,26 @@ const HomePage: React.FC = () => {
       {isLoading ? (
         <Preloader />
       ) : (
-        
+        <div className="area" >
+            <ul className="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            
         <div className="services">
           <HomeHead />
           <HomeService />
           <HomeProject />
           <HomeTestimonial />
-        </div>
+        </div></ul>
+    </div >
       )}
     </div>
   );
