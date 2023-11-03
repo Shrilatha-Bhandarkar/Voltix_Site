@@ -49,6 +49,8 @@ const ProjectDetail: React.FC = () => {
       {isLoading ? (
         <Preloader />
       ) : (
+        <div className="grid-bg ba-grid anim">
+  `     <div className="inner">
         <div className="container-fluid pro">
           <h1 className="pro-title mb-5">{project.project_title}</h1>
             <img
@@ -56,11 +58,12 @@ const ProjectDetail: React.FC = () => {
               className="img mb-4"
               alt={project.project_title}
             />
-            <div className="container-fluid description">
+          <div className="container-fluid description">
             <h3 className="pro-head mb-4">{project.project_category}</h3>
             <p className="para">{project.project_description}</p>
             </div>
         </div>
+        </div></div>
       )}
     </div>
   );
