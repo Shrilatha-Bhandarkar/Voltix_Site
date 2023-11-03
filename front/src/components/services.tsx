@@ -31,6 +31,11 @@ const Services: React.FC = () => {
   }, []);
 
   return (
+    <div className="servp">
+    <div className="wave"></div>
+    <div className="wave"></div>
+    <div className="wave"></div>
+
     <div className="container-fluid sb">
       <div className="head">
         The software development company that puts your needs first
@@ -86,7 +91,7 @@ const Services: React.FC = () => {
         <h6>Don't let your brand get lost in the noise.</h6>
       </div>
     </div>
-  
+    </div>
   );
 };
 
