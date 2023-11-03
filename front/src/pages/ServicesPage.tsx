@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Services from '../components/services';
 import './styles/Page.css';
 import Preloader from '../components/Preloader';
-import SocialFeeds from './SocialFeeds';
 
 const ServicesPage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,8 +25,7 @@ const ServicesPage: React.FC = () => {
       {isLoading ? (
         <Preloader />
       ) : (
-       <div className='container-fluid'> <Services />
-       <SocialFeeds /> </div>
+       <div className='container-fluid'> <Services /> </div>
       )}
     </div>
   );

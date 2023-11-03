@@ -1,7 +1,6 @@
 import React from "react";
 import About from "../components/About";
 import  './styles/Page.css';
-// import AboutHead from "../components/AboutHead";
 import Preloader from "../components/Preloader";
 import { useState, useEffect } from 'react';
 

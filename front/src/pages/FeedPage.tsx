@@ -1,10 +1,9 @@
-import React from "react";
-import Testimonials from "../components/testimonials";
-import  './styles/Page.css';
-import Preloader from "../components/Preloader";
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import Feed from '../components/Feed';
+import './styles/Page.css';
+import Preloader from '../components/Preloader';
 
-const TestimonialsPage: React.FC = () => {
+const FeedPage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -20,13 +19,16 @@ const TestimonialsPage: React.FC = () => {
 
     fetchData();
   }, []);
+
   return (
     <div className="container-fluid mar">
-      {isLoading ? <Preloader /> : null}
-      <h1>Testimonials</h1>
-      <Testimonials />
+      {isLoading ? (
+        <Preloader />
+      ) : (
+       <div className='container-fluid'> <Feed /> </div>
+      )}
     </div>
   );
 };
 
-export default TestimonialsPage;
+export default FeedPage;

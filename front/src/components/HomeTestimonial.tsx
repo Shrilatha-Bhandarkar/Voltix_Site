@@ -65,7 +65,7 @@ const HomeTestimonial = () => {
                 <div className="line"></div>
               </div>
               <h6 className="service card-text text-center">{entry.testimonial_service}</h6>
-              <h6 className="card1-text text-center">{entry.testimonial_content}</h6>
+              <h6 className="card1-text text-center mb-0">{entry.testimonial_content}</h6>
               <div className="star-rating text-center">
                 <StarRating rating={entry.rating} maxRating={5} />
               </div>

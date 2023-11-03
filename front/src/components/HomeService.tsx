@@ -18,7 +18,7 @@ const HomeService = () => {
   }, []);
 
   return (
-    <div className="container-fluid mt-5 mb-5">
+    <div className="container-fluid mt-3 mb-3">
       <h1 className="head">Our Actions and Motivations</h1>
       <h5 className="sub-head">
         Our skilled and dedicated team plays a significant role in our ability to successfully develop business solutions.
@@ -28,8 +28,8 @@ const HomeService = () => {
         {services.map((entry) => (
          
           <div className="col-4" key={entry._id}>
-            <div className="card mb-4 mt-4 hser-tit">
-              <div className="card-body d-flex flex-column p-4">
+            <div className="card mb-2 mt-2 hser-tit">
+              <div className="card-body d-flex flex-column p-2">
                 <Link to={`/services/id?id=${entry._id}`}>
                   <h3 className="card-title text-center mb-4 ser-tit">
                     {entry.service_title}

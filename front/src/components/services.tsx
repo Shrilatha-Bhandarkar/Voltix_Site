@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../components/styles/Services.css";
+import './styles/Contact.css';
 import { fetchServices } from "../services/api";
 
 export interface IService {
@@ -32,6 +33,9 @@ const Services: React.FC = () => {
 
   return (
     <div className="container-fluid sb">
+      <div className="bg"></div>
+        <div className="bg bg2"></div>
+        <div className="bg bg3"></div>
       <div className="head">
         The software development company that puts your needs first
       </div>

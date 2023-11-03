@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../components/styles/Projects.css";
+import './styles/Contact.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { fetchProjects } from "../services/api";
 
@@ -29,6 +30,9 @@ const Projects: React.FC = () => {
 
   return (
     <div className="container-fluid pbg">
+      <div className="bg"></div>
+        <div className="bg bg2"></div>
+        <div className="bg bg3"></div>
       <div className="head">Great Design That Actually Works!</div>
       <div className="des">
         Our versatile team is built of designers, developers and digital
