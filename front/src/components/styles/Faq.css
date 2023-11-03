@@ -46,32 +46,32 @@
     border-color: rgb(105, 2, 98);
   }
   .cube:nth-child(2) {
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     left: 25vw;
     top: 40vh;
   }
   .cube:nth-child(3) {
-    -webkit-animation-delay: 4s;
-            animation-delay: 4s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
     left: 75vw;
     top: 50vh;
   }
   .cube:nth-child(4) {
-    -webkit-animation-delay: 6s;
-            animation-delay: 6s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     left: 90vw;
     top: 10vh;
   }
   .cube:nth-child(5) {
-    -webkit-animation-delay: 8s;
-            animation-delay: 8s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     left: 10vw;
     top: 85vh;
   }
   .cube:nth-child(6) {
-    -webkit-animation-delay: 10s;
-            animation-delay: 10s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     left: 50vw;
     top: 10vh;
   }
