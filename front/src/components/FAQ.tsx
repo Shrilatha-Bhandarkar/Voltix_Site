@@ -23,7 +23,14 @@ const FAQ: React.FC = () => {
   }, []);
 
   return (
-    // <div className="theme-container">
+    <div className="hero"> 
+    <div className="cube"></div>
+    <div className="cube"></div>
+    <div className="cube"></div>
+    <div className="cube"></div>
+    <div className="cube"></div>
+    <div className="cube"></div>
+ 
    <div className="text-content">
     <div className="container-fluid mt-5">
       <h2 className="text-center mb-5">Frequently Asked Questions</h2>
@@ -57,7 +64,7 @@ const FAQ: React.FC = () => {
         <div className="end"></div>
       </div>
     </div>
-    // </div>
+   </div>
   );
 };
 

@@ -7,7 +7,6 @@
     font-weight: bolder;
     color: purple;
   }
-  
   .faq {
     background-image: linear-gradient(#d6c4ff, #eeebf6);
     margin-left: 50px;
@@ -23,107 +22,113 @@
     padding-bottom: 0px;
     font-weight: bold;
   }
-/* body{
-    animation: theme 21s linear infinite;
-    
-    &:after,
-    &:before {
-        content: '';
-        display: block;
-        position: fixed;
-        z-index: -1;
-        top: 0;
-        width: 100vw; 
-        height: 100vh; 
-        width: 100vmax;
-        height: 100vmax;
-        background: rgba(0,0,0,0.05);
-        animation: background 90s linear infinite;
+  .hero {
+    background-color: #b998e4;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #980093;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    -webkit-animation: cube 12s ease-in forwards infinite;
+            animation: cube 12s ease-in forwards infinite;
+  }
+  .cube:nth-child(2n) {
+    border-color: rgb(105, 2, 98);
+  }
+  .cube:nth-child(2) {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+  .cube:nth-child(3) {
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+  }
+  .cube:nth-child(4) {
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+  }
+  .cube:nth-child(5) {
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+  }
+  .cube:nth-child(6) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }
+  
+  @-webkit-keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
     }
-
-    &:after {
-        left: 15vw;
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
     }
-
-    &:before {
-        right: 15vw;
-        animation-delay: -30s;
-        animation-direction: reverse;
+  }
+  
+  @keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
     }
-}
-
-@keyframes theme {
-    0% {
-        background: #74C390;
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
     }
-    
-    16% {
-        background: #5DBDB6;
-    }
-    
-    33% {
-        background: #59D4E1;
-    }
-    
-    50% {
-        background: #51BCE8;
-    }
-    
-    66% {
-        background: #FA5374;
-    }    
-    
-    83% {
-        background: #E46653;
-    }
-
-    100% {
-        background: #74C390;
-    }
-}
-
-@keyframes background {
-    0% {
-        transform: rotate(0deg);
-    }
-    
-    100% {
-        transform: rotate(360deg);
-    }
-} */
-
+  }
   @media (max-width: 768px) {
     .faq {
-      margin-left: 10px; /* Adjust left margin for better spacing on mobile screens */
-      margin-right: 10px; /* Adjust right margin for better spacing on mobile screens */
+      margin-left: 10px;
+      margin-right: 10px; 
     }
   
     .Ques {
-      font-size: medium; /* Adjust font size for better readability on mobile screens */
+      font-size: medium;
     }
   
     .ans {
-      padding-left: 20px; /* Adjust left padding for better content alignment on mobile screens */
-      padding-right: 20px; /* Adjust right padding for better content alignment on mobile screens */
-      font-size: medium; /* Adjust font size for better readability on mobile screens */
-      padding-top: 15px; /* Adjust top padding for better spacing on mobile screens */
-      padding-bottom: 0; /* Remove bottom padding for better content alignment on mobile screens */
+      padding-left: 20px; 
+      padding-right: 20px;
+      font-size: medium;
+      padding-top: 15px; 
+      padding-bottom: 0; 
     }
   
     .text-center {
-      text-align: center; /* Center-align text for mobile screens */
+      text-align: center; 
     }
     
     .btn-link {
-      padding: 5px; /* Adjust button padding for better spacing on mobile screens */
+      padding: 5px; 
     }
   
     .card-body.ans {
-      padding: 10px; /* Adjust padding for better spacing on mobile screens */
+      padding: 10px; 
     }
   
     .mb-0 {
-      margin-bottom: 15px; /* Adjust margin for better spacing on mobile screens */
+      margin-bottom: 15px; 
     }
     .wrapper{
       margin-bottom: 15px;
