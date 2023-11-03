@@ -55,6 +55,9 @@ const ServiceDetail: React.FC = () => {
       {isLoading ? (
         <Preloader />
       ) : (
+        <div className="grid-bg ba-grid anim">
+  <div className="inner">
+
         <div className="container-fluid ser">
           <div className="head">
             <h2>{service.service_head}</h2>
@@ -68,6 +71,8 @@ const ServiceDetail: React.FC = () => {
             <h2 className="mb-3">{service.service_template}</h2>
             <p className="ser-des">{service.service_description}</p>
           </div>
+        </div>
+        </div>
         </div>
       )}
     </div>
