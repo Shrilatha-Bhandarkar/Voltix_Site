@@ -40,6 +40,7 @@ const ContactForm: React.FC = () => {
         <div className="bg"></div>
         <div className="bg bg2"></div>
         <div className="bg bg3"></div>
+        <div className="frame">
         <div className="container-fluid c_form ">
           <h2>Fill up the Form</h2>
           <h6>Our success in creating business solutions is due in large part, especially to a talented and highly committed team</h6>
@@ -103,6 +104,7 @@ const ContactForm: React.FC = () => {
               </button>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </form>

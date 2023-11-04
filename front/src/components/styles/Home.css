@@ -145,48 +145,69 @@ body::-webkit-scrollbar{
   font-size: 24px;
   font-weight: bolder;
 }
-@media (max-width: 768px) {
-  .container-fluid {
-    padding: 10px; /* Add some padding to the container for better spacing on mobile screens */
-  }
 
+
+@media (max-width:468px) {
+  .container-fluid {
+    padding: 10px;
+  }
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .hser-tit {
+    padding: 10px; 
+  }
+  .ser-tit, .ser-tit:hover {
+    color: #000; 
+  }
+  .textStyleLarge1 {
+    font-size: 24px; 
+  }
+  .textStyleMedium1 {
+    font-size: 16px; 
+  }
   .row {
     flex-direction: column; /* Stack the cards vertically on smaller screens */
   }
-
   .col-4 {
     width: 100%; /* Make each column take the full width on mobile screens */
   }
-
-  .hser-tit {
-    padding: 10px; /* Adjust padding for smaller screens */
-  }
-
-  .ser-tit, .ser-tit:hover {
-    color: #000; /* Adjust text color for better readability on mobile screens */
-  }
-
-  .textStyleLarge1 {
-    font-size: 24px; /* Adjust font size for better readability on mobile screens */
-  }
-
-  .textStyleMedium1 {
-    font-size: 16px; /* Adjust font size for better readability on mobile screens */
-  }
-
   .text {
-    text-shadow: none; /* Remove text shadow on mobile screens for better legibility */
+    text-shadow: none; 
   }
   .hh-img {
-    max-width: 100%; /* Make the image responsive */
+    max-width: 100%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width:486px) {
+  .container-fluid {
+    padding: 5px;
+  }
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  }
+  .hser-tit {
+    padding: 5px; 
+  }
+  .ser-tit, .ser-tit:hover {
+    color: #000; 
+  }
   .textStyleLarge1 {
-    font-size: 20px; /* Further adjust font size for smaller screens */
+    font-size: 14px; 
   }
-
   .textStyleMedium1 {
-    font-size: 14px; /* Further adjust font size for smaller screens */
+    font-size: 12px; 
   }
-}
+  .row {
+    flex-direction: column; /* Stack the cards vertically on smaller screens */
+  }
+  .col-4 {
+    width: 100%; /* Make each column take the full width on mobile screens */
+  }
+  .text {
+    text-shadow: none; 
+  }
+  .hh-img {
+    max-width: 100%;
+  }
+} 
