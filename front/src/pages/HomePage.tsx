@@ -10,50 +10,50 @@ const HomePage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        await new Promise(resolve => setTimeout(resolve, 2000));
-        setIsLoading(false);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-        setIsLoading(false); 
-      }
-    };
+      const fetchData = async () => {
+          try {
+              await new Promise(resolve => setTimeout(resolve, 2000));
+              setIsLoading(false);
+          } catch (error) {
+              console.error('Error fetching data:', error);
+              setIsLoading(false);
+          }
+      };
 
-    fetchData();
+      fetchData();
   }, []);
 
   return (
-    <div className="container-fluid mar">
-      {isLoading ? (
-        <Preloader />
-      ) : (   
-        <div className="container-fluid">
-          <div className="area">
-          <div className="services">
-          <HomeHead />
-          <HomeService />
-          <HomeProject />
-          <HomeTestimonial />
-        </div>
-            <div className="circles">
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      )}
-    </div>
+      <div className="mar">
+          {isLoading ? (
+              <Preloader />
+          ) : (
+              <div className="container-fluid">
+                  <div className="area">
+                      <div className="services">
+                          <HomeHead />
+                          <HomeService />
+                          <HomeProject />
+                          <HomeTestimonial />
+                      </div>
+                  </div>
+                  <div className="circles">
+                      <ul>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                      </ul>
+                  </div>
+              </div>
+          )}
+      </div>
   );
 };
 
