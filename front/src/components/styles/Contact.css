@@ -6,6 +6,7 @@
   width:45%;
   height: auto;
 }
+/* Outer frame */
 .frame{
   margin-top: 8%;
   margin-left: 20%;
@@ -43,7 +44,7 @@ input[type='text']:focus,
 input[type='number']:focus {
   outline: none;
 }
-
+/* submit button */
 .contactbutton {
   display: flex;
   /* align-self: center; */
@@ -77,12 +78,12 @@ input[type='number']:focus {
   flex: auto;
   left: 0;
 } */
-
+/* 
 html,body{
   margin: 0;
   width: 100%;
   height: 100%;
-}
+} */
 
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
@@ -113,6 +114,8 @@ html,body{
     transform:translateX(25%);
   }
 }
+
+/* responsieness */
 @media (max-width: 768px) {
   .form {
     width: 80%; /* Adjust the form width for mobile screens */

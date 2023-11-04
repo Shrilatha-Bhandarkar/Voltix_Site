@@ -2,7 +2,6 @@
     font-size: large;
     color: black;
   }
-  
   .Ques:hover {
     font-weight: bolder;
     color: purple;
@@ -12,7 +11,6 @@
     margin-left: 50px;
     margin-right: 50px;
   }
-  
   .ans {
     text-align: center;
     padding-left: 80px;
@@ -29,7 +27,7 @@
     overflow: hidden;
     font-family: "Montserrat", sans-serif;
   }
-  
+  /* Animation */
   .cube {
     position: absolute;
     top: 80vh;
@@ -97,6 +95,8 @@
       opacity: 0;
     }
   }
+
+  /* Responsiveness */
   @media (max-width: 768px) {
     .faq {
       margin-left: 10px;

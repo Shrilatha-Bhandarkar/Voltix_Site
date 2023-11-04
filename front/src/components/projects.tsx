@@ -33,7 +33,7 @@ const Projects: React.FC = () => {
       <div className="bg"></div>
         <div className="bg bg2"></div>
         <div className="bg bg3"></div>
-      <div className="head">Great Design That Actually Works!</div>
+      <div className="head1">Great Design That Actually Works!</div>
       <div className="des">
         Our versatile team is built of designers, developers and digital
         marketers<br></br> who all bring unique experience.

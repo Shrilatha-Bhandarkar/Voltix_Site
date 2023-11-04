@@ -2,7 +2,6 @@
     text-align: center;
     font-size: xx-large;
   }
-
   .ab {
     margin-top: 20px;
   } 
@@ -68,6 +67,7 @@
   font-weight: bolder;
 }
 
+/* Animation */
 .example-box {
   background-image: linear-gradient(to bottom right, rgb(146, 101, 235) ,#b998e4 );
   width: 100%;
@@ -131,6 +131,10 @@
     transform: translate3d(0, -1692px, 0);
   }
 }
+
+
+
+/* Responsiveness */
 @media (min-width: 992px) {
   .container {
     padding: 0 50px;
@@ -155,6 +159,8 @@
     padding: 10px;
   }
 }
+
+
 @media (max-width: 767px) {
   .container {
     padding: 0 20px;
@@ -184,10 +190,6 @@
       margin-top: 10px; 
       text-align: center;
     }
-  
-    /* .background-shapes {
-      display: none; 
-    } */
     .ab{
       margin-top: 20px;
     }
