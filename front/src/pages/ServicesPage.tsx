@@ -25,7 +25,7 @@ const ServicesPage: React.FC = () => {
       {isLoading ? (
         <Preloader />
       ) : (
-        <Services />
+       <div className='container-fluid'> <Services /> </div>
       )}
     </div>
   );

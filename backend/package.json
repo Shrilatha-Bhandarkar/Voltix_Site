@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build",
+    "clean": "tsc --build clean",
+    "start": "npx nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.433.0",
-    "aws-sdk": "^2.1478.0",
+    "@types/aws-sdk": "^2.7.0",
+    "aws-sdk": "^2.1485.0",
     "axios": "^1.6.0",
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",

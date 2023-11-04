@@ -6,6 +6,8 @@ const Footer = () => {
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-section">
+          <a href='/'><img src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698732835276_Voltixlogo.png?AWSAccessKeyId=K49UPV101Q9KIYF13OOR&Expires=1699025238&Signature=eYMU7B55QthJFqawFFXZpJm0x78%3D" alt="VoltixLogo" className="logo" /></a>
+
             <h3>Voltix Solution</h3>
             <p>
               We are not afraid to say no to projects that we cannot do well. We

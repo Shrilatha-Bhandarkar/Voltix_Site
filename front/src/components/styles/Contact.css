@@ -2,14 +2,15 @@
     margin-top: 100px;
     margin-bottom: 50px;
     margin-left: auto;
-    margin-right: 20px;
+    margin-right:auto;
     width:45%;
+    height: auto;
   }
   
   .c_form {
     border-radius: 15px;
     padding: 20px;
-    background-color: #ccc;
+    background-image: linear-gradient(#d6c4ff,#eeebf6);
     padding-left: 80px;
     padding-right: 80px;
   }
@@ -39,6 +40,7 @@
   
   .contactbutton {
     display: block;
+    align-self: center;
     width: 30%;
     padding: 10px 20px;
     margin-top: 20px;
@@ -56,15 +58,68 @@
     font-weight: bolder;
     font-size: larger;
   }
-  .container1-cbg {
+  /* .container1-cbg {
     background-image: url('https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698732652635_Home%20page%202.png?AWSAccessKeyId=HZKM3Y3VDAFTLNYLVPR1&Expires=1698791958&Signature=xj%2FvfrVJJHGvazeI9nk7UCfPcg0%3D');
     background-size: cover;
     width: 100%;
-    height: 100vh; /* Set the height to 100% of the viewport height for fullscreen */
+    height: 100vh;
     margin: 0;
     display: flex;
     flex: auto;
     left: 0;
+  } */
+
+  html,body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
   }
   
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(146, 101, 235) 50%, #b998e4 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+    height: 100%;
+  }
   
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+  @media (max-width: 768px) {
+    .form {
+      width: 80%; /* Adjust the form width for mobile screens */
+    }
+  
+    .c_form {
+      padding-left: 20px; /* Adjust the padding for smaller screens */
+      padding-right: 20px;
+    }
+  
+    input[type='text'],
+    input[type='number'] {
+      width: 100%; /* Make the input fields take the full width of the form */
+    }
+  
+    .contactbutton {
+      width: 50%; /* Adjust the button width for mobile screens */
+    }
+  }

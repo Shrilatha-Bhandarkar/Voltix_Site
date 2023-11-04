@@ -26,7 +26,10 @@ const AboutPage: React.FC = () => {
       {isLoading ? (
         <Preloader />
       ) : (
+        <div className="container-fluid">
+        {/* <AboutHead /> */}
         <About/>
+        </div>
       )}
     </div>
   );

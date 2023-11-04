@@ -37,6 +37,49 @@ const About: React.FC = () => {
   }
 
   return (
+    <div className="example-box">
+      <img
+        className="img-fluid ah-img"
+        src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698747450835_ABOUT%20main.png?AWSAccessKeyId=K49UPV101Q9KIYF13OOR&Expires=1699026836&Signature=ibHSPvRJAHqe5sItCEr2Z35l7Tc%3D"
+        alt="Welcome!"
+      ></img>
+  <div className="background-shapes"></div>
+    <div className="container abouthead">
+      
+      <div className="textStyleLarges1">
+        <p>
+          We are here to redefine <br></br>the way you do your business!
+        </p>
+      </div>
+      <div className="textStyleMediums1">
+        Our team of talented and highly committed professionals<br></br>
+        is the key to our success in creating business solutions.
+      </div>
+      <div className="text1">
+        <p>Planning it right</p>
+        <p>
+          We hold one-to-one meetings with the clients and carefully analyze
+          <br></br>
+          their needs to form a viable idea that is practicable under their
+          budget.
+        </p>
+      </div>
+      <div className="text2">
+        <p>Making it as per plan</p>
+        <p>
+          We then form a project schedule and create a deadline including all
+          processes <br></br> involved in it and completes everything on schedule..
+        </p>
+      </div>
+      <div className="text3">
+        <p>Delivering it on-time</p>
+        <p>
+          After a thorough quality check and testing, we deliver the product to
+          the clients <br></br>after confirming the final output with them.
+        </p>
+      </div>
+    </div>
+    
     <div className="container-fluid mt-4 mb-4">
       {data.map((entry) => (
         <div className="row" key={entry._id}>
@@ -48,26 +91,9 @@ const About: React.FC = () => {
           </div>
         </div>
       ))}
-      {/* <div className="container-fluid card-bubble">
-        <h3 className="mb-3">We are here to redefine the way you do your business!</h3>
-        <h5 className="mb-4">Our process – How we get things done for you.</h5>
-      <div className="number-list">
-        {Array.from({ length: 3 }).map((_, index) => (
-          <div key={index} className="bubble-arrow">
-            <div className={`bubble ${index < activeBubble ? 'filled' : ''}`} key={index}>
-              <div className="number">{index + 1}</div>
-            </div>
-            {index < 2 && (
-              <div className={`arrow ${index < activeBubble - 1 ? 'hidden' : ''}`}>
-                <i className="gg-arrow-long-down"></i>
-              </div>
-
-            )}
-          </div>
-        ))}
-      </div>
-      </div> */}
     </div>
+    </div>
+    
   );
 };
 

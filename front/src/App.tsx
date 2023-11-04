@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import TestimonialsPage from "./pages/TestimonialsPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ServicesPage from "./pages/ServicesPage";
 import HomePage from "./pages/HomePage";
@@ -10,15 +9,16 @@ import Footer from "./components/Footer";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import FAQPage from "./pages/FAQPage";
+import FeedPage from "./pages/FeedPage";
+
 function App() {
   
   return (
-    <div className="container-fluid">
+    <>
       <Navbar />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/testimonials" element={<TestimonialsPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/projects/id" element={<ProjectDetail />} />
@@ -26,10 +26,10 @@ function App() {
           <Route path="/About" element={<AboutPage />} />
           <Route path="/Contact" element={<ContactPage />} />
           <Route path="/FAQ" element={<FAQPage />} />
+          <Route path="/Feeds" element={<FeedPage />} />
         </Routes>
       </BrowserRouter>
-      <Footer />
-    </div>
+    <Footer /></>
   );
 }
 

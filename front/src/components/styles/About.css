@@ -1,67 +1,194 @@
-
 .ab-title {
     text-align: center;
     font-size: xx-large;
   }
-  
+
   .ab {
     margin-top: 20px;
-    /* background-image: linear-gradient(#ecf1f1, rgb(225, 215, 215)); */
-  }
-  
+  } 
   .ab-content {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 150px;
     padding-right: 150px;
-    /* background-color: rgb(217, 217, 217); */
     border-radius: 20px;
     font-size: large;
   }
-.card-bubble{
-  align-items:left;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 0;
-    left: 150px;
+.ah-img{
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
 }
-  .number-list {
-    
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    /* margin: 20px auto; */
-    
-  }
-  
-  .bubble {
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    padding: 10px;
-    border: 2px solid #333;
-    border-radius: 40%;
-    background-color: #fff;
-    transition: background-color 1s; /* Adjust the duration as needed */
-    margin-bottom: 20px;
-    position: relative;
-  }
-  
-  .bubble.filled {
-    background-color: #ba68d7; /* Color for filled bubble */
-  }
-  
-  .number {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center; /* Ensure text alignment */
-  }
-  
-.arrow {
-  text-align: center; /* Ensure arrow alignment */
+.textStyleLarges1{
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  font-size: 35px;
+  font-weight: bolder;
+}
+.textStyleMediums1{
+  position: absolute;
+  top: 9%;
+  left: 3%;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.text1{
+  margin-top: 20px;
+  position: absolute;
+  top: 13%;
+  left: 3%;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.text2{
+  margin-top: 20px;
+  position: absolute;
+  top: 21%;
+  left: 3%;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.text3{
+  margin-top: 10px;
+  position: absolute;
+  top: 29%;
+  left: 3%;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  font-size: 18px;
+  font-weight: bolder;
 }
 
-.arrow i {
-  font-size: 24px;
+.example-box {
+  background-image: linear-gradient(to bottom right, rgb(146, 101, 235) ,#b998e4 );
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-position: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  color: white;
+  font-weight: 200;
+  z-index: 1;
 }
+
+.example-box * {
+  z-index: 2;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.background-shapes {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5076px;
+  background-size: 100%;
+  animation: 120s infiniteScroll linear infinite;
+  background-repeat: repeat;
+  background-image: url(https://cdn2.hubspot.net/hubfs/53/Pricing%202017%20Assets/marketing/Header_Circles-1.svg);
+}
+
+@-webkit-keyframes infiniteScroll {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, -1692px, 0);
+    transform: translate3d(0, -1692px, 0);
+  }
+}
+
+@keyframes infiniteScroll {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, -1692px, 0);
+    transform: translate3d(0, -1692px, 0);
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    padding: 0 50px;
+  }
+  .ab-title {
+    font-size: 24px;
+  }
+  .ab-content {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+  .ab-title {
+    font-size: 20px;
+  }
+  .ab-content {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+
+    .ab-content {
+      font-size: 14px;
+      padding: 10px; 
+    }
+    .ab-title {
+      font-size: 18px;
+    }
+    .ah-img {
+      height: auto;
+    }
+  
+    .example-box {
+      font-size: medium;
+    }
+  
+    .textStyleLarges1,
+    .textStyleMediums1,
+    .text1,
+    .text2,
+    .text3 {
+      position: static; 
+      margin-top: 10px; 
+      text-align: center;
+    }
+  
+    /* .background-shapes {
+      display: none; 
+    } */
+    .ab{
+      margin-top: 20px;
+    }
+  }

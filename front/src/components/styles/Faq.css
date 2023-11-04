@@ -1,23 +1,136 @@
-.Ques{
-    font-size:large;
+.Ques {
+    font-size: large;
     color: black;
-}
-.Ques:hover{
+  }
+  
+  .Ques:hover {
     font-weight: bolder;
     color: purple;
-}
-.faq{
-    /* background-color: #d6c4ff; */
-    background-image: linear-gradient(#d6c4ff,#eeebf6);
+  }
+  .faq {
+    background-image: linear-gradient(#d6c4ff, #eeebf6);
     margin-left: 50px;
     margin-right: 50px;
-}
-.ans{
+  }
+  
+  .ans {
     text-align: center;
     padding-left: 80px;
     padding-right: 80px;
     font-size: large;
     padding-top: 25px;
-    padding-bottom: 25px;
-    font-weight:bold;
-}
+    padding-bottom: 0px;
+    font-weight: bold;
+  }
+  .hero {
+    background-color: #b998e4;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #980093;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    -webkit-animation: cube 12s ease-in forwards infinite;
+            animation: cube 12s ease-in forwards infinite;
+  }
+  .cube:nth-child(2n) {
+    border-color: rgb(105, 2, 98);
+  }
+  .cube:nth-child(2) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    left: 25vw;
+    top: 40vh;
+  }
+  .cube:nth-child(3) {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    left: 75vw;
+    top: 50vh;
+  }
+  .cube:nth-child(4) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    left: 90vw;
+    top: 10vh;
+  }
+  .cube:nth-child(5) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    left: 10vw;
+    top: 85vh;
+  }
+  .cube:nth-child(6) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    left: 50vw;
+    top: 10vh;
+  }
+  
+  @-webkit-keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    .faq {
+      margin-left: 10px;
+      margin-right: 10px; 
+    }
+  
+    .Ques {
+      font-size: medium;
+    }
+  
+    .ans {
+      padding-left: 20px; 
+      padding-right: 20px;
+      font-size: medium;
+      padding-top: 15px; 
+      padding-bottom: 0; 
+    }
+  
+    .text-center {
+      text-align: center; 
+    }
+    
+    .btn-link {
+      padding: 5px; 
+    }
+  
+    .card-body.ans {
+      padding: 10px; 
+    }
+  
+    .mb-0 {
+      margin-bottom: 15px; 
+    }
+    .wrapper{
+      margin-bottom: 15px;
+    }
+  }
