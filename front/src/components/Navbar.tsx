@@ -36,7 +36,7 @@ const Navbar = () => {
     //     <a className='nav-link' href='/FAQ'><button className="nav-btn">FAQ</button></a>
     //   </nav>
     // </div>
-    <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary text-center">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           <img
