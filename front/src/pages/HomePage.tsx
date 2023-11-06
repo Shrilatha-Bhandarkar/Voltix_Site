@@ -28,7 +28,7 @@ const HomePage: React.FC = () => {
           {isLoading ? (
               <Preloader />
           ) : (
-              <div className="container-fluid">
+              <div className="col-xxl">
                   <div className="area">
                       <div className="services">
                           <HomeHead />
