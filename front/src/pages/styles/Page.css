@@ -124,8 +124,8 @@
 
 .circles li:nth-child(10){
     left: 65%;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     animation-delay: 0s;
     animation-duration: 11s;
 }
@@ -133,6 +133,13 @@
     left: 70%;
     width: 80px;
     height: 80px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+.circles li:nth-child(13){
+    left: 79%;
+    width: 40px;
+    height: 40px;
     animation-delay: 0s;
     animation-duration: 11s;
 }
