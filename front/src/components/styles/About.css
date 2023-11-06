@@ -135,7 +135,7 @@
 
 
 /* Responsiveness */
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .container {
     padding: 0 50px;
   }
@@ -159,7 +159,7 @@
     padding: 10px;
   }
 }
-
+ */
 
 @media (max-width: 767px) {
   .container {
