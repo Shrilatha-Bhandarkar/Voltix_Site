@@ -24,7 +24,8 @@ const HomeService = () => {
         Our skilled and dedicated team plays a significant role in our ability to successfully develop business solutions.
       </h5>
 
-      <div className="row">
+      <div className="container-fluid row">
+
         {services.map((entry) => (
          
           <div className="col-4" key={entry._id}>

@@ -39,6 +39,7 @@ const HomePage: React.FC = () => {
           <HomeProject />
           <HomeTestimonial />
         </div>
+        <div>
         <ul className="circles">
                     <li></li>
                     <li></li>
@@ -49,7 +50,9 @@ const HomePage: React.FC = () => {
                     <li></li>
                     <li></li>
                     <li></li>
-                    <li></li></ul>
+                    <li></li>
+                    <li></li>
+                    <li></li></ul></div>
         </div>
       )}
     </div>

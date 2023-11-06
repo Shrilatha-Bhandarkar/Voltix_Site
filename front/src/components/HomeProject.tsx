@@ -35,10 +35,18 @@ const HomeProject = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow:  <NextArrow /> ,
+    nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    
+    responsive: [
+      {
+        breakpoint: 768, // Define your desired breakpoint here
+        settings: {
+          slidesToShow: 1, // Change the number of slides to show on smaller screens
+        },
+      },
+    ],
   };
+  
   return (
     <div className="container-fluid">
       <h1 className="head">Check out our Projects</h1>
