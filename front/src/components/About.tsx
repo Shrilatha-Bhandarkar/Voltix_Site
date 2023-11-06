@@ -37,13 +37,14 @@ const About: React.FC = () => {
   }
 
   return (
+    <div className="col-xxl">
     <div className="example-box">
       <img
         className="img-fluid ah-img"
-        src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698985581582_1698747450835_ABOUT%20main.png?AWSAccessKeyId=SKLBP79EZP1A290MOSZU&Expires=1699155703&Signature=Vqtx1or3U9MsR9crGFB5lF1wybg%3D"
+        src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698747450835_ABOUT%20main.png?AWSAccessKeyId=K49UPV101Q9KIYF13OOR&Expires=1699026836&Signature=ibHSPvRJAHqe5sItCEr2Z35l7Tc%3D"
         alt="Welcome!"
       ></img>
-  <div className="background-shapes"></div>
+  <div className="background-shapes col-xxl"></div>
     <div className="container abouthead">
       
       <div className="textStyleLarges1">
@@ -93,7 +94,7 @@ const About: React.FC = () => {
       ))}
     </div>
     </div>
-    
+    </div>
   );
 };
 
