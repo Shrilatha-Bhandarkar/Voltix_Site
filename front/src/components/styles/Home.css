@@ -179,6 +179,9 @@ body::-webkit-scrollbar{
   .hh-img {
     max-width: 100%;
   }
+  .star-rating{
+    font-size: 15px;
+  }
 }
 @media (max-width:486px) {
   .container-fluid {
