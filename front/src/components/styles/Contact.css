@@ -1,125 +1,137 @@
 .form {
-    margin-top: 100px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right:auto;
-    width:45%;
-    height: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  /* margin-left: auto;
+  margin-right:auto; */
+  width:45%;
+  height: auto;
+}
+/* Outer frame */
+.frame{
+  margin-top: 8%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 8%;
+}
+.c_form {
+  right: 20%;
+  border-radius: 15px;
+  padding: 30px;
+  background-image: linear-gradient(#d6c4ff,#eeebf6);
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: bold;
+  font-style: italic;
+}
+
+input[type='text'],
+input[type='number'] {
+  width:100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+input[type='text']:focus,
+input[type='number']:focus {
+  outline: none;
+}
+/* submit button */
+.contactbutton {
+  display: flex;
+  /* align-self: center; */
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  /* padding: 10px 20px; */
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0b0b0b;
+  color: white;
+  cursor: pointer;
+/* margin: 0 auto; */
+}
+
+.contactbutton:hover {
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+/* .container1-cbg {
+  background-image: url('https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698732652635_Home%20page%202.png?AWSAccessKeyId=HZKM3Y3VDAFTLNYLVPR1&Expires=1698791958&Signature=xj%2FvfrVJJHGvazeI9nk7UCfPcg0%3D');
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex: auto;
+  left: 0;
+} */
+/* 
+html,body{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(146, 101, 235) 50%, #b998e4 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+  height: 100%;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
   }
-  
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+/* responsieness */
+@media (max-width: 768px) {
+  .form {
+    width: 80%; /* Adjust the form width for mobile screens */
+  }
+
   .c_form {
-    border-radius: 15px;
-    padding: 20px;
-    background-image: linear-gradient(#d6c4ff,#eeebf6);
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 20px; /* Adjust the padding for smaller screens */
+    padding-right: 20px;
   }
-  
-  label {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: block;
-    font-weight: bold;
-    font-style: italic;
-  }
-  
+
   input[type='text'],
   input[type='number'] {
-    width:100%;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
+    width: 100%; /* Make the input fields take the full width of the form */
   }
-  
-  input[type='text']:focus,
-  input[type='number']:focus {
-    outline: none;
-  }
-  
-  .contactbutton {
-    display: block;
-    align-self: center;
-    width: 30%;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #0b0b0b;
-    color: white;
-    cursor: pointer;
-  margin: 0 auto;
-  }
-  
-  .contactbutton:hover {
-    background-color: white;
-    color: black;
-    font-weight: bolder;
-    font-size: larger;
-  }
-  /* .container1-cbg {
-    background-image: url('https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698732652635_Home%20page%202.png?AWSAccessKeyId=HZKM3Y3VDAFTLNYLVPR1&Expires=1698791958&Signature=xj%2FvfrVJJHGvazeI9nk7UCfPcg0%3D');
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    flex: auto;
-    left: 0;
-  } */
 
-  html,body{
-    margin: 0;
-    width: 100%;
-    height: 100%;
+  .contactbutton {
+    width: 50%; /* Adjust the button width for mobile screens */
   }
-  
-  .bg {
-    animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, rgb(146, 101, 235) 50%, #b998e4 50%);
-    bottom:0;
-    left:-50%;
-    opacity:.5;
-    position:fixed;
-    right:-50%;
-    top:0;
-    z-index:-1;
-    height: 100%;
-  }
-  
-  .bg2 {
-    animation-direction:alternate-reverse;
-    animation-duration:4s;
-  }
-  
-  .bg3 {
-    animation-duration:5s;
-  }
-  @keyframes slide {
-    0% {
-      transform:translateX(-25%);
-    }
-    100% {
-      transform:translateX(25%);
-    }
-  }
-  @media (max-width: 768px) {
-    .form {
-      width: 80%; /* Adjust the form width for mobile screens */
-    }
-  
-    .c_form {
-      padding-left: 20px; /* Adjust the padding for smaller screens */
-      padding-right: 20px;
-    }
-  
-    input[type='text'],
-    input[type='number'] {
-      width: 100%; /* Make the input fields take the full width of the form */
-    }
-  
-    .contactbutton {
-      width: 50%; /* Adjust the button width for mobile screens */
-    }
-  }
+}

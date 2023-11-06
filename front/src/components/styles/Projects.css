@@ -1,7 +1,7 @@
-.head{
+.head1{
     text-align: center;
     font-size: 30px;
-    margin-top:30%;
+    margin-top:5%;
     font-weight: bold;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
@@ -44,20 +44,20 @@
     font-size: large;
 }
 :root{
-    --gird-width:30px;
-    --gird-height:30px;
+    /* --gird-width:30px;
+    --gird-height:30px; */
     --line-color:#999;
     --dot-color:#ccc;
     --dot-size:2px;
     --point-gap-width:calc(var(--gird-width) * 4);
     --point-gap-height:calc(var(--gird-height) * 4);
   }
-  html,body{
+  /* html,body{
     padding:0;
     margin:0;
     width:100%;
     height: 100%;
-  }
+  } */
   /* .grid-bg{
     width: 100%;
     height: 100%;
@@ -137,6 +137,7 @@
     animation: 1.6s linear move infinite;
   }
   
+
   @keyframes move{
     0%{
       background-position:calc(var(--point-gap-width) / 2) calc(var(--point-gap-height) / 2);

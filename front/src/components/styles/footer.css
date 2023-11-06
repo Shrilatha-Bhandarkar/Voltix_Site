@@ -62,6 +62,8 @@
 .logo{
   margin-bottom: 5%;
 }
+
+/* Responsiveness */
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column; /* Stack the sections vertically on smaller screens */
