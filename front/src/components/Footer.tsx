@@ -56,6 +56,8 @@ const Footer = () => {
             <p>voltixsolution@gmail.com</p>
           </div>
         </div>
+        <span id="copyright-tag">© 2023 Voltix Solution. All rights reserved.</span>
+        
       </footer>
     </div>
   );
