@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://voltix-site.onrender.com";
+const BASE_URL = 'https://voltix-site.onrender.com';
 
 export const fetchProjectById = (projectId: string) => {
   return axios.get(`${BASE_URL}/papi/projects/id?id=${projectId}`);
