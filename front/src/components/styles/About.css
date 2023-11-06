@@ -20,8 +20,8 @@
 }
 .textStyleLarges1{
   position: absolute;
-  top: 2%;
-  left: 3%;
+  top: 15%;
+  left: 5%;
   background-color: rgba(0, 0, 0, 0);
   color: black;
   font-size: 35px;
@@ -29,8 +29,8 @@
 }
 .textStyleMediums1{
   position: absolute;
-  top: 9%;
-  left: 3%;
+  top: 30%;
+  left: 5%;
   background-color: rgba(0, 0, 0, 0);
   color: black;
   font-size: 24px;
@@ -39,8 +39,8 @@
 .text1{
   margin-top: 20px;
   position: absolute;
-  top: 13%;
-  left: 3%;
+  top: 40%;
+  left: 5%;
   background-color: rgba(0, 0, 0, 0);
   color: black;
   font-size: 18px;
@@ -49,18 +49,18 @@
 .text2{
   margin-top: 20px;
   position: absolute;
-  top: 21%;
-  left: 3%;
+  top: 57%;
+  left: 5%;
   background-color: rgba(0, 0, 0, 0);
-  color: black;
+  color: rgba(0, 0, 0, 0.904);
   font-size: 18px;
   font-weight: bolder;
 }
 .text3{
   margin-top: 10px;
   position: absolute;
-  top: 29%;
-  left: 3%;
+  top:75%;
+  left: 5%;
   background-color: rgba(0, 0, 0, 0);
   color: black;
   font-size: 18px;
@@ -101,7 +101,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 5076px;
+  height: 270%;
   background-size: 100%;
   animation: 120s infiniteScroll linear infinite;
   background-repeat: repeat;
@@ -135,7 +135,7 @@
 
 
 /* Responsiveness */
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .container {
     padding: 0 50px;
   }
@@ -159,7 +159,7 @@
     padding: 10px;
   }
 }
-
+ */
 
 @media (max-width: 767px) {
   .container {

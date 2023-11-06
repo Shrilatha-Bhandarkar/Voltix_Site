@@ -27,7 +27,6 @@ const AboutPage: React.FC = () => {
         <Preloader />
       ) : (
         <div className="container-fluid">
-        {/* <AboutHead /> */}
         <About/>
         </div>
       )}
