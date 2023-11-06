@@ -33,7 +33,9 @@ app.get("/*", function(req,res){
 })
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: '*', // Replace with your Firebase frontend URL
+}));
 
 const mongoURI = process.env.MONGO;
 
