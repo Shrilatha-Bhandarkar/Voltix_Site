@@ -40,7 +40,7 @@ const About: React.FC = () => {
     <div className="example-box">
       <img
         className="img-fluid ah-img"
-        src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698985581582_1698747450835_ABOUT%20main.png?AWSAccessKeyId=A8DQ3D16NBFXG1S5TLLF&Expires=1699286504&Signature=TkqT%2BR9SHyuKR3nbi08fNyxoFUw%3D"
+        src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698747450835_ABOUT%20main.png?AWSAccessKeyId=K49UPV101Q9KIYF13OOR&Expires=1699026836&Signature=ibHSPvRJAHqe5sItCEr2Z35l7Tc%3D"
         alt="Welcome!"
       ></img>
   <div className="background-shapes"></div>
