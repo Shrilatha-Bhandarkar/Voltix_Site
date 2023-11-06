@@ -37,8 +37,12 @@ const About: React.FC = () => {
   }
 
   return (
-    <div className="col-xxl">
-    <div className="example-box">
+    <div className="container-fluid cbg">
+        <div className="bg"></div>
+        <div className="bg bg2"></div>
+        <div className="bg bg3"></div>
+        <div className="services">
+    {/* <div className="example-box"> */}
       <img
         className="img-fluid ah-img"
         src="https://voltixsite.s3.wasabisys.com/1699254689332_about2.png?AWSAccessKeyId=DYOXIVQ4TYHAD0CTIVTA&Expires=1699427496&Signature=RMgtgLpozSljyX8ypdNM47OmDJQ%3D"
