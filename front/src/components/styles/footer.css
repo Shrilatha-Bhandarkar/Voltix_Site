@@ -16,7 +16,7 @@
   .footer-section {
     width: 30%;
     padding: 20px;
-    text-align: center;
+    /* text-align: center; */
     text-align: left;
   }
   
@@ -66,10 +66,13 @@
   .footer-content {
     flex-direction: column; /* Stack the sections vertically on smaller screens */
   }
+  .footeer{
+    margin-bottom: 0%;
+  }
 
   .footer-section {
     width: 100%; /* Make each section take the full width of the screen */
-    margin-bottom: 0px; 
+    margin-bottom: 0%; 
     margin-right: 0%;
   }
 }

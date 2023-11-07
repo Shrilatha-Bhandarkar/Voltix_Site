@@ -42,7 +42,7 @@ const About: React.FC = () => {
         <div className="bg bg2"></div>
         <div className="bg bg3"></div>
         <div className="services">
-    {/* <div className="example-box"> */}
+    <div className="example-box">
       <img
         className="img-fluid ah-img"
         src="https://voltixsite.s3.wasabisys.com/1699254689332_about2.png?AWSAccessKeyId=DYOXIVQ4TYHAD0CTIVTA&Expires=1699427496&Signature=RMgtgLpozSljyX8ypdNM47OmDJQ%3D"
@@ -84,7 +84,7 @@ const About: React.FC = () => {
           the clients <br></br>after confirming the final output with them.
         </p>
       </div>
-    </div>
+    </div></div>
     
     <div className="container-fluid mt-4 mb-4">
       {data.map((entry) => (

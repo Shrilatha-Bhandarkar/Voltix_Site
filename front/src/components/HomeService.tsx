@@ -6,7 +6,6 @@ import './styles/Home.css';
 
 const HomeService = () => {
   const [services, setServices] = useState<IService[]>([]);
-
   useEffect(() => {
     fetchServices()
       .then((response) => {
@@ -25,7 +24,6 @@ const HomeService = () => {
       </h5>
 
       <div className="container-fluid row">
-
         {services.map((entry) => (
          
           <div className="col-4" key={entry._id}>

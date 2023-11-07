@@ -39,7 +39,7 @@ const HomeProject = () => {
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 768, // Define your desired breakpoint here
+        breakpoint: 609, // Define your desired breakpoint here
         settings: {
           slidesToShow: 1, // Change the number of slides to show on smaller screens
         },

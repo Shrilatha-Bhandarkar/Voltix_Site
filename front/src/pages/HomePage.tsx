@@ -5,11 +5,11 @@ import HomeHead from "../components/HomeHead";
 import Preloader from "../components/Preloader";
 import React, { useState, useEffect } from "react";
 import "./styles/Page.css";
-// import "../components/styles/Contact.css";
+
 
 const HomePage: React.FC = () => {
+  
   const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -20,7 +20,6 @@ const HomePage: React.FC = () => {
         setIsLoading(false);
       }
     };
-
     fetchData();
   }, []);
 

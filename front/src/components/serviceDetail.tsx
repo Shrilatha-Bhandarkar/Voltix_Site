@@ -15,7 +15,6 @@ interface IServiceDetail {
   service_template: string;
   image_url: string;
   image_url1: string;
-
   created_at: Date;
   created_by: string;
 }
