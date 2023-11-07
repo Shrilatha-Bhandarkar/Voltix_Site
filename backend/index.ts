@@ -34,7 +34,7 @@ app.get("/*", function(req,res){
 
 app.use(express.json());
 app.use(cors({
-  origin: '*', // Replace with your Firebase frontend URL
+  origin: 'https://voltixsolutions.web.app', // Replace with your Firebase frontend URL
 }));
 
 const mongoURI = process.env.MONGO;
