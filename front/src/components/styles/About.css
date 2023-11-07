@@ -20,7 +20,7 @@
 }
 .textStyleLarges1{
   position: absolute;
-  top: 15%;
+  top: 2%;
   left: 5%;
   background-color: rgba(0, 0, 0, 0);
   color: black;
@@ -29,17 +29,17 @@
 }
 .textStyleMediums1{
   position: absolute;
-  top: 30%;
+  top: 16%;
   left: 5%;
   background-color: rgba(0, 0, 0, 0);
   color: black;
-  font-size: 24px;
+  font-size: 1.45em;
   font-weight: bolder;
 }
 .text1{
   margin-top: 20px;
   position: absolute;
-  top: 40%;
+  top: 25%;
   left: 5%;
   background-color: rgba(0, 0, 0, 0);
   color: black;
@@ -49,7 +49,7 @@
 .text2{
   margin-top: 20px;
   position: absolute;
-  top: 57%;
+  top: 39%;
   left: 5%;
   background-color: rgba(0, 0, 0, 0);
   color: rgba(0, 0, 0, 0.904);
@@ -59,7 +59,7 @@
 .text3{
   margin-top: 10px;
   position: absolute;
-  top:75%;
+  top:55%;
   left: 5%;
   background-color: rgba(0, 0, 0, 0);
   color: black;
@@ -161,35 +161,45 @@
 }
  */
 
+
+
 @media (max-width: 767px) {
-  .container {
-    padding: 0 0px;
+  .ab-content {
+    padding: 10px; /* Adjust padding */
+    font-size: small; /* Further reduce font size for smaller screens */
   }
-    .ab-content {
-      font-size: 14px;
-      padding: 10px; 
-    }
-    .ab-title {
-      font-size: 18px;
-    }
-    .ah-img {
-      height: auto;
-    }
-  
-    .example-box {
-      font-size: medium;
-    }
-  
-    .textStyleLarges1,
-    .textStyleMediums1,
-    .text1,
-    .text2,
-    .text3 {
-      position: static; 
-      margin-top: 10px; 
-      text-align: center;
-    }
-    .ab{
-      margin-top: 20px;
-    }
+
+  .textStyleLarges1 {
+    position:absolute; /* Change position to relative */
+    margin-top: 0px;
+    margin-bottom: 0%;
+    margin-left: 13px;
+    margin-right: 13px; /* Adjust margin */
+    text-align: left; /* Center align the text */
+    font-size: 15px; /* Adjust font size */
   }
+  .textStyleMediums1 {
+    position:absolute; /* Change position to relative */
+    margin-top: 2px;
+    margin-left: 13px;
+    margin-right: 13px; /* Adjust margin */
+    text-align: left; /* Center align the text */
+    font-size: 11px; /* Adjust font size */
+  }
+
+  .text1,
+  .text2,
+  .text3 {
+    position: absolute; /* Remove absolute positioning */
+    margin-top: 6px; /* Adjust margin */
+    margin-right: 15px;
+    margin-left: 12px;
+    text-align: left; /* Center align the text */
+    font-size: 10px; /* Adjust font size */
+  }
+
+  .ab {
+    margin-top: 10px; /* Adjust margin */
+  }
+
+}

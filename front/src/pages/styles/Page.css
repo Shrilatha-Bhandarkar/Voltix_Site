@@ -7,7 +7,6 @@
     right: 0%;
     align-items: center;
     padding: 0;
-
     margin-left: 0%;
     margin-right: 0;
     margin-bottom: 0;
@@ -168,7 +167,7 @@
 } 
 .bg {
     animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, rgb(188, 166, 233) 50%, #e3d3f4 30%);
+    background-image: linear-gradient(-60deg, rgb(183, 158, 232) 50%, #d4b5f5 30%);
     bottom:0;
     left:-50%;
     opacity:.5;
