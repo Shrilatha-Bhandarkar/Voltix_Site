@@ -5,7 +5,7 @@ const HomeHead = () => {
       <div className="row">
       <img
         className="img-fluid hh-img"
-        src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698732684989_Home%20page.png?AWSAccessKeyId=WNYR8KOHKV6PI9I7TUUC&Expires=1699336190&Signature=%2FU40DTes%2Bqs7KF1iaSBZ7pADtqU%3D"
+        src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698732684989_Home%20page.png?AWSAccessKeyId=U7UJBRKAT4RUYTW1X7NG&Expires=1699383762&Signature=1jKQG7bE%2FtXYLwWZ2F9drw0vKwo%3D"
         alt="Welcome!"
       ></img>
       <div className="col-1">
