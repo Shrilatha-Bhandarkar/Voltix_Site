@@ -6,7 +6,7 @@ const Footer = () => {
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-section">
-          <a href='/'><img src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698732835276_Voltixlogo.png?AWSAccessKeyId=WNYR8KOHKV6PI9I7TUUC&Expires=1699372450&Signature=IMpEholTbOR3LUpppPsQ4SL89OQ%3D" alt="VoltixLogo" className="logo" /></a>
+          <a href='/'><img src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698732835276_Voltixlogo.png?AWSAccessKeyId=U7UJBRKAT4RUYTW1X7NG&Expires=1699383776&Signature=BBOPnaxu2zqwjalI8fPq0mTUeIE%3D" alt="VoltixLogo" className="logo" /></a>
 
             <h3>Voltix Solution</h3>
             <p>
