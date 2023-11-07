@@ -1,8 +1,6 @@
 .form {
   margin-top: 100px;
   margin-bottom: 50px;
-  /* margin-left: auto;
-  margin-right:auto; */
   width:45%;
   height: auto;
 }
@@ -44,21 +42,20 @@ input[type='text']:focus,
 input[type='number']:focus {
   outline: none;
 }
+.button1{
+  justify-content: center;
+}
 /* submit button */
 .contactbutton {
   display: flex;
-  /* align-self: center; */
   justify-content: center;
-  align-items: center;
   width: 30%;
-  /* padding: 10px 20px; */
   margin-top: 20px;
   border: none;
   border-radius: 5px;
   background-color: #0b0b0b;
   color: white;
   cursor: pointer;
-/* margin: 0 auto; */
 }
 
 .contactbutton:hover {
@@ -122,7 +119,7 @@ html,body{
   }
 
   .c_form {
-    padding-left: 20px; /* Adjust the padding for smaller screens */
+    padding-left: 10px; /* Adjust the padding for smaller screens */
     padding-right: 20px;
   }
 
