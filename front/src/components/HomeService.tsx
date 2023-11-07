@@ -29,7 +29,7 @@ const HomeService = () => {
           <div className="col-4" key={entry._id}>
             <div className="card mb-2 mt-2 hser-tit">
               <div className="card-body d-flex flex-column p-2">
-                <Link to={`/services/id?id=${entry._id}`}>
+                <Link to={`/services/id?id=${entry._id}`} className="no-underline">
                   <h3 className="card-title text-center mb-4 ser-tit">
                     {entry.service_title}
                   </h3>

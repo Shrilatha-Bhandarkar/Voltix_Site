@@ -63,7 +63,7 @@ const HomeProject = () => {
               alt={entry.project_title}
             />
             <div className="card-body d-flex flex-column">
-            <Link to={`/projects/id?id=${entry._id}`}>
+            <Link to={`/projects/id?id=${entry._id}`} className="no-underline">
             <h5 className="card-title text-center pro-tit">
                 {entry.project_title}{" "}
               </h5>

@@ -61,7 +61,7 @@ const Services: React.FC = () => {
                   {entry.service_template}
                 </h6>
                 <div className="text-center mt-3">
-                  <Link to={`/services/id?id=${entry._id}`}>
+                  <Link to={`/services/id?id=${entry._id}`} className="no-underline">
                     <button className="btn btn-primary ser-btn">
                       Know More
                     </button>

@@ -33,16 +33,16 @@
     background-color: rgb(104, 49, 192);
 }
 /* Add hover animation */
-.card:hover {
-    transform: scale(1.05);
-    transition: transform 0.2s ease;
-  }
+
 .ser{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-top: 80px;
+}
+.no-underline {
+  text-decoration: none;
 }
 /* .sb{
     background-image: url('https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698746388395_bg%20homepage%20projects.png?AWSAccessKeyId=ACEKXTCCZJ7I1BWFRF7T&Expires=1698862427&Signature=i1w2EgAjgPKFUgXgHG3VB%2B29CHg%3D');

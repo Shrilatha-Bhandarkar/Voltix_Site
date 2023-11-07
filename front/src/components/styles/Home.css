@@ -12,7 +12,6 @@ body::-webkit-scrollbar{
   text-align: center;
   margin-bottom: 10px;
 }
-/* Services */
 .hser-tit{
     padding: 20px;
     background-image: linear-gradient(#ecf1f1,#8e56fd);
@@ -20,11 +19,16 @@ body::-webkit-scrollbar{
 .pro-tit:hover,.pro-tit,.ser-tit,.ser-tit:hover{
     color: black;
 }
+
 .text{
   text-shadow: 2px 2px 6px rgb(241, 230, 171);
 }
 .card-title-container {
     text-align: center;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
   }
 .line {
   width: 50%; 
@@ -65,7 +69,9 @@ body::-webkit-scrollbar{
 .End {
   padding: 5% 5% 0; /* Top padding of 5%, right and left padding of 5%, and bottom padding of 0 */
 }
-
+.no-underline {
+  text-decoration: none;
+}
 /* slider */
 .custom-slick-arrow {
   background: #baa0ed; 
