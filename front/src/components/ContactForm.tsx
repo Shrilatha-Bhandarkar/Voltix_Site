@@ -98,7 +98,7 @@ const ContactForm: React.FC = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-12">
+            <div className="col-12 d-flex justify-content-center">
               <button type="submit" className="btn btn-dark contactbutton">
                 Submit
               </button>
