@@ -53,7 +53,9 @@ app.get("/*", function (req, res) {
     });
 });
 app.use(express_1.default.json());
-app.use(cors());
+app.use(cors({
+    origin: 'https://voltixsolutions.web.app', // Replace with your Firebase frontend URL
+}));
 const mongoURI = process.env.MONGO;
 mongoose_1.default
     .connect(mongoURI)
