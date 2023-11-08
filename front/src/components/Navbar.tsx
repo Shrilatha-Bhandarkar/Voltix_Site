@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           <img
-            src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698732835276_Voltixlogo.png?AWSAccessKeyId=U7UJBRKAT4RUYTW1X7NG&Expires=1699383776&Signature=BBOPnaxu2zqwjalI8fPq0mTUeIE%3D"
+            src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1698732835276_Voltixlogo.png?AWSAccessKeyId=DWCNH2E78ZJI8M0MMT8R&Expires=1699450433&Signature=yzG%2BAYmE26GMPmbdeBrepyY5uh4%3D"
             alt="VoltixLogo"
             width="100"
             height="40"

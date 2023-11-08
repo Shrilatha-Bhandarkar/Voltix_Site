@@ -45,7 +45,7 @@ const About: React.FC = () => {
     <div className="example-box">
       <img
         className="img-fluid ah-img"
-        src="https://voltixsite.s3.wasabisys.com/1699254689332_about2.png?AWSAccessKeyId=DYOXIVQ4TYHAD0CTIVTA&Expires=1699427496&Signature=RMgtgLpozSljyX8ypdNM47OmDJQ%3D"
+        src="https://s3.ap-southeast-1.wasabisys.com/voltixsite/1699254689332_about2.png?AWSAccessKeyId=DWCNH2E78ZJI8M0MMT8R&Expires=1699450406&Signature=TD70MujEzR0y80L2V2Z5FuxeUYg%3D"
         
         alt="Welcome!"
       ></img>
